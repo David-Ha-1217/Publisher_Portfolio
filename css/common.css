@@ -1,28 +1,98 @@
 * { margin: 0; padding: 0; }
 ol, ul { list-style: none; }
-a { outline: 0; text-decoration: none; color: #555; }
+a { outline: 0; text-decoration: none; color: black; }
 img { border: 0; }
-body { font : 12px/1.6 arial; color: #555; }
+
+/* ------- 검색창 ------- */
+/*
+    [메모]
+    검색창 CSS 공부 후에 제대로 수정하기.
+*/
+
+/* ---------------------------- 헤더 영역 ------------------------------- */
 
 header {
-    width: 1080px;
-    height: 166px;
+    width: 1080px; height: 166px;
     margin: 0 auto;
-    background-color: aqua;
 }
+
+/* ------------- 로고 영역 ------------- */
 
 header div#logoWrap {
-    width: 1080px;
-    height: 110px;
-    background-color: lightblue;
+    width: 1080px; height: 110px;
+    overflow: hidden;
 }
 
+/* 상단 로고 */  
 div#logoWrap h1 {
+    line-height: 110px;
+    margin-left: 407.435px;
     text-align: center;
+    display: block;
+    float: left;
 }
 
-header div#topMenu {
-    width: 1080px;
-    height: 56px;
-    background-color: yellow;
+/* 회원가입 / 로그인 */
+
+div#logoWrap p {
+    line-height: 110px;
+    margin-right: 100px;
+    text-align: center;
+    display: block;
+    float: right;
+}
+
+/* ------------- 탭 영역 ------------- */
+
+header nav#topGnb {
+    width: 1080px; height: 56px;
+    background-color: rgb(158, 158, 158);
+    overflow: hidden;
+}
+
+/* 탭 메뉴 [172px * 5] */  
+#topGnb ul li {
+    width: 172px; height: 56px;
+    line-height: 56px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+#topGnb ul li a {
+    font-weight: bold;
+}
+
+
+/* 검색창 [220px]  */
+#topGnb div {
+    width: 220px; height: 56px;
+    display: block;
+    float: left;
+}
+
+#topGnb div div#search {
+    width: 200px; height: 36px;
+    margin: 9px;
+    border: 1px solid rgb(166,166,166);
+    background: #fff;
+    display: block;
+    float: left; 
+}
+
+#topGnb div div#search input {
+    width: 159px; height: 36px;
+    margin: 0px 0px 0px 5px;
+    border: 0px;
+    outline: none;
+    float: left; 
+}
+
+#topGnb div div#search button {
+    width: 36px; height: 36px;
+    border: 0px;
+    background: rgb(237, 237, 237);
+    color: rgb(166,166,166);
+    outline: none;
+    float: right;
 }
