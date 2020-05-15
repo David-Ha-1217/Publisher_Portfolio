@@ -101,3 +101,26 @@ header nav#topGnb {
 }
 
 /* ---------------------------- 헤더 영역 END ------------------------------- */
+
+/* ---------------------------- 푸터 영역 ------------------------------- */
+
+footer {
+    width: 1080px; height: 160px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgb(224,224,224);
+}
+
+footer h1 {
+    line-height: 110px;
+    margin-left: 407.435px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+footer div p {
+    font-size: 16px;
+}
+
+/* ---------------------------- 푸터 영역 END ------------------------------- */
