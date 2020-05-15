@@ -9,6 +9,7 @@ img { border: 0; }
 */
 
 /*
+    (2020-05-15) index.css 분리 _ 푸터 영역 디자인(css)를  구분하기 위함.
     (2020-05-15) 헤더, 푸터 css 완성.
 */
 
@@ -113,13 +114,13 @@ footer {
     width: 1080px; height: 160px;
     margin: 0 auto;
     overflow: hidden;
-    background-color: rgb(224,224,224);
+    background-color: yellow;
 }
 
 footer h1 {
     line-height: 160px;
     margin-left: 163.735px;
-    color: rgb(51,51,51);
+    color: rgb(190,190,190);
     text-align: center;
     display: block;
     float: left;
@@ -129,7 +130,7 @@ footer p {
     font-size: 12px; 
     margin-left: 18.555px;
     padding-top: 56px;
-    color: rgb(51,51,51);
+    color: rgb(190,190,190);
     display: block;
     float: left;
 }
