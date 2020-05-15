@@ -33,14 +33,17 @@ div#logoWrap h1 {
 }
 
 /* 회원가입 / 로그인 */
-
 div#logoWrap p {
     line-height: 110px;
     margin-right: 100px;
     text-align: center;
     display: block;
     float: right;
+    color: rgb(51,51,51);
 }
+
+div#logoWrap p a { color: rgb(51,51,51); }
+
 
 /* ------------- 탭 영역 ------------- */
 
@@ -50,9 +53,9 @@ header nav#topGnb {
     overflow: hidden;
 }
 
-/* 탭 메뉴 [172px * 5] */  
+/* 탭 메뉴 [162px * 5] */  
 #topGnb ul li {
-    width: 172px; height: 56px;
+    width: 162px; height: 56px;
     line-height: 56px;
     text-align: center;
     display: block;
@@ -64,15 +67,15 @@ header nav#topGnb {
 }
 
 
-/* 검색창 [220px]  */
+/* 검색창 [270px]  */
 #topGnb div {
-    width: 220px; height: 56px;
+    width: 270px; height: 56px;
     display: block;
     float: left;
 }
 
 #topGnb div div#search {
-    width: 200px; height: 36px;
+    width: 250px; height: 36px;
     margin: 9px;
     border: 1px solid rgb(166,166,166);
     background: #fff;
@@ -81,11 +84,11 @@ header nav#topGnb {
 }
 
 #topGnb div div#search input {
-    width: 159px; height: 36px;
+    width: 209px; height: 36px;
     margin: 0px 0px 0px 5px;
     border: 0px;
     outline: none;
-    float: left; 
+    float: left;
 }
 
 #topGnb div div#search button {
