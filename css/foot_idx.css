@@ -1,0 +1,32 @@
+/*
+    foot_idx.css - index.html (푸터)
+*/
+
+/* ---------------------------- 푸터 영역 ------------------------------- */
+
+footer {
+    width: 1080px; height: 160px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: yellow;
+}
+
+footer h1 {
+    line-height: 160px;
+    margin-left: 163.735px;
+    color: rgb(190,190,190);
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+footer address p {
+    font-size: 12px; 
+    margin-left: 18.555px;
+    padding-top: 56px;
+    color: rgb(190,190,190);
+    display: block;
+    float: left;
+}
+
+/* ---------------------------- 푸터 영역 END ------------------------------- */
