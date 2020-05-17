@@ -4,16 +4,16 @@ a { outline: 0; text-decoration: none; color: black; }
 img { border: 0; }
 
 /*
-    common.css - 공통 영역
-    (2020-05-15) 헤더, 푸터 css 완료.
-    (2020-05-15) 푸터 영역 분리. (foot_idx.css, foot_com.css)
+    > common.css - 공통 영역 (푸터 제외)
+    > (2020-05-15) 헤더, 푸터 css 완료.
+    > (2020-05-15) 푸터 영역 분리. (foot_idx.css, foot_com.css)
 */
 
 /* ---------------------------- 헤더 영역 ------------------------------- */
 
 header {
     width: 1080px; height: 166px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 /* ------------- 로고 영역 ------------- */

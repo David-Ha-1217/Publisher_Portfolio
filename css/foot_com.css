@@ -1,12 +1,12 @@
 /*
-    foot_com.css - 공통 영역 (푸터)
+    > foot_com.css - 공통 영역 (푸터)
 */
 
 /* ---------------------------- 푸터 영역 ------------------------------- */
 
 footer {
     width: 1080px; height: 160px;
-    margin: 0 auto;
+    margin: 0px auto;
     overflow: hidden;
     background-color: rgb(224,224,224);
 }
