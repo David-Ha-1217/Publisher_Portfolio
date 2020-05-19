@@ -1,0 +1,33 @@
+/*
+    > login_form.css - login_form.html (콘텐츠)
+*/
+
+/* ---------------------------- 콘텐츠 영역 ------------------------------- */
+
+div#contents {
+    width: 1080px; height: 674px;
+    margin: 0px auto;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+/* ------------- 상단 TITLE 영역 ------------- */
+
+div#contents h1 {
+    margin: 40px 0px 0px 492px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+div#contents hr {
+    width: 428px;
+    margin: 10px 0px 0px 325px;
+    float: left;
+}
+
+/* ------------- input 영역 ------------- */
+
+
+
+/* ---------------------------- 콘텐츠 영역 END ------------------------------- */

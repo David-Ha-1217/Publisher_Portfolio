@@ -16,12 +16,14 @@ header {
     margin: 0px auto;
 }
 
+
 /* ------------- 로고 영역 ------------- */
 
 header div#logoWrap {
     width: 1080px; height: 110px;
     overflow: hidden;
 }
+
 
 /* 상단 로고 */  
 div#logoWrap h1 {
@@ -31,6 +33,7 @@ div#logoWrap h1 {
     display: block;
     float: left;
 }
+
 
 /* 회원가입 / 로그인 */
 div#logoWrap p {
@@ -52,6 +55,7 @@ header nav#topGnb {
     background-color: rgb(158, 158, 158);
     overflow: hidden;
 }
+
 
 /* 탭 메뉴 [162px * 5] */  
 #topGnb ul li {
@@ -100,26 +104,51 @@ header nav#topGnb {
 
 /* ---------------------------- 헤더 영역 END ------------------------------- */
 
+
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
-div#contents {
+/* 사이드가 없는 페이지 */
+/*
+    div#contents {
+    width: 1080px; height: 674px;
+    margin: 0px auto;
+    overflow: hidden;
+    background-color: aquamarine;
+    }
+
+    div#contents h1 {
+    margin: 40px 0px 0px 470.375px;
+    text-align: center;
+    display: block;
+    float: left;
+    }
+
+    div#contents hr {
+    width: 428px;
+    margin: 10px 0px 0px 325px;
+    float: left;
+    }
+
+*/
+
+/* 사이드가 있는 페이지 */
+section#contents {
     width: 1080px; height: 674px;
     margin: 0px auto;
     overflow: hidden;
     background-color: aquamarine;
 }
 
-div#contents h1 {
-    margin: 40px 0px 0px 470.375px;
-    text-align: center;
+section#contents > h2 {
+    margin: 40px 0px 0px 40px;
     display: block;
-    float: left;
+    float: right;
 }
 
-div#contents hr {
+section#contents > hr {
     width: 428px;
-    margin: 10px 0px 0px 325px;
-    float: left;
+    margin: 10px 0px 0px 40px;
+    float: right;
 }
 
 /* ---------------------------- 콘텐츠 영역 END ------------------------------- */

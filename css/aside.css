@@ -1,0 +1,39 @@
+/*
+    > aside.css - 공통 영역 (콘텐츠_사이드)
+    > (2020-05-19) 콘텐츠_사이드 영역 css 완료.
+*/
+
+/* ---------------------------- 콘텐츠_사이드 영역 ------------------------------- */
+
+aside#side {
+    width: 255px; height: 674px;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+aside#side div {
+    width: 225px; height: 171px;
+    margin: 40px 0px 0px 15px;
+    border-radius: 10px;
+    background-color: lightcoral;
+}
+
+aside#side h3 {
+    margin: 20px 0px 0px 30.5px;
+    float: left;
+}
+
+aside#side hr {
+    width: 172px;
+    margin: 7.5px 0px 0px 26.5px;
+    float: left;
+}
+
+aside#side ul {
+    margin: 15px 0px 0px 30.5px;
+    line-height: 35px;
+    float: left;
+}
+
+
+/* ---------------------------- 콘텐츠_사이드 영역 END ------------------------------- */

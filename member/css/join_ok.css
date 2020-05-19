@@ -1,5 +1,55 @@
 /*
     > join_ok.css - join_ok.html (콘텐츠)
+    > (2020-05-19) 콘텐츠 영역 css 완료.
 */
 
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
+
+div#contents {
+    width: 1080px; height: 674px;
+    margin: 0px auto;
+    overflow: hidden;
+    background-color: aquamarine;
+    }
+
+    div#contents h1 {
+    margin: 40px 0px 0px 470.375px;
+    text-align: center;
+    display: block;
+    float: left;
+    }
+
+    div#contents hr {
+    width: 428px;
+    margin: 10px 0px 0px 325px;
+    float: left;
+    }
+
+div#contents h2 {
+    margin: 40px 0px 0px 321px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+div#contents img {
+    margin: 40px 0px 0px 414px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+div#contents button {
+    width: 244px; height: 55px;
+    margin: 40px 0px 0px 418px;
+    background-color: rgb(94,94,94);
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    float: left;
+}
+
+/* ---------------------------- 콘텐츠 영역 END ------------------------------- */
