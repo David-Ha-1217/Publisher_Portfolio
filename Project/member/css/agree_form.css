@@ -1,0 +1,87 @@
+/*
+    > id_find_form.css - id_find_form.html (콘텐츠)
+    > (2020-05-19) 콘텐츠 영역 css 완료.
+*/
+
+/* ---------------------------- 콘텐츠 영역 ------------------------------- */
+
+div#contents {
+    width: 1080px; height: 674px;
+    margin: 0px auto;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+/* ------------- 상단 TITLE 영역 ------------- */
+
+div#contents h1 {
+    margin: 40px 0px 0px 470.375px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+div#contents hr {
+    width: 428px;
+    margin: 10px 0px 0px 325px;
+    float: left;
+}
+
+div#contents h3 {
+    margin: 20px 0px 0px 408.515px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+/* ------------- 약관 영역 ------------- */
+
+#contents div#agreeWrap {
+    width: 986px; height: 772px;
+    margin: 40px 0px 0px 47px;
+    display: block;
+    float: left;
+    background-color: lightcoral;
+}
+
+#contents div#agreeWrap div#agreeChk {
+    width: 966px; height: 322px;
+    margin: 5px 0px 0px 10px;
+    display: block;
+    float: left;
+    background-color: lightblue;
+}
+
+#contents div#agreeWrap div#agreeChk > h4 { font-size: 19px; }
+
+#contents div#agreeWrap div#agreeChk div {
+    width: 946px; height: 266px;
+    margin: 10px 0px 0px 10px;
+    background-color: royalblue;
+    padding: 10px;
+}
+
+#contents div#agreeWrap div#agreeChk div > h4 { font-size: 16px; margin-top: 16px;}
+
+#contents div#agreeWrap div#agreeChk div ul li { margin-top: 8px; }
+
+ul.depth01 { font-size: 15px; }
+
+ul.depth02 li {
+    margin-left: 16px;
+    padding: 2px 0;
+    text-indent: -16px;
+}
+
+ul.depth03 {
+    margin-top: 4px !important;
+    margin-left: 0px;
+}
+
+
+
+
+
+
+
+/* ---------------------------- 콘텐츠 영역 END ------------------------------- */
