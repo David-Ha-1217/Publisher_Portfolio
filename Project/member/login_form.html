@@ -17,6 +17,7 @@
     <!--
         > login_form.html - 로그인
         > (2020-05-15) 헤더, 푸터 마크업 완료.
+        > (2020-05-21) 컨텐츠 마크업 완료.
     -->
 
     <!-- ---------------------------- 헤더 영역 ------------------------------- -->
@@ -24,9 +25,9 @@
     <header>
 
         <div id="logoWrap">
-            <h1>JACOB'S LADDER</h1>
+            <h1><a href="../index.html">JACOB'S LADDER</a></h1>
 
-            <p><a href="#">회원가입</a> / <a href="#">로그인</a></p>
+            <p><a href="#">회원가입</a> / <a href="./member/login_form.html">로그인</a></p>
             <!--
                 <a href="#">마이 페이지</a> / <a href="#">로그아웃</a>
                 <a href="#">관리 페이지</a> / <a href="#">로그아웃</a>
@@ -35,14 +36,14 @@
 
         <nav id="topGnb">
             <ul>
-                <li><a href="#">회사소개</a></li>
+                <li><a href="./company/company.html">회사소개</a></li>
                 <li><a href="#">도서</a></li>
                 <li><a href="#">자료실</a></li>
                 <li><a href="#">질문답변</a></li>
                 <li><a href="#">동영상 강의</a></li>
             </ul>
             <div>
-                <div id="search">
+                <div id = "search">
                     <input type="text" placeholder="도서명, 저자 등 검색">
                     <button><i class="fas fa-search"></i></button>
                 </div>
@@ -59,6 +60,30 @@
         <h1>로그인</h1>
         <hr>
 
+        <div id="inputWrap">
+            <div id="inputId">
+                <label for="member_id"><i class="fas fa-user"></i></label>
+                <input type="text" id="member_id" name="member_id" minlength="5" maxlength="11" placeholder="아이디를 입력해주세요.">
+            </div>
+
+            <div id="inputPwd">
+                <label for="member_pwd"><i class="fas fa-key"></i></label>
+                <input type="password" id="member_pwd" name="member_pwd" minlength="8" maxlength="20" placeholder="비밀번호를 입력해주세요.">
+            </div>
+
+            <div id="saveId">
+                <input type="checkbox" id="sv_member" name="sv_member">
+                <label for="sv_member"> 아이디 저장 </label>
+            </div>
+
+            <button>로그인</button>
+
+            <div id="btnWrap">
+                <button type="button" id="id_find" onclick="location.href='./id_find_form.html'" style="cursor:pointer">아이디 찾기</button>
+                <button type="button" id="pwd_find" onclick="location.href='./pwd_find_form.html'" style="cursor:pointer">비밀번호 찾기</button>
+                <button type="button" id="join" onclick="location.href='#'" style="cursor:pointer">회원가입</button>
+            </div>
+        </div>
         
 
     </div>

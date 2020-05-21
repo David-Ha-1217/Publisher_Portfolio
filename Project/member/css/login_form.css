@@ -1,5 +1,6 @@
 /*
     > login_form.css - login_form.html (콘텐츠)
+    > (2020-05-21) 콘텐츠 영역 css 완료.
 */
 
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
@@ -8,7 +9,6 @@ div#contents {
     width: 1080px; height: 674px;
     margin: 0px auto;
     overflow: hidden;
-    background-color: aquamarine;
 }
 
 /* ------------- 상단 TITLE 영역 ------------- */
@@ -28,6 +28,129 @@ div#contents hr {
 
 /* ------------- input 영역 ------------- */
 
+#contents div#inputWrap {
+    width: 411px; height: 500px;
+    margin: 40px 0px 0px 334.5px;
+    display: block;
+    float: left;
+}
 
+/* 아이디 */
+#contents div#inputWrap div#inputId {
+    width: 409px; height: 60px;
+    border: 1px solid rgb(166,166,166);
+    background: #fff;
+    display: block;
+    float: left;
+}
+
+#contents div#inputWrap div#inputId label {
+    width: 60px; height: 60px;
+    border: 0px;
+    background: rgb(237, 237, 237);
+    color: rgb(166,166,166);
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+    outline: none;
+    float: left;
+}
+
+#contents div#inputWrap div#inputId input {
+    width: 340px; height: 60px;
+    border: 0px;
+    margin-left: 9px;
+    outline: none;
+    float: right;
+}
+
+/* 비밀번호 */
+#contents div#inputWrap div#inputPwd {
+    width: 409px; height: 60px;
+    margin-top: 15px;
+    border: 1px solid rgb(166,166,166);
+    background: #fff;
+    display: block;
+    float: left;
+}
+
+#contents div#inputWrap div#inputPwd label {
+    width: 60px; height: 60px;
+    border: 0px;
+    background: rgb(237, 237, 237);
+    color: rgb(166,166,166);
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+    outline: none;
+    float: left;
+}
+
+#contents div#inputWrap div#inputPwd input {
+    width: 340px; height: 60px;
+    border: 0px;
+    margin-left: 9px;
+    outline: none;
+    float: right;
+}
+
+/* 아이디 저장*/
+#contents div#inputWrap div#saveId {
+    width: 409px; height: 20px;
+    margin-top: 10px;
+    display: block;
+    float: left;
+}
+
+#contents div#inputWrap div#saveId input {
+    width: 15px; height: 15px;
+    position: relative;
+    top: 1.5px;
+}
+
+/* 로그인 */
+#contents div#inputWrap > button {
+    width: 100px; height: 47px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgb(94,94,94);
+    float: right;
+    color: white;
+}
+
+/* 버튼 영역 */
+#contents div#inputWrap div#btnWrap {
+    width: 411px; height: 103px;
+    margin-top: 40px;
+    display: block;
+    float: left;
+}
+
+#contents div#inputWrap div#btnWrap button {
+    background-color: rgb(224, 224, 224);
+    color: rgb(64,64,64);
+    font-size: 16px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#contents div#inputWrap div#btnWrap button#id_find {
+    width: 189px; height: 47px;
+    margin-left: 14px;
+    float: left;
+}
+
+#contents div#inputWrap div#btnWrap button#pwd_find {
+    width: 189px; height: 47px;
+    margin-right: 14px;
+    float: right;
+}
+
+#contents div#inputWrap div#btnWrap button#join {
+    width: 383px; height: 47px;
+    margin: 10px 0px 0px 14px;
+}
 
 /* ---------------------------- 콘텐츠 영역 END ------------------------------- */
