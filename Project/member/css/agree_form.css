@@ -1,6 +1,6 @@
 /*
-    > id_find_form.css - id_find_form.html (콘텐츠)
-    > (2020-05-19) 콘텐츠 영역 css 완료.
+    > agree_form.css - agree_form.html (콘텐츠)
+    > (2020-05-22) 콘텐츠 영역 css 완료.
 */
 
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
@@ -9,7 +9,6 @@ div#contents {
     width: 1080px; height: 674px;
     margin: 0px auto;
     overflow: hidden;
-    background-color: aquamarine;
 }
 
 /* ------------- 상단 TITLE 영역 ------------- */
@@ -37,67 +36,173 @@ div#contents h3 {
 /* ------------- 약관 영역 ------------- */
 
 #contents div#agreeWrap {
-    width: 986px; height: 772px;
+    width: 986px; height: 1000px;
     margin: 40px 0px 0px 47px;
     display: block;
     float: left;
-    background-color: lightcoral;
 }
 
+/* -------------  이용 약관 ------------- */
 #contents div#agreeWrap div#agreeChk {
     width: 966px; height: 364px;
     margin: 0px 0px 0px 10px;
     display: block;
     float: left;
-    background-color: lightblue;
 }
 
-#contents div#agreeWrap div#agreeChk > h4 { font-size: 19px; }
+div#agreeChk > h4 { font-size: 19px; }
 
-#contents div#agreeWrap div#agreeChk div#agree_cnt {
+/* 약관 내용 */
+div#agreeChk div#agree_cnt {
     width: 964px; height: 266px;
     margin: 10px 0px 0px 0px;
     border: 1px solid rgb(224, 224, 224);
-    background-color: royalblue;
+} 
+
+div#agree_cnt ul.depth01 li h4 { margin-top: 10px; }
+
+div#agree_cnt ul.depth02 {
+    text-indent: -18px;
+    padding-left:18px;
+    font-size: 15px;
 }
 
-#contents div#agreeWrap div#agreeChk div#agree01 {
+div#agree_cnt ul.depth03 {
+    list-style-position: inside;
+    text-indent: -18px;
+    padding-left:18px;
+    font-size: 14px;
+}
+
+/* 이용 약관 동의 (예, 아니요) */
+div#agreeChk div#agree01 {
     width: 964px; height: 53px;
     border: 1px solid rgb(224, 224, 224);
     border-top: 0px;
 }
 
-#contents div#agreeWrap div#agreeChk div#agree01 h4 {
+div#agreeChk div#agree01 h4 {
     line-height: 53px;
     float: left;
 }
 
-#contents div#agreeWrap div#agreeChk div#agree01 div {
+div#agreeChk div#agree01 div {
     margin-right: 30px;
     float: right;
 }
 
-#contents div#agreeWrap div#agreeChk div#agree01 div > input { margin: 20px; }
+div#agreeChk div#agree01 div > input { margin: 20px; }
 
-#contents div#agreeWrap div#agreeChk div#agree01 div > label { font-weight: bold; }
+div#agreeChk div#agree01 div > label { font-weight: bold; }
 
-/*
-#contents div#agreeWrap div#agreeChk div > h4 { font-size: 16px; margin-top: 16px;}
 
-#contents div#agreeWrap div#agreeChk div ul li { margin-top: 8px; }
-
-ul.depth01 { font-size: 15px; }
-
-ul.depth02 li {
-    margin-left: 16px;
-    padding: 2px 0;
-    text-indent: -16px;
+/* ------------- 개인정보취급방침 동의 ------------- */
+#contents div#agreeWrap div#psnInfo {
+    width: 966px; height: 364px;
+    margin: 50px 0px 0px 10px;
+    display: block;
+    float: left;
 }
 
-ul.depth03 {
-    margin-top: 4px !important;
-    margin-left: 0px;
+div#psnInfo > h4 { font-size: 19px; }
+
+/* 개인정보취급방침 내용 */
+div#psnInfo div#psnInfo_cnt {
+    width: 964px; height: 266px;
+    margin: 10px 0px 0px 0px;
+    border: 1px solid rgb(224, 224, 224);
 }
-*/
+
+div#psnInfo_cnt div h4, h5 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+div#psnInfo_cnt ul.depth02 {
+    text-indent: -18px;
+    padding-left:18px;
+    font-size: 15px;
+}
+
+div#psnInfo_cnt ul.depth02 li {
+    text-indent: -18px;
+    padding-left:18px;
+    font-size: 14px;
+}
+
+div#psnInfo_cnt ul.depth03 {
+    list-style-position: inside;
+    text-indent: -18px;
+    padding-left:18px;
+    font-size: 14px;
+}
+
+/* 개인정보취급방침 동의 (예, 아니요) */
+div#psnInfo div#agree02 {
+    width: 964px; height: 53px;
+    border: 1px solid rgb(224, 224, 224);
+    border-top: 0px;
+}
+
+div#psnInfo div#agree02 h4 {
+    line-height: 53px;
+    float: left;
+}
+
+div#psnInfo div#agree02 div {
+    margin-right: 30px;
+    float: right;
+}
+
+div#psnInfo div#agree02 div > input { margin: 20px; }
+
+div#psnInfo div#agree02 div > label { font-weight: bold; }
+
+
+/* ------------- 전체 동의 ------------- */
+
+div#agreeWrap div#agreeAll {
+    width: 280px; height: 53px;
+    margin: 40px 0px 0px 400px;
+    display: block;
+    float: left;
+}
+
+div#agreeAll label { 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ------------- 전체 동의 ------------- */
+
+div#agreeWrap div#btnWrap {
+    width: 280px; height: 53px;
+    margin: 40px 0px 0px 400px;
+    display: block;
+    float: left;
+}
+
+div#btnWrap button#subOk {
+    width: 135px; height: 53px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(64,64,64);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    float: left;
+}
+
+div#btnWrap button#reset {
+    width: 135px; height: 53px;
+    margin-left: 10px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(224,224,224);
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(64,64,64,);
+    float: left;
+}
 
 /* ---------------------------- 콘텐츠 영역 END ------------------------------- */
