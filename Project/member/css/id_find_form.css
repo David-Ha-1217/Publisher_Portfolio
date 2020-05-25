@@ -9,7 +9,6 @@ div#contents {
     width: 1080px; height: 674px;
     margin: 0px auto;
     overflow: hidden;
-    background-color: aquamarine;
 }
 
 /* ------------- 상단 TITLE 영역 ------------- */
@@ -42,7 +41,6 @@ div#contents div {
     text-align: center;
     display: block;
     float: left;
-    background-color: lightcoral;
 }
 
 /* 이메일 / 인증번호 */

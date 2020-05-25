@@ -9,7 +9,6 @@ div#contents {
     width: 1080px; height: 674px;
     margin: 0px auto;
     overflow: hidden;
-    background-color: aquamarine;
 }
 
 /* ------------- 상단 TITLE 영역 ------------- */
@@ -42,7 +41,6 @@ div#contents div {
     text-align: center;
     display: block;
     float: left;
-    background-color: lightcoral;
 }
 
 div#contents div label.label {
@@ -80,6 +78,8 @@ div#contents div > button#cite_btn{
     font-size: 16px;
     color: rgb(64,64,64);
     background-color: rgb(224,224,224);
+    font-weight: bold;
+    cursor : pointer;
 }
 
 /* 버튼 영역 */
@@ -93,6 +93,8 @@ div#contents div button#pwd_find_btn {
     color: white;
     background-color: rgb(64,64,64);
     float: left;
+    font-weight: bold;
+    cursor : pointer;
 }
 
 div#contents div button#reset {
@@ -104,6 +106,8 @@ div#contents div button#reset {
     color: rgb(64,64,64);
     background-color: rgb(224,224,224);
     float: left;
+    font-weight: bold;
+    cursor : pointer;
 }
 
 /* ---------------------------- 콘텐츠 영역 END ------------------------------- */

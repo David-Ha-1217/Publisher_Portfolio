@@ -1,0 +1,139 @@
+/*
+    > join_form.css - join_form.html (콘텐츠)
+    > (2020-05-25) 콘텐츠 영역 css 완료.
+*/
+
+/* ---------------------------- 콘텐츠 영역 ------------------------------- */
+
+div#contents {
+    width: 1080px; height: 674px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+/* ------------- 상단 TITLE 영역 ------------- */
+
+div#contents h1 {
+    margin: 40px 0px 0px 476px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+div#contents hr {
+    width: 428px;
+    margin: 10px 0px 0px 325px;
+    float: left;
+}
+
+div#contents h3 {
+    margin: 10px 0px 0px 458.578px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+/* ------------- input 영역 ------------- */
+
+div#contents div {
+    width: 640px;
+    margin: 40px 0px 0px 220px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+div#contents div label.label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 아이디 / 중복확인 */
+
+div#contents div input#member_id {
+    width: 310px; height: 57px;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 10px;
+    margin-left: 126px;
+}
+
+div#contents div > button#dup_id{
+    width: 111px; height: 57px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(64,64,64);
+    background-color: rgb(224,224,224);
+    font-weight: bold;
+    cursor : pointer;
+}
+
+/* 이메일 / 중복확인 */
+
+div#contents div input#member_email {
+    width: 310px; height: 57px;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 10px;
+    margin: 15px 0px 0px 126px;
+}
+
+div#contents div > button#dup_email {
+    width: 111px; height: 57px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(64,64,64);
+    background-color: rgb(224,224,224);
+    font-weight: bold;
+    cursor : pointer;
+}
+
+/* 비밀번호 / 비밀번호 확인 */
+
+div#contents div input#member_pwd {
+    width: 428px; height: 57px;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 10px;
+    margin: 15px 0px 0px 102px;
+}
+
+div#contents div input#re_pwd {
+    width: 428px; height: 57px;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 10px;
+    margin: 15px 0px 0px 46px;
+}
+
+/* 확인 / 취소 */
+
+div#contents div#btnWrap {
+    width: 280px; height: 53px;
+    margin: 40px 0px 0px 400px;
+    display: block;
+    float: left;
+}
+
+div#btnWrap button#subOk {
+    width: 135px; height: 53px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(64,64,64);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    float: left;
+    cursor : pointer;
+}
+
+div#btnWrap button#reset {
+    width: 135px; height: 53px;
+    margin-left: 10px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(224,224,224);
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(64,64,64,);
+    float: left;
+    cursor : pointer;
+}

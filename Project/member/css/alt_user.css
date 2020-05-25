@@ -1,0 +1,75 @@
+/*
+    > alt_user.css - alt_user.html (콘텐츠)
+*/
+
+/* ---------------------------- 콘텐츠 영역 ------------------------------- */
+
+div#cntWrap {
+    width: 1080px; height: 674px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+section#contents {
+    width: 823px; height: 674px;
+    overflow: hidden;
+    float: right;
+    margin: 0px;
+}
+section#contents > div {
+    width: 640px;
+    margin: 40px 0px 0px 220px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+section#contents > div label.label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 아이디 / 중복확인 */
+
+section#contents > div input#member_id {
+    width: 310px; height: 57px;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 10px;
+    margin-left: 126px;
+}
+
+/* 이메일 / 중복확인 */
+
+section#contents > div input#member_email {
+    width: 310px; height: 57px;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 10px;
+    margin: 15px 0px 0px 126px;
+}
+
+section#contents > div > button#dup_email {
+    width: 111px; height: 57px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(64,64,64);
+    background-color: rgb(224,224,224);
+    font-weight: bold;
+    cursor : pointer;
+}
+
+/* 비밀번호 / 비밀번호 확인 */
+
+section#contents > div input#member_pwd {
+    width: 428px; height: 57px;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 10px;
+    margin: 15px 0px 0px 102px;
+}
+
+section#contents > div input#re_pwd {
+    width: 428px; height: 57px;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 10px;
+    margin: 15px 0px 0px 46px;
+}

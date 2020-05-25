@@ -118,6 +118,8 @@ div#contents hr {
     background-color: rgb(94,94,94);
     float: right;
     color: white;
+    font-weight: bold;
+    cursor : pointer;
 }
 
 /* 버튼 영역 */
@@ -134,6 +136,8 @@ div#contents hr {
     font-size: 16px;
     border: 0px;
     border-radius: 10px;
+    font-weight: bold;
+    cursor : pointer;
 }
 
 #contents div#inputWrap div#btnWrap button#id_find {
