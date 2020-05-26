@@ -7,8 +7,8 @@
 
 aside#side {
     width: 255px; height: 674px;
-    overflow: hidden;
     background-color: lightblue;
+    float: left;
 }
 
 aside#side div {
@@ -34,6 +34,5 @@ aside#side ul {
     line-height: 35px;
     float: left;
 }
-
 
 /* ---------------------------- 콘텐츠_사이드 영역 END ------------------------------- */

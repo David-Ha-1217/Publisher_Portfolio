@@ -11,7 +11,7 @@
     <!-- 공통 영역 (푸터)-->
     <link rel="stylesheet" href="../css/foot_com.css">
     <!-- 콘텐츠 영역 (direction.html) -->
-    <link rel="stylesheet" href="./css/direction.css">
+    <link rel="stylesheet" href="./css/directions.css">
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -55,8 +55,8 @@
 
     <!-- ---------------------------- 헤더 영역 END ------------------------------- -->
 
-    <section id="contents">
-        
+    <div id="cntWrap">
+
         <aside id="side">
             <div>
                 <h3>회사소개</h3>
@@ -68,11 +68,50 @@
             </div>
         </aside>
 
+        <section id="contents">
+            
+            <div id="titleWrap">
+                <h2>찾아오시는 길</h2>
+                <hr>
+            </div>
 
-        <h2>찾아오시는 길</h2>
-        <hr>
+            <div id="mapWrap">
+                <!--
+                    Kakao Maps API
+                    > 카카오 개발자(https://developers.kakao.com/)에서 '등록된 도메인'과 '호출된 도메인'이 다른 경우, 정상적으로 지도가 출력되지 않음.
+                    > 현재 등록된 도메인 : http://127.0.0.1:5500
+                -->
 
-    </section>
+                <div id="map"></div>
+                <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=53936144ac1b3c3ab0b9c3e2ca6a972b&libraries=services,clusterer,drawing" type="text/javascript"></script>
+                <script>
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = { 
+                            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                            level: 3 // 지도의 확대 레벨
+                        };
+                    
+                    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+                    
+                    // 마커가 표시될 위치입니다 
+                    var markerPosition  = new kakao.maps.LatLng(33.450701, 126.570667); 
+                    
+                    // 마커를 생성합니다
+                    var marker = new kakao.maps.Marker({
+                        position: markerPosition
+                    });
+                    
+                    // 마커가 지도 위에 표시되도록 설정합니다
+                    marker.setMap(map);
+                    
+                    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+                    // marker.setMap(null);
+                </script>
+                
+            </div>
+
+        </section>
+    </div>
     
     <!-- ---------------------------- 푸터 영역 ------------------------------- -->
 
