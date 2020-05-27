@@ -6,35 +6,32 @@
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
 section#contents div#aboutUs {
-    width: 780px; height: 350px;
+    width: 780px; height: 400px;
     margin: 15px 0px 0px 20px;
     display: block;
     float: left;
 }
 
-/* 회사 로고 */
-
-div#aboutUs img {
-    width: 300px; height: 230px;
-    margin-top: 60px;
+/* 소개 글 */
+div#aboutUs div#itd {
+    width: 450px; height: 350px;
+    margin-top: 20px;
     float: left;
 }
 
-
-/* 소개 글 */
-
-section#contents div#aboutUs div#itd {
-    width: 450px; height: 290px;
-    margin-top: 20px;
-    float: right;
+div#aboutUs div#itd h2, h3 { margin-top: 10px; }
+div#aboutUs div#itd h2 { font-size: 30px; }
+div#aboutUs div#itd h3 { font-size: 22px; }
+div#aboutUs div#itd p {
+    margin-top: 35px;
+    font-size: 18px;
 }
 
-section#contents div#aboutUs div#itd h2, h3 { margin-top: 10px; }
-section#contents div#aboutUs div#itd h2 { font-size: 24px; }
-section#contents div#aboutUs div#itd h3 { font-size: 20px; }
-section#contents div#aboutUs div#itd p {
-    margin-top: 35px;
-    font-size: 14px;
+/* 회사 로고 */
+div#aboutUs img {
+    width: 290px; height: 220px;
+    margin: 136px 10px 0px 0px;
+    float: right;
 }
 
 /* ---------------------------- 콘텐츠 영역 END ------------------------------- */
