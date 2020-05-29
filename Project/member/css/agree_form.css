@@ -56,7 +56,7 @@ div#agreeChk > h4 { font-size: 19px; }
 div#agreeChk div#agree_cnt {
     width: 964px; height: 266px;
     margin: 10px 0px 0px 0px;
-    border: 1px solid rgb(224, 224, 224);
+    border: 1px solid rgb(224, 224, 224); 
 } 
 
 div#agree_cnt ul.depth01 li h4 { margin-top: 10px; }
