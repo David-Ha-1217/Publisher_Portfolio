@@ -15,9 +15,47 @@ div#contents > div#topWrap {
     background-color: lemonchiffon;
 }
 
-div#contents > #bottomWrap {
+div#contents > div#bottomWrap {
     width: 1080px; height: 316px;
     background-color: rgb(224,224,224);
+}
+
+div#bottomWrap > div#left {
+    width: 510px; height: 288px;
+    margin: 14px 0px 0px 15px;
+    background-color: khaki;
+    float: left;
+}
+
+div#left h2 { float: left; }
+div#left a { margin: 8px 10px 0px 0px; float: right; }
+div#left hr { width: 510px; margin-top: 40px;}
+div#left div.box {
+    width: 60px; height: 26px;
+    font-size: 12px;
+    color: rgb(64, 64, 64);
+    background-color: rgb(160, 160, 160);
+    line-height: 26px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+div#left table {
+    width: 500px; height: 224px;
+    margin-top: 10px;
+    float: left;
+}
+
+div#left table tr td {
+    width: ;
+}
+
+
+div#bottomWrap > div#right {
+    width: 510px; height: 288px;
+    margin: 14px 15px 0px 0px;
+    background-color: lightblue;
+    float: right;
 }
 
 /* ---------------------------- 콘텐츠 영역 END ------------------------------- */
