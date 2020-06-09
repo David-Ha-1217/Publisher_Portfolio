@@ -1,0 +1,125 @@
+/*
+    > book.css - book.html (콘텐츠)
+    > (2020-06-09) 콘텐츠 영역 css 완료. (페이징 작업 제외.)
+*/
+
+/* ---------------------------- 콘텐츠 영역 ------------------------------- */
+
+div#contents {
+    width: 1080px; height: 1750px;
+    margin: 0px auto;
+    overflow: hidden;
+    background-color: lightskyblue;
+}
+
+/* ------------- 상단 TITLE 영역 ------------- */
+
+div#contents > h1 {
+    margin: 40px 0px 0px 508px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+div#contents > hr {
+    width: 428px;
+    margin: 10px 0px 0px 325px;
+    float: left;
+}
+
+/* 검색창 [270px]  */
+
+div#contents div#sWrap {
+    width: 1080px; height: 80px;
+    float:right;
+    background-color: royalblue;
+}
+
+div#search {
+    width: 250px; height: 36px;
+    margin: 22px 60px 0px 0px;
+    border: 1px solid rgb(166,166,166);
+    background: #fff;
+    float: right; 
+}
+
+div#search input {
+    width: 209px; height: 36px;
+    margin: 0px 0px 0px 5px;
+    border: 0px;
+    outline: none;
+    float: left;
+}
+
+div#search button {
+    width: 36px; height: 36px;
+    border: 0px;
+    background: rgb(237, 237, 237);
+    color: rgb(166,166,166);
+    outline: none;
+    float: right;
+}
+
+/* 도서 리스트 */
+
+div#contents > div.bWrap {
+    width: 900px; height: 260px;
+    margin-left: 90px;
+    float: left;
+    border: 2px solid rgb(166,166,166);
+}
+
+div#contents > div#b1 { margin-top: 20px; border-bottom: 1px solid rgb(166,166,166); }
+div#contents > div#b2 { border-bottom: 1px solid rgb(166,166,166); }
+div#contents > div#b3 { border-bottom: 1px solid rgb(166,166,166); }
+div#contents > div#b4 { border-bottom: 1px solid rgb(166,166,166); }
+
+div.bWrap > div#bimg {
+    width: 204px; height: 260px;
+    background-color: lightcoral;
+    float: left;
+}
+
+div.bWrap img {
+    width: 184px; height: 240px;
+    margin: 10px;
+}
+
+div.bWrap > div#bCnt {
+    width: 676px; height: 240px;
+    background-color: lightgreen;
+    margin: 10px;
+    float: right;
+}
+
+div#bCnt ul li { margin: 12px; }
+div#bCnt ul li > p { display: inline; }
+div#bCnt ul li > p:nth-child(3) { font-weight: bold; }
+div#bCnt ul li:nth-child(4) {
+    font-size: 15px;
+    font-family: 'Noto Sans', 'sans-serif', '나눔고딕', 'NanumGothic', 'dotum';
+}
+
+/* 버튼 영역 */
+
+div#contents div#btnWrap {
+    width: 1080px;
+    margin-top: 15px;
+    text-align: center;
+    float: left;
+    background-color: lightpink;
+}
+
+div#contents div#btnWrap button {
+    width: 104px; height: 50px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgb(64,64,64);
+    margin-right: 90px;
+    font-weight: bold;
+    color: white;
+    float: right;
+}
+
+/* ---------------------------- 콘텐츠 영역 END ------------------------------- */

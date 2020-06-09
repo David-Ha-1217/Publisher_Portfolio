@@ -10,26 +10,31 @@ div#contents {
     overflow: hidden;
     }
 
+/* ------------- 콘텐츠 영역 상단------------- */
+
 div#contents > div#topWrap {
     width: 1080px; height: 358px;
     background-color: lemonchiffon;
 }
+
+/* ------------- 콘텐츠 영역 하단------------- */
 
 div#contents > div#bottomWrap {
     width: 1080px; height: 316px;
     background-color: rgb(224,224,224);
 }
 
+/* 공지사항/이벤트 */
+
 div#bottomWrap > div#left {
     width: 510px; height: 288px;
-    margin: 14px 0px 0px 15px;
-    background-color: khaki;
+    margin: 14px 0px 0px 35px;
     float: left;
 }
 
-div#left h2 { float: left; }
-div#left a { margin: 8px 10px 0px 0px; float: right; }
-div#left hr { width: 510px; margin-top: 40px;}
+div#left > h2 { float: left; }
+div#left > a { margin: 8px 10px 0px 0px; float: right; }
+div#left > hr { width: 510px; margin-top: 40px;}
 div#left div.box {
     width: 60px; height: 26px;
     font-size: 12px;
@@ -38,24 +43,47 @@ div#left div.box {
     line-height: 26px;
     border-radius: 5px;
     text-align: center;
+    float: left;
 }
 
-div#left table {
+div#left > table {
     width: 500px; height: 224px;
     margin-top: 10px;
     float: left;
 }
 
-div#left table tr td {
-    width: ;
-}
+div#left > table tr td.icon { width: 60px; }
+div#left > table tr td:nth-child(2) { text-indent: 10px; }
+div#left > table tr td:nth-child(3) { width: 100px; text-align: center; }
 
+/* 배너, SNS */
 
 div#bottomWrap > div#right {
-    width: 510px; height: 288px;
+    width: 475px; height: 288px;
     margin: 14px 15px 0px 0px;
-    background-color: lightblue;
     float: right;
+}
+
+div#right > div#banner {
+    width: 346px; height: 268px;
+    margin: 10px;
+    float: left;
+}
+
+div#banner img {
+    width: 346px; height: 80px;
+    margin: 2.5px 0px;
+}
+
+div#right > div#sns {
+    width: 74.38px; height: 255px;
+    margin: 16.5px;
+    float: left;
+}
+
+div#sns a i{
+    font-size: 85px;
+    float: left;
 }
 
 /* ---------------------------- 콘텐츠 영역 END ------------------------------- */

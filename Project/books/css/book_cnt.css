@@ -1,0 +1,15 @@
+/*
+    > book_cnt.css - book_cnt.html (콘텐츠)
+    > 
+*/
+
+/* ---------------------------- 콘텐츠 영역 ------------------------------- */
+
+div#contents {
+    width: 1080px; height: 1750px;
+    margin: 0px auto;
+    overflow: hidden;
+    background-color: lightskyblue;
+}
+
+/* ---------------------------- 콘텐츠 영역 END ------------------------------- */
