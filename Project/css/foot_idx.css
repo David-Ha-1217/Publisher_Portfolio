@@ -11,7 +11,7 @@ footer {
     overflow: hidden;
 }
 
-footer h1 {
+footer > h1 {
     line-height: 160px;
     margin-left: 163.735px;
     color: rgb(190,190,190);
@@ -20,7 +20,7 @@ footer h1 {
     float: left;
 }
 
-footer address p {
+footer > address > p {
     font-size: 12px; 
     margin-left: 18.555px;
     padding-top: 56px;
