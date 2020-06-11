@@ -14,8 +14,40 @@ div#contents {
 
 div#contents > div#topWrap {
     width: 1080px; height: 358px;
-    background-color: lemonchiffon;
 }
+
+div#bannerWrap {
+    width: 1080px; height: 348px;
+    position: relative;
+    
+}
+
+div.books { width: 216px; height: 348px; float: left; box-shadow: none;}
+div.books > img { width: 196px; height: 235px; }
+div.books > h3 {
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+div.books > p {
+    width: 216px;
+    font-size: 15px;
+    text-align: left;
+    overflow:hidden; 
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+#prevBtn { position: absolute; left: 20px; top: 156.5px; }
+#nextBtn { position: absolute; right: 20px; top: 156.5px; }
+
+#prevBtn > img { width: 45px; height: 45px; }
+#nextBtn > img { width: 45px; height: 45px; }
+
 
 /* ------------- 콘텐츠 영역 하단------------- */
 
