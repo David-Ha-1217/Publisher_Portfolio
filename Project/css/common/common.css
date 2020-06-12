@@ -8,6 +8,7 @@ img { border: 0; }
     > (2020-05-15) 헤더, 푸터 css 완료.
     > (2020-05-15) 푸터 영역 분리. (foot_idx.css, foot_com.css)
     > (2020-05-26) 콘텐츠 영역 css 완료.
+    > (2020-06-12) 코드정리(헤더) 완료.
 */
 
 /* ---------------------------- 헤더 영역 ------------------------------- */
@@ -17,94 +18,77 @@ header {
     margin: 0px auto;
 }
 
+/* ------------- 로고 영역(logoWrap) ------------- */
 
-/* ------------- 로고 영역 ------------- */
-
-header div#logoWrap {
+header > div#logoWrap {
     width: 1080px; height: 110px;
-    overflow: hidden;
 }
 
-
 /* 상단 로고 */  
-div#logoWrap h1 {
+div#logoWrap > h1 {
     line-height: 110px;
     margin-left: 407.435px;
-    text-align: center;
-    display: block;
     float: left;
 }
 
-
 /* 회원가입 / 로그인 */
-div#logoWrap p {
+div#logoWrap > p {
     line-height: 110px;
     margin-right: 100px;
-    text-align: center;
-    display: block;
     float: right;
-    color: rgb(51,51,51);
 }
 
-div#logoWrap p a { color: rgb(51,51,51); }
+div#logoWrap > p > a { color: rgb(51,51,51); }
 
 
-/* ------------- 탭 영역 ------------- */
+/* ------------- 탭 영역(topGnb) ------------- */
  
-header nav#topGnb {
+header > nav#topGnb {
     width: 1080px; height: 56px;
     background-color: rgb(158, 158, 158);
-    overflow: hidden;
 }
 
-
 /* 탭 메뉴 [162px * 5] */  
-#topGnb ul li {
+#topGnb > ul > li {
     width: 162px; height: 56px;
     line-height: 56px;
     text-align: center;
-    display: block;
     float: left;
+    font-weight: bold;
 }
-
-#topGnb ul li a { font-weight: bold; }
-
 
 /* 검색창 [270px]  */
-#topGnb div {
+#topGnb > div {
     width: 270px; height: 56px;
-    display: block;
     float: left;
 }
 
-#topGnb div div#search {
+div#search {
     width: 250px; height: 36px;
     margin: 9px;
     border: 1px solid rgb(166,166,166);
     background: #fff;
-    display: block;
     float: left; 
 }
 
-#topGnb div div#search input {
+div#search > input {
     width: 209px; height: 36px;
     margin: 0px 0px 0px 5px;
     border: 0px;
-    outline: none;
+    /* outline: none; */
     float: left;
 }
 
-#topGnb div div#search button {
+div#search > button {
     width: 36px; height: 36px;
     border: 0px;
-    background: rgb(237, 237, 237);
+    background-color: rgb(237, 237, 237);
     color: rgb(166,166,166);
-    outline: none;
+    /* outline: none; */
     float: right;
 }
 
 /* ---------------------------- 헤더 영역 END ------------------------------- */
-
 
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 

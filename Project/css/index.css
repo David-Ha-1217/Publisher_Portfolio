@@ -7,23 +7,22 @@
 div#contents {
     width: 1080px; height: 674px;
     margin: 0px auto;
-    overflow: hidden;
-    }
+}
 
-/* ------------- 콘텐츠 영역 상단------------- */
+/* ------------- 콘텐츠 영역 상단 (topWrap)------------- */
 
 div#contents > div#topWrap {
     width: 1080px; height: 358px;
-}
-
-div#bannerWrap {
-    width: 1080px; height: 348px;
     position: relative;
-    
 }
 
-div.books { width: 216px; height: 348px; float: left; box-shadow: none;}
+div.books {
+    width: 216px; height: 348px;
+    float: left;
+}
+
 div.books > img { width: 196px; height: 235px; }
+
 div.books > h3 {
     font-size: 18px;
     line-height: 35px;
