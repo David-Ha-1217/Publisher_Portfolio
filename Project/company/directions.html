@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JACOB'S LADDER - 찾아오시는 길</title>
-    <!-- 공통 영역 -->
-    <link rel="stylesheet" href="../css/common.css">
-    <!-- 공통 영역 (콘텐츠_사이드) -->
-    <link rel="stylesheet" href="../css/aside.css">
-    <!-- 공통 영역 (푸터)-->
-    <link rel="stylesheet" href="../css/foot_com.css">
-    <!-- 콘텐츠 영역 (direction.html) -->
-    <link rel="stylesheet" href="./css/directions.css">
+
+    <!-- ---------------- 공통 영역 ---------------- -->
+    <link rel="stylesheet" href="../css/common/common.css">
+
+    <!-- ---------------- 푸터 영역 (direction.html) ---------------- -->
+    <link rel="stylesheet" href="../css/common/foot_com.css">
+
+    <!-- ---------------- 공통 영역 (콘텐츠_사이드) ---------------- -->
+    <link rel="stylesheet" href="../css/common/aside.css">
+
+    <!-- ---------------- 콘텐츠 영역 (direction.html) ---------------- -->
+    <link rel="stylesheet" href="../css/company/directions.css">
+
+    <!-- ---------------- fontawesome ---------------- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -89,14 +95,14 @@
                 <script>
                     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                         mapOption = { 
-                            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                            center: new kakao.maps.LatLng(37.478029, 126.878921), // 지도의 중심좌표
                             level: 3 // 지도의 확대 레벨
                         };
                     
                     var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
                     
                     // 마커가 표시될 위치입니다 
-                    var markerPosition  = new kakao.maps.LatLng(33.450701, 126.570667); 
+                    var markerPosition  = new kakao.maps.LatLng(37.478029, 126.878921); 
                     
                     // 마커를 생성합니다
                     var marker = new kakao.maps.Marker({

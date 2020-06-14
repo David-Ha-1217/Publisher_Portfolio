@@ -1,5 +1,6 @@
 /*
     > index.css - index.html (콘텐츠)
+    > (2020-06-10) 콘텐츠 영역 css 완료.
 */
 
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
@@ -17,45 +18,45 @@ div#contents > div#topWrap {
 }
 
 div.books {
-    width: 216px; height: 348px;
+    width: 214px; height: 348px;
     float: left;
 }
 
-div.books > img { width: 196px; height: 235px; }
+div.books > img { width: 186px; height: 225px; }
 
 div.books > h3 {
     font-size: 18px;
-    line-height: 35px;
+    line-height: 38px;
     text-align: center;
     overflow:hidden; 
     text-overflow:ellipsis;
     white-space:nowrap;
 }
 
-div.books > p {
-    width: 216px;
-    font-size: 15px;
+div.books > div {
+    width: 208px;
+    font-size: 12px;
     text-align: left;
-    overflow:hidden; 
-    white-space:nowrap;
     text-overflow:ellipsis;
+    white-space: normal;
+    line-height: 1.2;
+    height: 6.0em;
 }
 
 #prevBtn { position: absolute; left: 20px; top: 156.5px; }
 #nextBtn { position: absolute; right: 20px; top: 156.5px; }
-
 #prevBtn > img { width: 45px; height: 45px; }
 #nextBtn > img { width: 45px; height: 45px; }
 
 
-/* ------------- 콘텐츠 영역 하단------------- */
+/* ------------- 콘텐츠 영역 하단 (bottomWrap) ------------- */
 
 div#contents > div#bottomWrap {
     width: 1080px; height: 316px;
     background-color: rgb(224,224,224);
 }
 
-/* 공지사항/이벤트 */
+/* 공지사항/이벤트 (bottomWrap >> left) */
 
 div#bottomWrap > div#left {
     width: 510px; height: 288px;
@@ -66,7 +67,14 @@ div#bottomWrap > div#left {
 div#left > h2 { float: left; }
 div#left > a { margin: 8px 10px 0px 0px; float: right; }
 div#left > hr { width: 510px; margin-top: 40px;}
-div#left div.box {
+
+div#left > table {
+    width: 500px; height: 224px;
+    margin-top: 10px;
+    float: left;
+}
+
+div.box {
     width: 60px; height: 26px;
     font-size: 12px;
     color: rgb(64, 64, 64);
@@ -77,27 +85,21 @@ div#left div.box {
     float: left;
 }
 
-div#left > table {
-    width: 500px; height: 224px;
-    margin-top: 10px;
-    float: left;
-}
-
 div#left > table tr td.icon { width: 60px; }
 div#left > table tr td:nth-child(2) { text-indent: 10px; }
 div#left > table tr td:nth-child(3) { width: 100px; text-align: center; }
 
-/* 배너, SNS */
+/* 배너, SNS (bottomWrap >> right) */
 
 div#bottomWrap > div#right {
     width: 475px; height: 288px;
-    margin: 14px 15px 0px 0px;
+    margin: 14px 35px 0px 0px;
     float: right;
 }
 
-div#right > div#banner {
+div#banner {
     width: 346px; height: 268px;
-    margin: 10px;
+    margin: 10px 0px 0px 16.5px;
     float: left;
 }
 
@@ -106,13 +108,13 @@ div#banner img {
     margin: 2.5px 0px;
 }
 
-div#right > div#sns {
+div#sns {
     width: 74.38px; height: 255px;
-    margin: 16.5px;
-    float: left;
+    margin: 10px 16.5px 0px 0px;
+    float: right;
 }
 
-div#sns a i{
+div#sns i{
     font-size: 85px;
     float: left;
 }

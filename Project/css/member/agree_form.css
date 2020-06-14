@@ -6,7 +6,7 @@
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
 div#contents {
-    width: 1080px; height: 674px;
+    width: 1080px; height: 1274px;
     margin: 0px auto;
     overflow: hidden;
 }
@@ -45,7 +45,7 @@ div#contents h3 {
 /* -------------  이용 약관 ------------- */
 #contents div#agreeWrap div#agreeChk {
     width: 966px; height: 364px;
-    margin: 0px 0px 0px 10px;
+    margin: 25px 0px 0px 10px;
     display: block;
     float: left;
 }

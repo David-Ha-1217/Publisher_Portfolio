@@ -5,16 +5,15 @@
 
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
-section#contents div#inputWrap {
+section#contents > div#inputWrap {
     width: 640px;
-    margin: 40px 0px 0px 40px;
+    margin: 60px 0px 0px 40px;
     text-align: center;
-    display: block;
     float: left;
 
 }
 
-section#contents div#inputWrap label.label {
+div#inputWrap > label.label {
     font-size: 24px;
     font-weight: bold;
 }
@@ -22,14 +21,14 @@ section#contents div#inputWrap label.label {
 
 /* 아이디 */
 
-section#contents div#inputWrap input#member_id {
+input#member_id {
     width: 310px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
     margin-left: 126px;
 }
 
-section#contents div#inputWrap div {
+div#inputWrap div {
     width: 116px; height: 57px;
     border: 0px;
     float: right;
@@ -38,14 +37,14 @@ section#contents div#inputWrap div {
 
 /* 이메일 / 중복확인 */
 
-section#contents div#inputWrap input#member_email {
+input#member_email {
     width: 310px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
     margin: 15px 0px 0px 126px;
 }
 
-section#contents div#inputWrap button#dup_email {
+button#dup_email {
     width: 111px; height: 57px;
     border: 0px;
     border-radius: 10px;
@@ -59,14 +58,14 @@ section#contents div#inputWrap button#dup_email {
 
 /* 비밀번호 / 비밀번호 확인 */
 
-section#contents div#inputWrap input#member_pwd {
+input#member_pwd {
     width: 428px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
     margin: 15px 0px 0px 102px;
 }
 
-section#contents div#inputWrap input#re_pwd {
+input#re_pwd {
     width: 428px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
@@ -76,7 +75,7 @@ section#contents div#inputWrap input#re_pwd {
 
 /* 버튼 영역 */
 
-section#contents div#btnWrap {
+section#contents > div#btnWrap {
     width: 640px;
     margin: 50px 0px 0px 40px;
     text-align: center;
@@ -84,7 +83,7 @@ section#contents div#btnWrap {
     float: left;
 }
 
-section#contents div#btnWrap button {
+div#btnWrap button {
     width: 244px; height: 57px;
     border: 0px;
     border-radius: 10px;

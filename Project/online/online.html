@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JACOB'S LADDER - 동영상 강의</title>
-    <!-- 공통 영역 -->
-    <link rel="stylesheet" href="../css/common.css">
-    <!-- 공통 영역 (푸터)-->
-    <link rel="stylesheet" href="../css/foot_com.css">
-    <!-- 콘텐츠 영역 (online.html) -->
-    <link rel="stylesheet" href="./css/online.css">
+
+    <!-- ---------------- 공통 영역 ---------------- -->
+    <link rel="stylesheet" href="../css/common/common.css">
+
+    <!-- ---------------- 공통 영역 (푸터) ---------------- -->
+    <link rel="stylesheet" href="../css/common/foot_com.css">
+    
+    <!-- ---------------- 콘텐츠 영역 (online.html) ---------------- -->
+    <link rel="stylesheet" href="../css/online/online.css">
+
+    <!-- ---------------- fontawesome ---------------- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,26 +28,31 @@
     
     <header>
 
+        <!-- 헤더 영역 >> logoWrap -->
         <div id="logoWrap">
+
             <h1><a href="../index.html">JACOB'S LADDER</a></h1>
 
-            <p><a href="#">회원가입</a> / <a href="./member/login_form.html">로그인</a></p>
-            <!--
-                <a href="#">마이 페이지</a> / <a href="#">로그아웃</a>
-                <a href="#">관리 페이지</a> / <a href="#">로그아웃</a>
-            -->
+            <p>
+                <a href="../member/agree_form.html">회원가입</a> / <a href="../member/join_form.html">로그인</a>
+                <!--
+                    <a href="../member/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
+                    <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
+                -->
+            </p>
         </div>
 
+        <!-- 헤더 영역 >> topGnb -->
         <nav id="topGnb">
             <ul>
-                <li><a href="./company/company.html">회사소개</a></li>
-                <li><a href="#">도서</a></li>
-                <li><a href="#">자료실</a></li>
-                <li><a href="#">질문답변</a></li>
-                <li><a href="#">동영상 강의</a></li>
+                <li><a href="../company/company.html">회사소개</a></li>
+                <li><a href="../books/book.html">도서</a></li>
+                <li><a href="../pds/pds.html">자료실</a></li>
+                <li><a href="../ans/ans.html">질문답변</a></li>
+                <li><a href="../online/online.html">동영상 강의</a></li>
             </ul>
             <div>
-                <div id = "search">
+                <div id="search">
                     <input type="text" placeholder="도서명, 저자 등 검색">
                     <button><i class="fas fa-search"></i></button>
                 </div>
@@ -58,41 +68,108 @@
         
         <h1>동영상 강의</h1>
         <hr>
-        
         <!-- search Wrap -->
-        <div id="sWrap">
-            <div id = "search">
+        <div id="psWrap">
+            <div id = "pSearch">
                 <input type="text" placeholder="도서명, 저자 등 검색">
                 <button><i class="fas fa-search"></i></button>
             </div>
         </div>
 
-        <!-- onlineWrap -->
-        <div class="oWrap" id="o1">
+        <!-- book Wrap -->
+        <div class="bWrap" id="b1">
 
-            <div id="oimg">
-                <img src="../img/1.jpg">
+            <div id="bimg">
+                <img src="../images/book1.jpg">
             </div>
             
-            <div id="oCnt">
+            <div id="bCnt">
                 <ul>
-                    <li><h1>TITLE</h1></li>
-                    <li><p>2020-04-16</p></li>
-                    <li>이 책은 웹 사이트 팅커캐드에서 제공하는 아두이노 시뮬레이터인 ‘서킷’으로 실습을 진행합니다. 서킷을 사용하면 실물 키트가 없어도 실제와 똑같은 방법으로 아두이노 실습을 진행할 수 있습니다. 키트가 있다면 먼저 서킷에서 테스트한 다음 실물 키트로 만들어 보세요. 시행착오는 줄이고 성취감은 높일 수 있습니다.</li>
+                    <li><a href="./online_cnt.html"><h2>지옥에서 온 문서 관리자 깃&깃허브 입문</h2></a></li>
+                    <li>《Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문》 - 저자 직강 무료 동영상 강의입니다.</li>
                 </ul>
             </div>
             
         </div>
 
+        <div class="bWrap" id="b2">
+            <div id="bimg">
+                <img src="../images/book2.jpg">
+            </div>
 
-    <!-- 관리자 -->
+            <div id="bCnt">
+                <ul>
+                    <li><a href="#"><h2>리액트 프로그래밍 정석</h2></a></li>
+                    <li>《Do it! 리액트 프로그래밍 정석》 - 저자 직강 무료 동영상 강의입니다.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="bWrap" id="b3">
+            <div id="bimg">
+                <img src="../images/book3.png">
+            </div>
+
+            <div id="bCnt">
+                <ul>
+                    <li><a href="#"><h2>클론 코딩 영화 평점 웹서비스</h2></a></li>
+                    <li>《클론 코딩 영화 평점 웹서비스》 - 저자 직강 무료 동영상 강의입니다. </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="bWrap" id="b4">
+            <div id="bimg">
+                <img src="../images/book4.png">
+            </div>
+
+            <div id="bCnt">
+                <ul>
+                    <li><a href="#"><h2>키트 없이 만드는 아두이노</h2></a></li>
+                    <li>《키트 없이 만드는 아두이노》 - 저자 직강 무료 동영상 강의입니다.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="bWrap" id="b5">
+            <div id="bimg">
+                <img src="../images/book5.png">
+            </div>
+
+            <div id="bCnt">
+                <ul>
+                    <li><a href="#"><h2>기계는 어떻게 생각하는가?</h2></a></li>
+                    <li>《기계는 어떻게 생각하는가?》 - 저자 직강 무료 동영상 강의입니다.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- 관리자 -->
         <div id="btnWrap">
-            <button type="button" id="btnWrite">글쓰기</button>
+            <button type="button" id="subOk">글쓰기</button>
         </div>
         
-
-    <!-- 페이징 -->
-
+        <!-- 페이징 -->
+        <div class="list_number">
+            <div>
+                <p>
+                    <div class="list_n_menu">
+                        <span class="disabled"><  이전</span>
+                        <span class="current">1</span>
+                        <a href="#?page=2">2</a>
+                        <a href="#?page=3">3</a>
+                        <a href="#?page=4">4</a>
+                        <a href="#?page=5">5</a>
+                        ...
+                        <a href="#?page=2">다음  ></a>
+                    </div>
+                </p>
+            </div>
+        </div>
 
     </div>
     <!-- ---------------------------- 콘텐츠 영역 END ------------------------------- -->
@@ -104,7 +181,7 @@
         <h1>JACOB'S LADDER</h1>
         <address>
             <p>
-                서울특별시 강남구 잔다리로 109(우편번호 04003) TEL (02)552-1722 FAX (02)552-1723 <br>
+                서울특별시 금천구 가산디지털2로 115(우편번호 08505) TEL (02)552-1722 FAX (02)552-1723 <br>
                 사업자등록번호 115-87-44457 대표자 : 홍길동 / Email : jacob@jcl.co.kr<br>
                 Copyright(c)2020 제이콥스 래더㈜ Jacob's Ladder Co., Ltd. All Rights Reserved
             </p>
