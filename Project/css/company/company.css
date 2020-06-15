@@ -14,12 +14,12 @@ section#contents div#aboutUs {
 
 /* 소개 글 */
 div#aboutUs div#itd {
-    width: 450px; height: 350px;
-    margin-top: 20px;
-    float: left;
+    width: 450px; height: 320px;
+    margin-top: 40px;
+    margin-left: 10px;
+    float: right;
 }
 
-div#aboutUs div#itd h2, h3 { margin-top: 10px; }
 div#aboutUs div#itd h2 { font-size: 30px; }
 div#aboutUs div#itd h3 { font-size: 22px; }
 div#aboutUs div#itd p {
@@ -30,8 +30,8 @@ div#aboutUs div#itd p {
 /* 회사 로고 */
 div#aboutUs img {
     width: 290px; height: 220px;
-    margin: 136px 10px 0px 0px;
-    float: right;
+    margin: 136px 10px 0px 20px;
+    float: left;
 }
 
 /* ---------------------------- 콘텐츠 영역 END ------------------------------- */
