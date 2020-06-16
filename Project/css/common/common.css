@@ -85,6 +85,7 @@ div#search > button {
     color: rgb(166,166,166);
     /* outline: none; */
     float: right;
+    cursor: pointer;
 }
 
 /* ---------------------------- 헤더 영역 END ------------------------------- */

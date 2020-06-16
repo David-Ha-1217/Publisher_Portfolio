@@ -6,10 +6,197 @@
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
 div#contents {
-    width: 1080px; height: 1750px;
+    width: 1080px; height: 2430px;
     margin: 0px auto;
-    overflow: hidden;
-    background-color: lightskyblue;
 }
+
+/* ------------- 상단 TITLE 영역 ------------- */
+
+div#titleWrap {
+    width: 1080px; height: 130px;
+}
+
+div#tit {
+    width: 500px; height: 55px;
+    float: left;
+    margin : 40px 0px 0px 56px;
+}
+
+div#tit > h3 { margin-top: 5px; }
+
+div#adBtn {
+    width: 130px; height: 60px;
+    margin : 50px 56px 0px 0px;
+    float: right;
+}
+
+div#adBtn > button {
+    width: 50px; height: 25px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: rgb(64,64,64);
+    margin: 30px 0px 0px 10px;
+    font-weight: bold;
+    color: white;
+}
+
+div#titleWrap > hr {
+    width: 988px;
+    margin: 10px 0px 0px 46px;
+    float: left;
+}
+
+/* ------------- 상단 TITLE 영역 END ------------- */
+
+
+/* ------------- 책 정보 영역 ------------- */
+
+div#bookInfo {
+    width: 1080px; height: 400px;
+}
+
+div#bookInfo > img {
+    width: 216px; height: 300px;
+    margin: 30px 0px 0px 66px;
+    background-color: white;
+    float: left;
+}
+
+/* bookCnt */
+
+div#bookCnt {
+    width: 530px; height: 400px;
+    margin-left: 20px;
+    float: left;
+}
+
+ul#tit {
+    width: 100px; height: 280px;
+    margin: 40px 0px 0px 40px;
+    float: left;
+}
+
+ul#tit li {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+ul#cnt {
+    width: 200px; height: 280px;
+    margin: 40px 0px 0px 40px;
+    float: left;
+}
+
+ul#cnt li {
+    font-size: 16px;
+    margin-bottom: 26.5px;
+}
+
+hr#vtc {
+    height: 340px;
+    margin-top: 30px;
+    float: left;
+}
+
+/* store */
+div#store {
+    width: 178px; height: 400px;
+    margin-right: 66px;
+    float: right;
+}
+
+div#store > h3 {
+    margin: 35px 0px 0px 15px;
+    float: left;
+}
+
+div#store img {
+    width: 130px; height: 40px;
+    background-color: white;
+    margin: 15px 0px 0px 15px;
+    float: left;
+}
+
+hr#hori {
+    width: 988px;
+    margin: 10px 0px 0px 46px;
+    float: left;
+}
+
+/* 책 소개 */
+div.bTit > h2 {
+    float: left;
+    margin : 20px 0px 0px 56px;
+}
+
+div.bTit > p {
+    float: left;
+    margin : 20px 56px 0px 56px;
+}
+
+div#intro {
+    width: 1080px; height: 250px;
+    float: left;
+}
+
+/* 목 차 */
+div#bCnt {
+    width: 1080px; height: 1150px;
+    float: left;
+}
+
+div#blist {
+    width: 450px; height: 1020px;
+    margin : 60px 0px 0px -98px;
+    float: left;
+}
+
+div#blist > p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-top: 20px;
+}
+
+div#blist > ul > li {
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+ul#de07 { margin-top: 20px; }
+
+/* 저자 소개 */
+div#author {
+    width: 1080px; height: 420px;
+    float: left;
+}
+
+div#bAuth {
+    width: 968px; height: 320px;
+    margin : 20px 0px 0px 56px;
+    float: left;
+}
+
+p.name {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-top: 20px;
+}
+
+div#bAuth > p:nth-child(2) {
+    line-height: 24px;
+    margin-top: 18px;
+}
+
+div#bAuth > p:nth-child(4) {
+    line-height: 24px;
+    margin-top: 18px;
+}
+
+
+/* ------------- 책 정보 영역 END ------------- */
 
 /* ---------------------------- 콘텐츠 영역 END ------------------------------- */

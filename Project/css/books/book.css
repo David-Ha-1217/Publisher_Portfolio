@@ -55,6 +55,7 @@ div#pSearch > button {
     color: rgb(166,166,166);
     outline: none;
     float: right;
+    cursor: pointer;
 }
 
 /* 도서 리스트 */
@@ -115,6 +116,7 @@ div#contents div#btnWrap button {
     font-weight: bold;
     color: white;
     float: right;
+    cursor: pointer;
 }
 
 /* 페이징 */
