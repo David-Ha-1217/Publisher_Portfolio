@@ -92,30 +92,6 @@ div#search > button {
 
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
-/* 사이드가 없는 페이지 */
-/*
-    div#contents {
-    width: 1080px; height: 674px;
-    margin: 0px auto;
-    overflow: hidden;
-    background-color: aquamarine;
-    }
-
-    div#contents h1 {
-    margin: 40px 0px 0px 470.375px;
-    text-align: center;
-    display: block;
-    float: left;
-    }
-
-    div#contents hr {
-    width: 428px;
-    margin: 10px 0px 0px 325px;
-    float: left;
-    }
-
-*/
-
 /* 사이드가 있는 페이지 */
 
 div#cntWrap {

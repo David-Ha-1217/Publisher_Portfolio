@@ -1,0 +1,120 @@
+/*
+    > ans_cnt.css - ans_cnt.html (콘텐츠)
+*/
+
+/* ---------------------------- 콘텐츠 영역 ------------------------------- */
+
+div#contents {
+    width: 1080px; height: 780px;
+    margin: 0px auto;
+}
+
+/* ------------- 상단 TITLE 영역 ------------- */
+
+div#contents > h1 {
+    margin: 40px 0px 0px 476px;
+    text-align: center;
+    float: left;
+}
+
+div#contents > hr {
+    width: 428px;
+    margin: 10px 0px 0px 325px;
+    float: left;
+}
+
+div#ansTit {
+    width: 900px; height: 140px;
+    margin-left: 90px;
+    float: left;
+    background-color: lawngreen;
+}
+
+div#ansTit > h2 {
+    float: left;
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+div#ansTit > ul {
+    width: 800px; height: 30px;
+    float: left;
+    margin-top: 15px;
+}
+
+div#ansTit > ul li { float: left; }
+
+li.ansCnt {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 33px;
+}
+
+li.a01 { margin-left: 50px; }
+
+button#list {
+    width: 50px; height: 25px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 50px 10px 0px 0px;
+    background-color: rgb(64,64,64);
+    font-weight: bold;
+    color: white;
+    float: right;
+}
+
+
+div#ansWrap {
+    width: 900px; height: 400px;
+    margin: 20px 0px 0px 90px;
+    float: left;
+    background-color: lawngreen;
+}
+
+
+div#adBtn {
+    width: 200px; height: 55px;
+    margin-right: 90px;
+    float: right;
+}
+
+button#aswr {
+    width: 50px; height: 25px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 25px 10px 0px 0px;
+    background-color: rgb(64,64,64);
+    font-weight: bold;
+    color: white;
+    float: right;
+}
+
+button#alt {
+    width: 50px; height: 25px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 25px 10px 0px 0px;
+    background-color: rgb(224,224,224);
+    font-weight: bold;
+    color: rgb(64,64,64);
+    float: right;
+}
+
+button#del {
+    width: 50px; height: 25px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 25px 10px 0px 0px;
+    background-color: rgb(224,224,224);
+    font-weight: bold;
+    color: rgb(64,64,64);
+    float: right;
+}
+
+
+
+/* ---------------------------- 콘텐츠 영역 END ------------------------------- */

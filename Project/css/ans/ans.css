@@ -1,12 +1,12 @@
 /*
-    > pds.css - pds.html (콘텐츠)
+    > ans_cnt.css - pds.html (콘텐츠)
     > (2020-06-09) 콘텐츠 영역 css 완료.
 */
 
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
 div#contents {
-    width: 1080px; height: 1750px;
+    width: 1080px; height: 1200px;
     margin: 0px auto;
 }
 
@@ -60,7 +60,6 @@ div#ansWrap {
     width: 900px; height: 800px;
     margin-left: 90px;
     float: left;
-    background-color: lightseagreen;
 }
 
 div#table {
@@ -68,33 +67,33 @@ div#table {
     margin: 20px;
     border: 2px solid rgb(166,166,166);
     float: left;
-    background-color: limegreen;
 }
 
+div#table > table {
+    width: 860px; height: 760px;
+    border-collapse:collapse;
+}
+
+div#table tr { border: 1px solid rgb(166,166,166); }
+
 div#table tr td:nth-child(1) {
-    width: 500px; height: 74px;
     font-size: 28px; 
     text-indent: 30px;
     font-weight: bold;
-
 }
 
 div#table tr td:nth-child(2) {
-    width: 120px; height: 74px;
     text-align: center;
 
 }
 
 div#table tr td:nth-child(3) {
-    width: 120px; height: 74px;
     text-align: center;
 
 }
 
 div#table tr td:nth-child(4) {
-    width: 110px; height: 74px;
     text-align: center;
-
 }
 
 
