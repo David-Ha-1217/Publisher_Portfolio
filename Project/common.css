@@ -1,0 +1,97 @@
+
+/* ------------- 탭 영역(topGnb) ------------- */
+ 
+/*body 초기화*/
+
+nav {
+  width: 100%; height: 56px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: rgb(158, 158, 158);
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main-menu > li {
+  float: left;
+  position: relative;
+}
+
+#main-menu > li > a {
+  font-size: 16px;
+  color: rgba(51,51,51,0.85);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: block;
+  padding: 17px 56px;
+  border-right: 1px solid rgba(0,0,0,0.15);
+}
+
+#sub-menu {
+  position: absolute;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease-in;
+}
+
+#sub-menu > li {
+  padding: 17px 38px;
+  border-left: 1px solid rgba(0,0,0,0.15);
+  border-right: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+#sub-menu > li >  a {
+  color: rgba(51,51,51,0.6);
+  text-decoration: none;
+}
+
+#main-menu > li:hover #sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#sub-menu > li >  a:hover {
+ text-decoration: underline;
+}
+
+#main-menu > li:nth-child(6) {
+  width: 270px; height: 42px;
+  float: left;
+}
+
+li#search {
+  width: 250px; height: 42px;
+  margin:6px;
+  border: 1px solid rgb(166,166,166);
+  background: #fff;
+  float: left; 
+}
+
+li#search > input {
+  width: 209px; height: 40px;
+  margin: 0px 0px 0px 5px;
+  border: 0px;
+  outline: none;
+  float: left;
+}
+
+li#search > button {
+  width: 36px; height: 42px;
+  border: 0px;
+  background-color: rgb(237, 237, 237);
+  color: rgb(166,166,166);
+  outline: none;
+  float: right;
+  cursor: pointer;
+}
+
+/* ---------------------------- 헤더 영역 END ------------------------------- */

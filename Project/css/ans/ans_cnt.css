@@ -27,7 +27,6 @@ div#ansTit {
     width: 900px; height: 140px;
     margin-left: 90px;
     float: left;
-    background-color: lawngreen;
 }
 
 div#ansTit > h2 {
@@ -64,12 +63,13 @@ button#list {
     float: right;
 }
 
-
+/* 내용 */
 div#ansWrap {
     width: 900px; height: 400px;
     margin: 20px 0px 0px 90px;
     float: left;
-    background-color: lawngreen;
+    border : 2px solid #666;
+    border-radius: 10px;
 }
 
 
