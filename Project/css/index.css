@@ -5,24 +5,23 @@
 
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
-div#contents {
-    width: 1080px; height: 674px;
-    margin: 0px auto;
+/* ------------- 콘텐츠 영역 상단 (topCnt)------------- */
+div#topCnt {
+    width: 100%; height: 408px;
 }
 
-/* ------------- 콘텐츠 영역 상단 (topWrap)------------- */
-
-div#contents > div#topWrap {
-    width: 1080px; height: 358px;
+div#topCnt > div#topWrap {
+    width: 1155.5px; height: 408px;
+    margin: 0px auto;
     position: relative;
 }
 
 div.books {
-    width: 214px; height: 348px;
+    width: 229px; height: 398px;
     float: left;
 }
 
-div.books > img { width: 186px; height: 225px; }
+div.books > img { width: 236px; height: 250px; }
 
 div.books > h3 {
     font-size: 18px;
@@ -47,14 +46,17 @@ div.books > div {
 #nextBtn > img { width: 45px; height: 45px; }
 
 
-/* ------------- 콘텐츠 영역 하단 (bottomWrap) ------------- */
-
-div#contents > div#bottomWrap {
-    width: 1080px; height: 316px;
+/* ------------- 콘텐츠 영역 하단 (bottomCnt) ------------- */
+div#bottomCnt {
+    width: 100%; height: 316px;
     background-color: rgb(224,224,224);
 }
 
-/* 공지사항/이벤트 (bottomWrap >> left) */
+div#bottomCnt > div#bottomWrap {
+    width: 1155.5px; height: 316px;
+    margin: 0px auto;
+    background-color: rgb(224,224,224);
+}
 
 div#bottomWrap > div#left {
     width: 510px; height: 288px;

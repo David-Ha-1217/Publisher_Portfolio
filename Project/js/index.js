@@ -4,7 +4,7 @@ $(document).ready(function(){
         speed : 500,
         pager : false,
         moveSlides:1,
-        slideWidth:214,
+        slideWidth:229,
         minSlides:5,
         maxSlides:5,
         auto:true,

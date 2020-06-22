@@ -13,7 +13,7 @@ img { border: 0; }
 /* ---------------------------- 헤더 영역 ------------------------------- */
 
 header {
-    width: 1080px; height: 166px;
+    width: 1080px; height: 110px;
     margin: 0px auto;
 }
 
@@ -42,51 +42,104 @@ div#logoWrap > p > a { color: rgb(51,51,51); }
 
 /* ------------- 탭 영역(topGnb) ------------- */
  
-header > nav#topGnb {
-    width: 1080px; height: 56px;
-    background-color: rgb(158, 158, 158);
-}
-
-/* 탭 메뉴 [162px * 5] */  
-#topGnb > ul > li {
-    width: 162px; height: 56px;
-    line-height: 56px;
-    text-align: center;
+nav {
+    width: 100%; height: 56px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: rgb(158, 158, 158);
+  }
+  
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #main-menu > li {
     float: left;
+    position: relative;
+  }
+  
+  #main-menu > li > a {
+    font-size: 16px;
+    color: rgba(51,51,51,0.85);
     font-weight: bold;
-}
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    display: block;
+    padding: 18px 56px;
+    border-right: 1px solid rgba(158,158,158,0.15);
+  }
+  
+  /*
+  #main-menu > li:nth-child(1) {
+    border-left: 1px solid rgba(0,0,0,0.15);
+  }
+  */
 
-/* 검색창 [270px]  */
-#topGnb > div {
-    width: 270px; height: 56px;
+  #sub-menu {
+    position: absolute;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.15s ease-in;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #sub-menu > li {
+    padding: 17px 38px;
+    border-left: 1px solid rgba(0,0,0,0.15);
+    border-right: 1px solid rgba(0,0,0,0.15);
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+  }
+  
+  #sub-menu > li >  a {
+    color: rgba(51,51,51,0.6);
+    text-decoration: none;
+  }
+  
+  #main-menu > li:hover #sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  #sub-menu > li >  a:hover {
+   text-decoration: underline;
+  }
+  
+  #main-menu > li:nth-child(6) {
+    width: 270px; height: 42px;
     float: left;
-}
-
-div#search {
-    width: 250px; height: 36px;
-    margin: 9px;
+  }
+  
+  li#search {
+    width: 250px; height: 42px;
+    margin:6px;
     border: 1px solid rgb(166,166,166);
     background: #fff;
     float: left; 
-}
-
-div#search > input {
-    width: 209px; height: 36px;
+  }
+  
+  li#search > input {
+    width: 209px; height: 40px;
     margin: 0px 0px 0px 5px;
     border: 0px;
-    /* outline: none; */
+    outline: none;
     float: left;
-}
-
-div#search > button {
-    width: 36px; height: 36px;
+  }
+  
+  li#search > button {
+    width: 36px; height: 42px;
     border: 0px;
     background-color: rgb(237, 237, 237);
     color: rgb(166,166,166);
-    /* outline: none; */
+    outline: none;
     float: right;
     cursor: pointer;
-}
+  }
 
 /* ---------------------------- 헤더 영역 END ------------------------------- */
 
