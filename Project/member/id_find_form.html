@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JACOB'S LADDER - 아이디 찾기</title>
 
-    <!-- ---------------- 공통 영역 ---------------- -->
+    <!-- ------------------------ CSS ------------------------ -->
+    <!-- ----- 공통 영역 ----- -->
     <link rel="stylesheet" href="../css/common/common.css">
-
-    <!-- ---------------- 공통 영역 (푸터) ---------------- -->
+    <!-- ----- 공통 영역 (푸터) ----- -->
     <link rel="stylesheet" href="../css/common/foot_com.css">
+    <!-- ----- 콘텐츠 영역 (id_find_form.html) ----- -->
+    <link rel="stylesheet" href="./css/id_find_form.css">
 
-    <!-- ---------------- 콘텐츠 영역 (id_find_form.html) ---------------- -->
-    <link rel="stylesheet" href="../css/member/id_find_form.css">
-
+    <!-- ------------------------ js, jquery ------------------------ -->
+    <!-- ----- fontawesome ----- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -25,52 +26,66 @@
     -->
 
     <!-- ---------------------------- 헤더 영역 ------------------------------- -->
-    
+
     <header>
 
         <!-- 헤더 영역 >> logoWrap -->
         <div id="logoWrap">
 
             <h1><a href="../index.html">JACOB'S LADDER</a></h1>
-
             <p>
                 <a href="../member/agree_form.html">회원가입</a> / <a href="../member/join_form.html">로그인</a>
                 <!--
-                    <a href="../member/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
+                    <a href="../mypage/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
                     <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
                 -->
             </p>
+
         </div>
-
-        <!-- 헤더 영역 >> topGnb -->
-        <nav id="topGnb">
-            <ul>
-                <li><a href="../company/company.html">회사소개</a></li>
-                <li><a href="../books/book.html">도서</a></li>
-                <li><a href="../pds/pds.html">자료실</a></li>
-                <li><a href="../ans/ans.html">질문답변</a></li>
-                <li><a href="../online/online.html">동영상 강의</a></li>
-            </ul>
-            <div>
-                <div id="search">
-                    <input type="text" placeholder="도서명, 저자 등 검색">
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </nav>
-
+    
     </header>
 
     <!-- ---------------------------- 헤더 영역 END ------------------------------- -->
+
+    <!-- ---------------------------- 네비게이션 영역 ------------------------------- -->
+
+    <nav role="navigation">
+
+        <!-- 네비게이션 영역 >> main-menu-->
+        <ul id="main-menu">
+
+            <li><a href="../company/company.html">회사소개</a>
+                <ul id="sub-menu">
+                    <li><a href="../company/company.html" aria-label="subemnu">회사소개</a></li>
+                    <li><a href="../company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
+                </ul>
+            </li>
+            <li><a href="../books/book.html">도서</a></li>
+            <li><a href="../pds/pds.html">자료실</a></li>
+            <li><a href="../ans/ans.html">질문답변</a></li>
+            <li><a href="../online/online.html">동영상 강의</a></li>
+
+            <!-- 네비게이션 영역 >> search-->
+            <li id="search">
+                <input type="text" placeholder="도서명, 저자 등 검색">
+                <button><i class="fas fa-search"></i></button>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ---------------------------- 네비게이션 영역 END ------------------------------- -->
 
     <!-- ---------------------------- 콘텐츠 영역 ------------------------------- -->
     <div id="contents">
         
         <h1>아이디 찾기</h1>
         <hr>
-        <h3>회원가입시 등록한 이메일을 입력해 주세요.</h3>
+        <h4>회원가입시 등록한 이메일을 입력해 주세요.</h4>
 
-        <div>
+        <!-- 콘텐츠 영역 >> id_findInput -->
+        <div id="id_findInput">
             <label for="member_email" class="label">이메일</label>
             <input type="email" id="member_email" name="member_email" maxlength="50" placeholder="이메일를 입력해주세요.">
         
@@ -79,8 +94,8 @@
             <button type="button" id="cite_btn">인증 요청</button>
         </div>
 
-        <div>
-            <button type="button" id="id_find_btn">아이디 찾기</button>
+        <div id="btnWrap">
+            <button type="button" id="id_findBtn">아이디 찾기</button>
             <button type="button" id="reset">취소</button>
         </div>
 
@@ -91,14 +106,16 @@
 
     <footer>
 
-        <h1>JACOB'S LADDER</h1>
-        <address>
-            <p>
-                서울특별시 금천구 가산디지털2로 115(우편번호 08505) TEL (02)552-1722 FAX (02)552-1723 <br>
-                사업자등록번호 115-87-44457 대표자 : 홍길동 / Email : jacob@jcl.co.kr<br>
-                Copyright(c)2020 제이콥스 래더㈜ Jacob's Ladder Co., Ltd. All Rights Reserved
-            </p>
-        </address>
+        <div id="ftWrap">
+            <h1>JACOB'S LADDER</h1>
+            <address>
+                <p>
+                    서울특별시 금천구 가산디지털2로 115(우편번호 08505) TEL (02)552-1722 FAX (02)552-1723 <br>
+                    사업자등록번호 115-87-44457 대표자 : 홍길동 / Email : jacob@jcl.co.kr<br>
+                    Copyright(c)2020 제이콥스 래더㈜ Jacob's Ladder Co., Ltd. All Rights Reserved
+                </p>
+            </address>
+        </div>
         
     </footer>
 

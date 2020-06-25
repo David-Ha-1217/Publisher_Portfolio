@@ -1,14 +1,13 @@
 /*
     > index.css - index.html (콘텐츠)
     > (2020-06-10) 콘텐츠 영역 css 완료.
+    > (2020-06-23) 최종 마크업 완료.
 */
 
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
-/* ------------- 콘텐츠 영역 상단 (topCnt)------------- */
-div#topCnt {
-    width: 100%; height: 408px;
-}
+/* 컨텐츠 영역 >> topCnt */
+div#topCnt { width: 100%; height: 408px; }
 
 div#topCnt > div#topWrap {
     width: 1155.5px; height: 408px;
@@ -21,9 +20,11 @@ div.books {
     float: left;
 }
 
-div.books > img { width: 236px; height: 250px; }
+div.books > img { width: 209px; height: 230px; margin: 10px;}
 
 div.books > h3 {
+    width: 209px;
+    margin: 10px;
     font-size: 18px;
     line-height: 38px;
     text-align: center;
@@ -33,10 +34,10 @@ div.books > h3 {
 }
 
 div.books > div {
-    width: 208px;
+    width: 209px;
+    margin: 10px;
     font-size: 12px;
     text-align: left;
-    line-height: 1.2;
     height: 6.0em;
 }
 
@@ -45,8 +46,7 @@ div.books > div {
 #prevBtn > img { width: 45px; height: 45px; }
 #nextBtn > img { width: 45px; height: 45px; }
 
-
-/* ------------- 콘텐츠 영역 하단 (bottomCnt) ------------- */
+/* 컨텐츠 영역 >> bottomCnt */
 div#bottomCnt {
     width: 100%; height: 316px;
     background-color: rgb(224,224,224);
@@ -58,9 +58,10 @@ div#bottomCnt > div#bottomWrap {
     background-color: rgb(224,224,224);
 }
 
-div#bottomWrap > div#left {
+
+div#left {
     width: 510px; height: 288px;
-    margin: 14px 0px 0px 35px;
+    margin: 14px 0px 0px 45px;
     float: left;
 }
 
@@ -72,6 +73,7 @@ div#left > table {
     width: 500px; height: 224px;
     margin-top: 10px;
     float: left;
+    table-layout: fixed;
 }
 
 div.box {
@@ -86,14 +88,23 @@ div.box {
 }
 
 div#left > table tr td.icon { width: 60px; }
-div#left > table tr td:nth-child(2) { text-indent: 10px; }
-div#left > table tr td:nth-child(3) { width: 100px; text-align: center; }
 
-/* 배너, SNS (bottomWrap >> right) */
+div#left > table tr td:nth-child(2) {
+    width: 332px; height: 43px;
+    text-indent: 10px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+}
 
-div#bottomWrap > div#right {
+div#left > table tr td:nth-child(3) {
+    width: 100px;
+    text-align: center;
+}
+
+div#right {
     width: 475px; height: 288px;
-    margin: 14px 35px 0px 0px;
+    margin: 14px 45px 0px 0px;
     float: right;
 }
 

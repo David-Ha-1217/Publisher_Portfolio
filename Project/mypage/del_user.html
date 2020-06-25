@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JACOB'S LADDER - 회사소개</title>
+    <title>JACOB'S LADDER - 회원탈퇴</title>
 
     <!-- ------------------------ CSS ------------------------ -->
     <!-- ----- 공통 영역 ----- -->
     <link rel="stylesheet" href="../css/common/common.css">
-    <!-- ----- 공통 영역 (푸터) ----- -->
+    <!-- ---------------- 공통 영역 (콘텐츠_사이드) ---------------- -->
+    <link rel="stylesheet" href="../css/common/aside.css">
+    <!-- ---------------- 공통 영역 (푸터)---------------- -->
     <link rel="stylesheet" href="../css/common/foot_com.css">
-    <!-- ----- 콘텐츠 영역 (company.html) ----- -->
-    <link rel="stylesheet" href="./css/company.css">
+    <!-- ---------------- 콘텐츠 영역 (del_user.html) ---------------- -->
+    <link rel="stylesheet" href="./css/del_user.css">
 
     <!-- ------------------------ js, jquery ------------------------ -->
     <!-- ----- fontawesome ----- -->
@@ -20,9 +22,9 @@
 <body>
 
     <!--
-        > join_ok.html - 가입 완료
+        > del_user.html - 마이 페이지 (회원정보변경)
         > (2020-05-15) 헤더, 푸터 마크업 완료.
-        > (2020-05-27) 컨텐츠 마크업 완료.
+        > (2020-05-26) 컨텐츠 마크업 완료.
         > (2020-06-24) 최종 마크업 완료.
     -->
 
@@ -78,43 +80,42 @@
 
     <!-- ---------------------------- 네비게이션 영역 END ------------------------------- -->
 
-    <!-- ---------------------------- 콘텐츠 영역 ------------------------------- -->
-    
-    <div id="contents">
+    <div id="cntWrap">
 
-        <h1>회사소개</h1>
-        <hr>
+        <!-- 콘텐츠 영역 >> side -->
+        <aside id="side">
 
-        <!-- 콘텐츠 영역 >> 회사 로고 -->
-        <img src="../images/logo.jpg" alt="회사 로고">
+            <div id="sideBox">
+                <h3>마이 페이지</h3>
+                <hr>
+                <ul>
+                    <li><a href="../mypage/alt_user.html">회원정보변경</a></li>
+                    <li><a href="../mypage/del_user.html">회원탈퇴</a></li>
+                </ul>
+            </div>
 
-        <!-- 콘텐츠 영역 >> aUs(About Us) -->
-        <div id="aUs">
-            <h2>JACOB'S LADDER</h2>
-            <h3>
-                '지식이 넘치는 책을 만드는 이곳'<br>
-                JACOB'S LADDER에 오신걸 환영합니다.
-            </h3>
-            <p>
-                사람에게는 구체적으로 도움을 주는 책<br>
-                우리는 열심히 사는 사람들에게 도움이 되고 싶습니다.<br>
-                우리는 책을 출간하기 전에 질문할 것입니다.<br>
-                "이 책이 사람들에게 도움이 됩니까?"<br>
-            </p>
-            <p>
-                손에 잡히는 이익을 얻을 수 있도록<br>
-                도움이 되는 책을 만들고 싶습니다.
-            </p>
-            <p>
-                <b>JACOB'S LADDER</b>에 참여하는<br>
-                모든 사람에게 도움을 주고 싶습니다.<br>
-            </p>
-            <p>
-                함께 참여해서 만드는 기쁨,<br>
-                우리의 미래를 원하는 대로 스스로 만드는 터전.<br>
-                그곳이 바로 <b>JACOB'S LADDER</b>입니다.<br>
-            </p>
-        </div>
+        </aside>
+
+        <!-- 콘텐츠 영역 >> contents -->
+        <section id="contents">
+
+            <h1>회원탈퇴</h2>
+            <hr>
+            <h4>- 탈퇴 후 회원님의 정보는 모두 삭제됩니다.</h4>
+
+            <div id="delInput">
+
+                <label for="member_pwd" class="label">비밀번호</label>
+                <input type="password" id="member_pwd" name="member_pwd" minlength="8" maxlength="20" placeholder="비밀번호를 입력해주세요.">
+
+                <label for="re_pwd" class="label">비밀번호 확인</label>
+                <input type="password" id="re_pwd" name="re_pwd" minlength="8" maxlength="20" placeholder="비밀번호를 다시 입력해주세요.">
+            
+            </div>
+
+            <button type="button" id="delOk">회원 탈퇴</button>
+
+        </section>
 
     </div>
 

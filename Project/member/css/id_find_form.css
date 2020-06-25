@@ -8,39 +8,35 @@
 div#contents {
     width: 1080px; height: 674px;
     margin: 0px auto;
-    overflow: hidden;
+    background-color: lightsalmon;
 }
 
-/* ------------- 상단 TITLE 영역 ------------- */
-
-div#contents h1 {
+div#contents > h1 {
     margin: 40px 0px 0px 454.375px;
     text-align: center;
-    display: block;
+    font-size: 32px;
     float: left;
 }
 
-div#contents hr {
+div#contents > hr {
     width: 428px;
     margin: 10px 0px 0px 325px;
     float: left;
 }
 
-div#contents h3 {
-    margin: 20px 0px 0px 356px;
+div#contents > h4 {
+    margin: 10px 0px 0px 382.656px;
     text-align: center;
-    display: block;
     float: left;
 }
 
-/* ------------- input 영역 ------------- */
+/* 콘텐츠 영역 >> id_findInput  */
 
-div#contents div {
-    width: 450px;
-    margin: 60px 0px 0px 315px;
-    text-align: center;
-    display: block;
+div#id_findInput {
+    width: 442px;
+    margin: 50px 0px 0px 319px;
     float: left;
+    background-color: lightseagreen;
 }
 
 /* 이메일 / 인증번호 */
@@ -65,7 +61,7 @@ div#contents div input#cite_num {
 }
 
 div#contents div > button#cite_btn{
-    width: 111px; height: 57px;
+    width: 113px; height: 57px;
     border: 0px;
     border-radius: 10px;
     font-size: 16px;

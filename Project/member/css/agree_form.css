@@ -6,60 +6,51 @@
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
 div#contents {
-    width: 1080px; height: 1274px;
+    width: 1080px; height: 1224px;
     margin: 0px auto;
-    overflow: hidden;
 }
 
-/* ------------- 상단 TITLE 영역 ------------- */
-
-div#contents h1 {
-    margin: 40px 0px 0px 470.375px;
+div#contents > h1 {
+    margin: 40px 0px 0px 476px;
     text-align: center;
-    display: block;
+    font-size: 32px;
     float: left;
 }
 
-div#contents hr {
+div#contents > hr {
     width: 428px;
     margin: 10px 0px 0px 325px;
     float: left;
 }
 
-div#contents h3 {
-    margin: 20px 0px 0px 408.515px;
+div#contents > h4 {
+    margin: 10px 0px 0px 427.562px;
     text-align: center;
-    display: block;
     float: left;
 }
 
-/* ------------- 약관 영역 ------------- */
-
-#contents div#agreeWrap {
-    width: 986px; height: 1000px;
-    margin: 40px 0px 0px 47px;
-    display: block;
+div#contents > div#agreeWrap {
+    width: 986px; height: 774px;
+    margin: 50px 0px 0px 47px;
     float: left;
 }
 
-/* -------------  이용 약관 ------------- */
-#contents div#agreeWrap div#agreeChk {
+/* 콘텐츠 영역 >> agreeChk */
+div#agreeChk {
     width: 966px; height: 364px;
-    margin: 25px 0px 0px 10px;
-    display: block;
+    margin: 0px 0px 0px 10px;
     float: left;
 }
 
 div#agreeChk > h4 { font-size: 19px; }
 
-/* 약관 내용 */
-div#agreeChk div#agree_cnt {
+div#agree_cnt {
     width: 964px; height: 266px;
     margin: 10px 0px 0px 0px;
     border: 1px solid rgb(224, 224, 224); 
 } 
 
-div#agree_cnt ul.depth01 li h4 { margin-top: 10px; }
+div#agree_cnt ul.depth01 li > h4 { margin-top: 10px; }
 
 div#agree_cnt ul.depth02 {
     text-indent: -18px;
@@ -74,30 +65,29 @@ div#agree_cnt ul.depth03 {
     font-size: 14px;
 }
 
-/* 이용 약관 동의 (예, 아니요) */
-div#agreeChk div#agree01 {
+div#agree01 {
     width: 964px; height: 53px;
     border: 1px solid rgb(224, 224, 224);
     border-top: 0px;
 }
 
-div#agreeChk div#agree01 h4 {
+div#agree01 > h4 {
     line-height: 53px;
     float: left;
 }
 
-div#agreeChk div#agree01 div {
+div#agree01 > div {
     margin-right: 30px;
     float: right;
 }
 
-div#agreeChk div#agree01 div > input { margin: 20px; }
+div#agree01 div > input { margin: 20px; }
 
-div#agreeChk div#agree01 div > label { font-weight: bold; }
+div#agree01 div > label { font-weight: bold; }
 
 
-/* ------------- 개인정보취급방침 동의 ------------- */
-#contents div#agreeWrap div#psnInfo {
+/* 콘텐츠 영역 >> psnInfo(personal information) */
+div#psnInfo {
     width: 966px; height: 364px;
     margin: 50px 0px 0px 10px;
     display: block;
@@ -106,14 +96,13 @@ div#agreeChk div#agree01 div > label { font-weight: bold; }
 
 div#psnInfo > h4 { font-size: 19px; }
 
-/* 개인정보취급방침 내용 */
-div#psnInfo div#psnInfo_cnt {
+div#psnInfo_cnt {
     width: 964px; height: 266px;
     margin: 10px 0px 0px 0px;
     border: 1px solid rgb(224, 224, 224);
 }
 
-div#psnInfo_cnt div h4, h5 {
+div#psnInfo_cnt > div h4, h5 {
     margin-top: 10px;
     font-size: 16px;
 }
@@ -137,52 +126,44 @@ div#psnInfo_cnt ul.depth03 {
     font-size: 14px;
 }
 
-/* 개인정보취급방침 동의 (예, 아니요) */
-div#psnInfo div#agree02 {
+div#agree02 {
     width: 964px; height: 53px;
     border: 1px solid rgb(224, 224, 224);
     border-top: 0px;
 }
 
-div#psnInfo div#agree02 h4 {
+div#agree02 > h4 {
     line-height: 53px;
     float: left;
 }
 
-div#psnInfo div#agree02 div {
+div#agree02 > div {
     margin-right: 30px;
     float: right;
 }
 
-div#psnInfo div#agree02 div > input { margin: 20px; }
+div#agree02 div > input { margin: 20px; }
 
-div#psnInfo div#agree02 div > label { font-weight: bold; }
+div#agree02 div > label { font-weight: bold; }
 
-
-/* ------------- 전체 동의 ------------- */
-
-div#agreeWrap div#agreeAll {
-    width: 280px; height: 53px;
+div#agreeAll {
+    width: 280px; height: 21px;
     margin: 40px 0px 0px 400px;
-    display: block;
     float: left;
 }
 
-div#agreeAll label { 
+div#agreeAll > label { 
     font-size: 16px;
     font-weight: bold;
 }
 
-/* ------------- 전체 동의 ------------- */
-
-div#agreeWrap div#btnWrap {
+div#btnWrap {
     width: 280px; height: 53px;
     margin: 40px 0px 0px 400px;
-    display: block;
     float: left;
 }
 
-div#btnWrap button#subOk {
+button#subOk {
     width: 135px; height: 53px;
     border: 0px;
     border-radius: 10px;
@@ -193,7 +174,7 @@ div#btnWrap button#subOk {
     float: left;
 }
 
-div#btnWrap button#reset {
+button#reset {
     width: 135px; height: 53px;
     margin-left: 10px;
     border: 0px;

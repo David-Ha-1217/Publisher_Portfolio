@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JACOB'S LADDER - 찾아오시는 길</title>
 
-    <!-- ---------------- 공통 영역 ---------------- -->
+    <!-- ------------------------ CSS ------------------------ -->
+    <!-- ----- 공통 영역 ----- -->
     <link rel="stylesheet" href="../css/common/common.css">
-
-    <!-- ---------------- 푸터 영역 (direction.html) ---------------- -->
+    <!-- ----- 공통 영역 (푸터) ----- -->
     <link rel="stylesheet" href="../css/common/foot_com.css">
+    <!-- ----- 콘텐츠 영역 (direction.html) ----- -->
+    <link rel="stylesheet" href="./css/directions.css">
 
-    <!-- ---------------- 공통 영역 (콘텐츠_사이드) ---------------- -->
-    <link rel="stylesheet" href="../css/common/aside.css">
-
-    <!-- ---------------- 콘텐츠 영역 (direction.html) ---------------- -->
-    <link rel="stylesheet" href="../css/company/directions.css">
-
-    <!-- ---------------- fontawesome ---------------- -->
+    <!-- ------------------------ js, jquery ------------------------ -->
+    <!-- ----- fontawesome ----- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,146 +23,150 @@
         > directions.html - 찾아오시는 길
         > (2020-05-15) 헤더, 푸터 마크업 완료.
         > (2020-05-27) 컨텐츠 마크업 완료.
+        > (2020-06-24) 최종 마크업 완료.
     -->
 
     <!-- ---------------------------- 헤더 영역 ------------------------------- -->
-    
+
     <header>
 
         <!-- 헤더 영역 >> logoWrap -->
         <div id="logoWrap">
 
             <h1><a href="../index.html">JACOB'S LADDER</a></h1>
-
             <p>
                 <a href="../member/agree_form.html">회원가입</a> / <a href="../member/join_form.html">로그인</a>
                 <!--
-                    <a href="../member/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
+                    <a href="../mypage/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
                     <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
                 -->
             </p>
+
         </div>
-
-        <!-- 헤더 영역 >> topGnb -->
-        <nav id="topGnb">
-            <ul>
-                <li><a href="../company/company.html">회사소개</a></li>
-                <li><a href="../books/book.html">도서</a></li>
-                <li><a href="../pds/pds.html">자료실</a></li>
-                <li><a href="../ans/ans.html">질문답변</a></li>
-                <li><a href="../online/online.html">동영상 강의</a></li>
-            </ul>
-            <div>
-                <div id="search">
-                    <input type="text" placeholder="도서명, 저자 등 검색">
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </nav>
-
+        
     </header>
 
     <!-- ---------------------------- 헤더 영역 END ------------------------------- -->
 
-    <div id="cntWrap">
+    <!-- ---------------------------- 네비게이션 영역 ------------------------------- -->
 
-        <aside id="side">
-            <div>
-                <h3>회사소개</h3>
-                <hr>
-                <ul>
-                    <li><a href="./company.html">회사소개</a></li>
-                    <li><a href="./directions.html">찾아오시는 길</a></li>
+    <nav role="navigation">
+
+        <!-- 네비게이션 영역 >> main-menu-->
+        <ul id="main-menu">
+
+            <li><a href="../company/company.html">회사소개</a>
+                <ul id="sub-menu">
+                    <li><a href="../company/company.html" aria-label="subemnu">회사소개</a></li>
+                    <li><a href="../company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
                 </ul>
-            </div>
-        </aside>
+            </li>
+            <li><a href="../books/book.html">도서</a></li>
+            <li><a href="../pds/pds.html">자료실</a></li>
+            <li><a href="../ans/ans.html">질문답변</a></li>
+            <li><a href="../online/online.html">동영상 강의</a></li>
 
-        <section id="contents">
-            
-            <div id="titleWrap">
-                <h2>찾아오시는 길</h2>
-                <hr>
-            </div>
+            <!-- 네비게이션 영역 >> search-->
+            <li id="search">
+                <input type="text" placeholder="도서명, 저자 등 검색">
+                <button><i class="fas fa-search"></i></button>
+            </li>
 
-            <div id="mapWrap">
-                <div id="map"></div>
+        </ul>
 
-                <!-- ---------------------------- Kakao Maps API END ------------------------------- -->
-                <!--
-                    > 카카오 개발자(https://developers.kakao.com/)에서 '등록된 도메인'과 '호출된 도메인'이 다른 경우에 지도가 정상적으로 출력되지 않을 수 있습니다.
-                    > 현재 등록된 도메인 : http://127.0.0.1:5500
-                -->
+    </nav>
 
-                <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=53936144ac1b3c3ab0b9c3e2ca6a972b&libraries=services,clusterer,drawing" type="text/javascript"></script>
-                <script>
-                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-                        mapOption = { 
-                            center: new kakao.maps.LatLng(37.478029, 126.878921), // 지도의 중심좌표
-                            level: 3 // 지도의 확대 레벨
-                        };
-                    
-                    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-                    
-                    // 마커가 표시될 위치입니다 
-                    var markerPosition  = new kakao.maps.LatLng(37.478029, 126.878921); 
-                    
-                    // 마커를 생성합니다
-                    var marker = new kakao.maps.Marker({
-                        position: markerPosition
-                    });
-                    
-                    // 마커가 지도 위에 표시되도록 설정합니다
-                    marker.setMap(map);
-                    
-                    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
-                    // marker.setMap(null);
-                </script>
+    <!-- ---------------------------- 네비게이션 영역 END ------------------------------- -->
 
-                <!-- ---------------------------- Kakao Maps API END ------------------------------- -->
+    <!-- ---------------------------- 콘텐츠 영역 ------------------------------- -->
+    <div id="contents">
+
+        <h1>찾아오시는 길</h1>
+        <hr>
+
+        <!-- 콘텐츠 영역 >> mapWrap -->
+        <div id="mapWrap">
+            <div id="map"></div>
+
+            <!-- ---------------------------- Kakao Maps API  ------------------------------- -->
+            <!--
+                > 카카오 개발자(https://developers.kakao.com/)에서 '등록된 도메인'과 '호출된 도메인'이 다른 경우에 지도가 정상적으로 출력되지 않을 수 있습니다.
+                > 현재 등록된 도메인 : http://127.0.0.1:5500 (VS Code, Live Server)
+            -->
+
+            <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=53936144ac1b3c3ab0b9c3e2ca6a972b&libraries=services,clusterer,drawing" type="text/javascript"></script>
+            <script>
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                    mapOption = { 
+                        center: new kakao.maps.LatLng(37.478029, 126.878921), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
                 
-                <div id="tptWrap">
+                var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+                
+                // 마커가 표시될 위치입니다 
+                var markerPosition  = new kakao.maps.LatLng(37.478029, 126.878921); 
+                
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+                
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+                
+                // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+                // marker.setMap(null);
+            </script>
 
-                    <div id="subway">
-                        <i class="fas fa-subway"></i>
-                        <span>지하철</span>
-                        <p>1, 7호선 가산디지털단지역 - 도보 5~10분</p>
-                    </div>
+            <!-- ---------------------------- Kakao Maps API END ------------------------------- -->
+        </div>
 
-                    <div id="bus">
-                        <i class="fas fa-bus"></i>
-                        <span>버스</span>
-                        <p>가산디지털3단지 또는 로옴코리아(월드벤처센터) 정류장 하차</p>
-                        <p>가산디지털3단지 또는 월드벤처센터, 대성디폴리스 정류장 하차</p>
-                    </div>
-                        
-                </div>
+        <!-- 콘텐츠 영역 >> tpt(Transportation) -->
+        <div id="tpt">
 
-                <div id="addr">
-                    <h1>JACOB'S LADDER</h1>
-                    <p>
-                        서울특별시 금천구 가산디지털2로 115(우편번호 08505)<br>
-                        TEL : (02) 552 - 1722<br>
-                        FAX : (02) 552 - 1723<br>
-                    </p>
-                </div>
+            <div id="subway">
+                <i class="fas fa-subway"></i>
+                <span>지하철</span>
+                <p>1, 7호선 가산디지털단지역 - 도보 5~10분</p>
             </div>
-            
-        </section>
+
+            <div id="bus">
+                <i class="fas fa-bus"></i>
+                <span>버스</span>
+                <p>가산디지털3단지 또는 로옴코리아(월드벤처센터) 정류장 하차</p>
+                <p>가산디지털3단지 또는 월드벤처센터, 대성디폴리스 정류장 하차</p>
+            </div>
+
+            <div id="addr">
+                <h2>JACOB'S LADDER</h2>
+                <p>
+                    서울특별시 금천구 가산디지털2로 115(우편번호 08505)<br>
+                    TEL : (02) 552 - 1722<br>
+                    FAX : (02) 552 - 1723<br>
+                </p>
+            </div>
+                
+        </div>
 
     </div>
+
+    <!-- ---------------------------- 콘텐츠 영역 END ------------------------------- -->
     
     <!-- ---------------------------- 푸터 영역 ------------------------------- -->
 
     <footer>
 
-        <h1>JACOB'S LADDER</h1>
-        <address>
-            <p>
-                서울특별시 금천구 가산디지털2로 115(우편번호 08505) TEL (02)552-1722 FAX (02)552-1723 <br>
-                사업자등록번호 115-87-44457 대표자 : 홍길동 / Email : jacob@jcl.co.kr<br>
-                Copyright(c)2020 제이콥스 래더㈜ Jacob's Ladder Co., Ltd. All Rights Reserved
-            </p>
-        </address>
+        <div id="ftWrap">
+            <h1>JACOB'S LADDER</h1>
+            <address>
+                <p>
+                    서울특별시 금천구 가산디지털2로 115(우편번호 08505) TEL (02)552-1722 FAX (02)552-1723 <br>
+                    사업자등록번호 115-87-44457 대표자 : 홍길동 / Email : jacob@jcl.co.kr<br>
+                    Copyright(c)2020 제이콥스 래더㈜ Jacob's Ladder Co., Ltd. All Rights Reserved
+                </p>
+            </address>
+        </div>
         
     </footer>
 
