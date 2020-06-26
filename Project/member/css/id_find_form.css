@@ -8,7 +8,6 @@
 div#contents {
     width: 1080px; height: 674px;
     margin: 0px auto;
-    background-color: lightsalmon;
 }
 
 div#contents > h1 {
@@ -36,54 +35,57 @@ div#id_findInput {
     width: 442px;
     margin: 50px 0px 0px 319px;
     float: left;
-    background-color: lightseagreen;
 }
 
-/* 이메일 / 인증번호 */
-
-div#contents div label.label {
+label.label {
     font-size: 24px;
     font-weight: bold;
 }
 
-div#contents div input#member_email {
+input#member_email {
     width: 307px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
     margin-left: 54px;
 }
 
-div#contents div input#cite_num {
+input#cite_num {
     width: 188px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
     margin: 30px 0px 0px 30px;
 }
 
-div#contents div > button#cite_btn{
+button#cite_btn{
     width: 113px; height: 57px;
     border: 0px;
     border-radius: 10px;
     font-size: 16px;
     color: rgb(64,64,64);
     background-color: rgb(224,224,224);
+    font-weight: bold;
+    cursor : pointer;
 }
 
-/* 버튼 영역 */
-
-div#contents div button#id_find_btn {
-    width: 244px; height: 57px;
-    margin-left: 24px;
-    border: 0px;
-    border-radius: 10px;
-    font-size: 16px;
-    color: white;
-    background-color: rgb(64,64,64);
+div#btnWrap {
+    width: 402px;
+    margin: 60px 0px 0px 339px;
     float: left;
 }
 
+button#id_findBtn {
+    width: 244px; height: 57px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(64,64,64);
+    font-weight: bold;
+    cursor : pointer;
+    float: left;
+}
 
-div#contents div button#reset {
+button#reset {
     width: 148px; height: 57px;
     margin-left: 10px;
     border: 0px;
@@ -91,6 +93,8 @@ div#contents div button#reset {
     font-size: 16px;
     color: rgb(64,64,64);
     background-color: rgb(224,224,224);
+    font-weight: bold;
+    cursor : pointer;
     float: left;
 }
 

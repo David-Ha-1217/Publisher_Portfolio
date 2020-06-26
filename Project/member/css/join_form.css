@@ -8,47 +8,41 @@
 div#contents {
     width: 1080px; height: 674px;
     margin: 0px auto;
-    overflow: hidden;
 }
-
-/* ------------- 상단 TITLE 영역 ------------- */
 
 div#contents h1 {
     margin: 40px 0px 0px 476px;
     text-align: center;
-    display: block;
+    font-size: 32px;
     float: left;
 }
 
-div#contents hr {
+div#contents > hr {
     width: 428px;
     margin: 10px 0px 0px 325px;
     float: left;
 }
 
-div#contents h3 {
+div#contents > h4 {
     margin: 10px 0px 0px 458.578px;
     text-align: center;
-    display: block;
     float: left;
 }
 
-/* ------------- input 영역 ------------- */
+/* 콘텐츠 영역 >> joinInput */
 
-div#contents div {
+div#joinInput {
     width: 640px;
-    margin: 60px 0px 0px 220px;
-    text-align: center;
-    display: block;
+    margin: 50px 0px 0px 220px;
     float: left;
+    background-color: khaki;
 }
 
-div#contents div label.label {
+label.label {
     font-size: 24px;
     font-weight: bold;
 }
 
-/* 아이디 / 중복확인 */
 
 div#contents div input#member_id {
     width: 310px; height: 57px;
@@ -58,7 +52,7 @@ div#contents div input#member_id {
 }
 
 div#contents div > button#dup_id{
-    width: 111px; height: 57px;
+    width: 113px; height: 57px;
     border: 0px;
     border-radius: 10px;
     font-size: 16px;
@@ -106,34 +100,34 @@ div#contents div input#re_pwd {
 
 /* 확인 / 취소 */
 
-div#contents div#btnWrap {
-    width: 280px; height: 53px;
-    margin: 40px 0px 0px 400px;
-    display: block;
+div#btnWrap {
+    width: 280px;
+    margin: 60px 0px 0px 400px;
     float: left;
+    background-color: lawngreen;
 }
 
-div#btnWrap button#subOk {
+button#joinBtn {
     width: 135px; height: 53px;
     border: 0px;
     border-radius: 10px;
-    background-color: rgb(64,64,64);
     font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(64,64,64);
     font-weight: bold;
-    color: white;
-    float: left;
     cursor : pointer;
+    float: left;
 }
 
-div#btnWrap button#reset {
+button#reset {
     width: 135px; height: 53px;
     margin-left: 10px;
     border: 0px;
     border-radius: 10px;
-    background-color: rgb(224,224,224);
     font-size: 16px;
+    color: rgb(64,64,64);
+    background-color: rgb(224,224,224);
     font-weight: bold;
-    color: rgb(64,64,64,);
-    float: left;
     cursor : pointer;
+    float: left;
 }
