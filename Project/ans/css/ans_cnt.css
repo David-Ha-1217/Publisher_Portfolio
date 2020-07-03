@@ -5,11 +5,9 @@
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
 div#contents {
-    width: 1080px; height: 780px;
+    width: 1080px; height: 838px;
     margin: 0px auto;
 }
-
-/* ------------- 상단 TITLE 영역 ------------- */
 
 div#contents > h1 {
     margin: 40px 0px 0px 476px;
@@ -19,19 +17,20 @@ div#contents > h1 {
 
 div#contents > hr {
     width: 428px;
-    margin: 10px 0px 0px 325px;
+    margin: 10px 325px 0px 325px;
     float: left;
 }
 
+/* 콘텐츠 영역 >> ansTit */
 div#ansTit {
-    width: 900px; height: 140px;
+    width: 900px; height: 110px;
+    margin-top: 50px;
     margin-left: 90px;
     float: left;
 }
 
 div#ansTit > h2 {
     float: left;
-    margin-top: 20px;
     font-size: 26px;
 }
 
@@ -53,17 +52,18 @@ li.a01 { margin-left: 50px; }
 
 button#list {
     width: 50px; height: 25px;
+    margin: 50px 10px 0px 0px;
     border: 0px;
     border-radius: 5px;
     font-size: 12px;
-    margin: 50px 10px 0px 0px;
+    color: rgb(255, 255, 255);
     background-color: rgb(64,64,64);
     font-weight: bold;
-    color: white;
+    cursor: pointer;
     float: right;
 }
 
-/* 내용 */
+/* 콘텐츠 영역 >> ansWrap */
 div#ansWrap {
     width: 900px; height: 400px;
     margin: 20px 0px 0px 90px;
@@ -72,46 +72,49 @@ div#ansWrap {
     border-radius: 10px;
 }
 
-
-div#adBtn {
+/* 콘텐츠 영역 >> ansBtn */
+div#ansBtn {
     width: 200px; height: 55px;
     margin-right: 90px;
     float: right;
 }
 
-button#aswr {
+button#ans {
     width: 50px; height: 25px;
+    margin: 25px 10px 0px 0px;
     border: 0px;
     border-radius: 5px;
     font-size: 12px;
-    margin: 25px 10px 0px 0px;
+    color: rgb(255, 255, 255);
     background-color: rgb(64,64,64);
     font-weight: bold;
-    color: white;
+    cursor: pointer;
     float: right;
 }
 
 button#alt {
     width: 50px; height: 25px;
+    margin: 25px 10px 0px 0px;
     border: 0px;
     border-radius: 5px;
     font-size: 12px;
-    margin: 25px 10px 0px 0px;
+    color: rgb(64,64,64);
     background-color: rgb(224,224,224);
     font-weight: bold;
-    color: rgb(64,64,64);
+    cursor: pointer;
     float: right;
 }
 
 button#del {
     width: 50px; height: 25px;
+    margin: 25px 10px 0px 0px;
     border: 0px;
     border-radius: 5px;
     font-size: 12px;
-    margin: 25px 10px 0px 0px;
+    color: rgb(64,64,64);
     background-color: rgb(224,224,224);
     font-weight: bold;
-    color: rgb(64,64,64);
+    cursor: pointer;
     float: right;
 }
 

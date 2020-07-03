@@ -37,8 +37,8 @@ section#contents > h4 {
 }
 
 
-section#contents > div#delInput {
-    width: 637px;
+div#delInput {
+    width: 636px;
     margin: 50px 0px 0px 94px;
     text-align: center;
     float: left;
@@ -49,8 +49,7 @@ label.label {
     font-weight: bold;
 }
 
-/* 비밀번호 / 비밀번호 확인 */
-
+/* 비밀번호 */
 input#member_pwd {
     width: 428px; height: 57px;
     border: 1px solid rgb(224,224,224);
@@ -58,15 +57,13 @@ input#member_pwd {
     margin: 0px 0px 0px 102px;
 }
 
+/* 비밀번호 확인 */
 input#re_pwd {
     width: 428px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
     margin: 15px 0px 0px 46px;
 }
-
-
-/* 버튼 영역 */
 
 button#delOk {
     width: 244px; height: 57px;

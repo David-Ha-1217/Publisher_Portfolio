@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JACOB'S LADDER - 도서</title>
 
-    <!-- ---------------- 공통 영역 ---------------- -->
+    <!-- ------------------------ CSS ------------------------ -->
+    <!-- ----- 공통 영역 ----- -->
     <link rel="stylesheet" href="../css/common/common.css">
-
-    <!-- ---------------- 공통 영역 (푸터) ---------------- -->
+    <!-- ----- 공통 영역 (푸터) ----- -->
     <link rel="stylesheet" href="../css/common/foot_com.css">
+    <!-- ----- 콘텐츠 영역 (book_cnt.html) ----- -->
+    <link rel="stylesheet" href="../books/css/book_cnt.css">
 
-    <!-- ---------------- 콘텐츠 영역 (book_cnt.html) ---------------- -->
-    <link rel="stylesheet" href="../css/books/book_cnt.css">
-
-    <!-- ---------------- fontawesome ---------------- -->
+    <!-- ------------------------ js, jquery ------------------------ -->
+    <!-- ----- fontawesome ----- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,7 +22,8 @@
     <!--
         > book_cnt.html - 도서(상세)
         > (2020-05-15) 헤더, 푸터 마크업 완료.
-        > 
+        > (2020-06-09) 컨텐츠 마크업 완료.
+        > (2020-06-29) 최종 마크업 완료.
     -->
 
     <!-- ---------------------------- 헤더 영역 ------------------------------- -->
@@ -32,11 +33,11 @@
         <!-- 헤더 영역 >> logoWrap -->
         <div id="logoWrap">
 
-            <h1><a href="./index.html">JACOB'S LADDER</a></h1>
+            <h1><a href="../index.html">JACOB'S LADDER</a></h1>
             <p>
-                <a href="./member/agree_form.html">회원가입</a> / <a href="./member/join_form.html">로그인</a>
+                <a href="../member/agree_form.html">회원가입</a> / <a href="../member/login_form.html">로그인</a>
                 <!--
-                    <a href="./member/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
+                    <a href="../mypage/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
                     <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
                 -->
             </p>
@@ -54,16 +55,16 @@
         <!-- 네비게이션 영역 >> main-menu-->
         <ul id="main-menu">
 
-            <li><a href="./company/company.html">회사소개</a>
+            <li><a href="../company/company.html">회사소개</a>
                 <ul id="sub-menu">
-                    <li><a href="./company/company.html" aria-label="subemnu">회사소개</a></li>
-                    <li><a href="./company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
+                    <li><a href="../company/company.html" aria-label="subemnu">회사소개</a></li>
+                    <li><a href="../company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
                 </ul>
             </li>
-            <li><a href="./books/book.html">도서</a></li>
-            <li><a href="./pds/pds.html">자료실</a></li>
-            <li><a href="./ans/ans.html">질문답변</a></li>
-            <li><a href="./online/online.html">동영상 강의</a></li>
+            <li><a href="../books/book.html">도서</a></li>
+            <li><a href="../pds/pds.html">자료실</a></li>
+            <li><a href="../ans/ans.html">질문답변</a></li>
+            <li><a href="../online/online.html">동영상 강의</a></li>
 
             <!-- 네비게이션 영역 >> search-->
             <li id="search">
@@ -80,22 +81,24 @@
     <!-- ---------------------------- 콘텐츠 영역 ------------------------------- -->
     <div id="contents">
 
-        <div id="titleWrap">
+        <!-- 콘텐츠 영역 >> bTitleWrap -->
+        <div id="bTitleWrap">
 
-            <div id="tit">
+            <div id="bookTit">
                 <h2>지옥에서 온 문서 관리자 깃&깃허브 입문</h2>
-                <h3>- subTitle</h3>
+                <!-- <h3>- subTitle</h3> -->
             </div>
 
             <div id="adBtn">
                 <button type="button" id="alt">수정</button>
-                <button type="button" id="del">글쓰기</button>
+                <button type="button" id="del">삭제</button>
             </div>
 
             <hr>
 
         </div>
 
+        <!-- 콘텐츠 영역 >> bookInfo -->
         <div id="bookInfo">
 
             <img src="../images/book1.jpg">
@@ -129,7 +132,7 @@
                 <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=220609696&start=slayer"><img src="../images/al.gif"></a>
             </div>
 
-            <hr id="hori">
+            <hr class="hori">
                 
             <div id="intro" class="bTit">
                 <h2>책&nbsp;&nbsp;&nbsp;소개</h2>
@@ -138,7 +141,7 @@
                 </p>
             </div>
 
-            <hr id="hori">
+            <hr class="hori">
 
             <div id="bCnt" class="bTit">
                 <h2>목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;차</h2>
@@ -209,9 +212,10 @@
 
             </div>
 
-            <hr id="hori">
+            <hr class="hori">
 
             <div id="author" class="bTit">
+
                 <h2>저자 소개</h2>
                 <div id="bAuth">
                     <p class="name">고경희  funcom@gmail.com</p>

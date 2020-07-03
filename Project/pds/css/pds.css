@@ -6,33 +6,27 @@
 /* ---------------------------- 콘텐츠 영역 ------------------------------- */
 
 div#contents {
-    width: 1080px; height: 1750px;
+    width: 1080px; height: 1760px;
     margin: 0px auto;
 }
 
-/* ------------- 상단 TITLE 영역 ------------- */
-
 div#contents > h1 {
-    margin: 40px 0px 0px 508px;
+    margin: 40px 0px 0px 492px;
     text-align: center;
     float: left;
 }
 
 div#contents > hr {
     width: 428px;
-    margin: 10px 0px 0px 325px;
+    margin: 10px 325px 0px 325px;
     float: left;
 }
 
-/* 검색창 [270px]  */
-div#psWrap {
-    width: 1080px; height: 80px;
-    float:right;
-}
 
+/* 콘텐츠 영역 >> pSearch(Search)  */
 div#pSearch {
     width: 250px; height: 36px;
-    margin: 22px 60px 0px 0px;
+    margin: 16px 45px 0px 0px;
     border: 1px solid rgb(166,166,166);
     background: #fff;
     float: right; 
@@ -53,33 +47,40 @@ div#pSearch > button {
     color: rgb(166,166,166);
     outline: none;
     float: right;
+    cursor: pointer;
 }
 
-/* 자료실 리스트 */
-div#contents > div.bWrap {
+/* 콘텐츠 영역 >> bWrap */
+div#bWrap {
+    width: 904px; height: 1312px;
+    margin-top: 50px;
+    margin-left: 88px;
+    float: left;
+}
+
+div.bList {
     width: 900px; height: 260px;
-    margin-left: 90px;
     float: left;
     border: 2px solid rgb(166,166,166);
 }
 
-div#contents > div#b1 { margin-top: 20px; border-bottom: 1px solid rgb(166,166,166); }
-div#contents > div#b2 { border-bottom: 1px solid rgb(166,166,166); }
-div#contents > div#b3 { border-bottom: 1px solid rgb(166,166,166); }
-div#contents > div#b4 { border-bottom: 1px solid rgb(166,166,166); }
+div#b1 { border-bottom: 0px solid rgb(166,166,166); }
+div#b2 { border-bottom: 0px solid rgb(166,166,166); }
+div#b3 { border-bottom: 0px solid rgb(166,166,166); }
+div#b4 { border-bottom: 0px solid rgb(166,166,166); }
 
 div#bimg {
     width: 204px; height: 260px;
     float: left;
 }
 
-div.bWrap img {
+div#bimg > img {
     width: 184px; height: 240px;
     margin: 10px;
     background-color: white;
 }
 
-div.bWrap > div#bCnt {
+div#bCnt {
     width: 676px; height: 240px;
     margin: 10px;
     float: right;
@@ -94,7 +95,11 @@ div#bCnt ul li:nth-child(2) {
 }
 
 div#bCnt ul li:nth-child(3) { margin-top: 45px; }
-div#bCnt ul li:nth-child(3) a { color: blue; text-decoration: underline;}
+
+/* <a> 태그 CSS */
+div#bCnt a:link { color: blue; text-decoration: none;}
+div#bCnt a:visited { color: rgb(64,64,64); text-decoration: none; }
+div#bCnt a:hover { color: red; text-decoration: underline; }
 
 div#adBtn {
     width: 140px; height: 55px;
@@ -103,40 +108,35 @@ div#adBtn {
 
 div#adBtn > button {
     width: 50px; height: 25px;
+    margin: 25px 10px 0px 0px;
     border: 0px;
     border-radius: 5px;
     font-size: 12px;
-    margin: 25px 10px 0px 0px;
+    color: rgb(255, 255, 255);
     background-color: rgb(64,64,64);
     font-weight: bold;
-    color: white;
+    cursor: pointer;
     float: right;
 }
 
-/* 버튼 영역 */
-div#contents div#btnWrap {
-    width: 1080px;
-    margin-top: 15px;
-    text-align: center;
-    float: left;
-}
-
-div#contents div#btnWrap button {
+/* 콘텐츠 영역 >> pdsWrite(관리자) */
+button#pdsWrite {
     width: 104px; height: 50px;
+    margin: 30px 90px 0px 886px;
     border: 0px;
     border-radius: 10px;
     font-size: 16px;
+    color: rgb(255, 255, 255);
     background-color: rgb(64,64,64);
-    margin-right: 90px;
     font-weight: bold;
-    color: white;
+    cursor: pointer;
     float: right;
 }
 
-/* 페이징 */
+/* 콘텐츠 영역 >> 페이징 */
 .list_number{
     width: 362px; height: 45px;
-    padding-top: 45px;
+    padding-top: 35px;
     margin-left: 359px;
     text-align:center;
     float: left;

@@ -30,9 +30,9 @@ section#contents > hr {
   float: left;
 }
 
-section#contents > div#altInput {
-    width: 637px;
-    margin: 50px 0px 0px 94px;
+div#altInput {
+    width: 636px;
+    margin: 50px 0px 0px 94.5px;
     float: left;
 }
 
@@ -55,8 +55,7 @@ div#altInput > div {
     float: right;
 }
 
-
-/* 이메일 / 중복확인 */
+/* 이메일 */
 input#member_email {
     width: 310px; height: 57px;
     border: 1px solid rgb(224,224,224);
@@ -65,7 +64,7 @@ input#member_email {
 }
 
 button#dup_email {
-    width: 113px; height: 57px;
+    width: 111px; height: 57px;
     border: 0px;
     border-radius: 10px;
     font-size: 16px;
@@ -76,8 +75,6 @@ button#dup_email {
 }
 
 
-/* 비밀번호 / 비밀번호 확인 */
-
 input#member_pwd {
     width: 428px; height: 57px;
     border: 1px solid rgb(224,224,224);
@@ -85,15 +82,13 @@ input#member_pwd {
     margin: 15px 0px 0px 102px;
 }
 
+/* 비밀번호 확인 */
 input#re_pwd {
     width: 428px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
-    margin: 15px 0px 0px 46px;
+    margin: 15px 0px 0px 45.66px;
 }
-
-
-/* 버튼 영역 */
 
 button#altOk {
     width: 244px; height: 57px;

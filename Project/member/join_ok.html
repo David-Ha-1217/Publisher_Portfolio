@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JACOB'S LADDER - 가입완료</title>
 
-   <!-- ---------------- 공통 영역 ---------------- -->
-   <link rel="stylesheet" href="../css/common/common.css">
+    <!-- ------------------------ CSS ------------------------ -->
+    <!-- ----- 공통 영역 ----- -->
+    <link rel="stylesheet" href="../css/common/common.css">
+    <!-- ----- 공통 영역 (푸터) ----- -->
+    <link rel="stylesheet" href="../css/common/foot_com.css">
+    <!-- ----- 콘텐츠 영역 (join_ok.html) ----- -->
+    <link rel="stylesheet" href="./css/join_ok.css">
 
-   <!-- ---------------- 공통 영역 (푸터) ---------------- -->
-   <link rel="stylesheet" href="../css/common/foot_com.css">
-
-    <!-- ----------------콘텐츠 영역 (join_ok.html) ---------------- -->
-    <link rel="stylesheet" href="../css//member/join_ok.css">
-
+    <!-- ------------------------ js, jquery ------------------------ -->
+    <!-- ----- fontawesome ----- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,6 +23,7 @@
         > join_ok.html - 가입 완료
         > (2020-05-15) 헤더, 푸터 마크업 완료.
         > (2020-05-19) 컨텐츠 마크업 완료.
+        > (2020-06-27) 최종 마크업 완료.
     -->
 
     <!-- ---------------------------- 헤더 영역 ------------------------------- -->
@@ -31,11 +33,11 @@
         <!-- 헤더 영역 >> logoWrap -->
         <div id="logoWrap">
 
-            <h1><a href="./index.html">JACOB'S LADDER</a></h1>
+            <h1><a href="../index.html">JACOB'S LADDER</a></h1>
             <p>
-                <a href="./member/agree_form.html">회원가입</a> / <a href="./member/join_form.html">로그인</a>
+                <a href="../member/agree_form.html">회원가입</a> / <a href="../member/login_form.html">로그인</a>
                 <!--
-                    <a href="./member/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
+                    <a href="../mypage/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
                     <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
                 -->
             </p>
@@ -53,16 +55,16 @@
         <!-- 네비게이션 영역 >> main-menu-->
         <ul id="main-menu">
 
-            <li><a href="./company/company.html">회사소개</a>
+            <li><a href="../company/company.html">회사소개</a>
                 <ul id="sub-menu">
-                    <li><a href="./company/company.html" aria-label="subemnu">회사소개</a></li>
-                    <li><a href="./company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
+                    <li><a href="../company/company.html" aria-label="subemnu">회사소개</a></li>
+                    <li><a href="../company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
                 </ul>
             </li>
-            <li><a href="./books/book.html">도서</a></li>
-            <li><a href="./pds/pds.html">자료실</a></li>
-            <li><a href="./ans/ans.html">질문답변</a></li>
-            <li><a href="./online/online.html">동영상 강의</a></li>
+            <li><a href="../books/book.html">도서</a></li>
+            <li><a href="../pds/pds.html">자료실</a></li>
+            <li><a href="../ans/ans.html">질문답변</a></li>
+            <li><a href="../online/online.html">동영상 강의</a></li>
 
             <!-- 네비게이션 영역 >> search-->
             <li id="search">
@@ -85,9 +87,11 @@
             '지식이 넘치는 책을 만드는 이곳'<br>
             JACOB'S LADDER에 오신걸 환영합니다.
         </h2>
+
+        <!-- 콘텐츠 영역 >> 가입 완료 -->
         <img src="../images/join_ok.PNG" alt="가입 완료">
 
-        <button>홈으로</button>
+        <button type="button" id="home">홈으로</button>
 
 
     </div>

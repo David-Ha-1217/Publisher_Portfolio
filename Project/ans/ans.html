@@ -11,7 +11,7 @@
     <!-- ----- 공통 영역 (ans.html) ----- -->
     <link rel="stylesheet" href="../css/common/foot_com.css">
     <!-- ----- 콘텐츠 영역 (ans.html) ----- -->
-    <link rel="stylesheet" href="./css/ans.css">
+    <link rel="stylesheet" href="../ans/css/ans.css">
 
     <!-- ------------------------ js, jquery ------------------------ -->
     <!-- ----- fontawesome ----- -->
@@ -22,6 +22,8 @@
     <!--
         > ans.html - 질문답변
         > (2020-05-15) 헤더, 푸터 마크업 완료.
+        > (2020-06-12) 컨텐츠 마크업 완료.
+        > (2020-06-29) 최종 마크업 완료.
     -->
 
     <!-- ---------------------------- 헤더 영역 ------------------------------- -->
@@ -31,11 +33,11 @@
         <!-- 헤더 영역 >> logoWrap -->
         <div id="logoWrap">
 
-            <h1><a href="./index.html">JACOB'S LADDER</a></h1>
+            <h1><a href="../index.html">JACOB'S LADDER</a></h1>
             <p>
-                <a href="./member/agree_form.html">회원가입</a> / <a href="./member/join_form.html">로그인</a>
+                <a href="../member/agree_form.html">회원가입</a> / <a href="../member/login_form.html">로그인</a>
                 <!--
-                    <a href="./member/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
+                    <a href="../mypage/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
                     <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
                 -->
             </p>
@@ -53,16 +55,16 @@
         <!-- 네비게이션 영역 >> main-menu-->
         <ul id="main-menu">
 
-            <li><a href="./company/company.html">회사소개</a>
+            <li><a href="../company/company.html">회사소개</a>
                 <ul id="sub-menu">
-                    <li><a href="./company/company.html" aria-label="subemnu">회사소개</a></li>
-                    <li><a href="./company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
+                    <li><a href="../company/company.html" aria-label="subemnu">회사소개</a></li>
+                    <li><a href="../company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
                 </ul>
             </li>
-            <li><a href="./books/book.html">도서</a></li>
-            <li><a href="./pds/pds.html">자료실</a></li>
-            <li><a href="./ans/ans.html">질문답변</a></li>
-            <li><a href="./online/online.html">동영상 강의</a></li>
+            <li><a href="../books/book.html">도서</a></li>
+            <li><a href="../pds/pds.html">자료실</a></li>
+            <li><a href="../ans/ans.html">질문답변</a></li>
+            <li><a href="../online/online.html">동영상 강의</a></li>
 
             <!-- 네비게이션 영역 >> search-->
             <li id="search">
@@ -81,74 +83,74 @@
         
         <h1>질문답변</h1>
         <hr>
-        <!-- search Wrap -->
-        <div id="psWrap">
-            <div id = "pSearch">
-                <input type="text" placeholder="도서명, 저자 등 검색">
-                <button><i class="fas fa-search"></i></button>
-            </div>
+
+        <!-- 콘텐츠 영역 >> pSearch(Search) -->
+        <div id = "pSearch">
+            <input type="text" placeholder="도서명, 저자 등 검색">
+            <button><i class="fas fa-search"></i></button>
         </div>
 
+        <!-- 콘텐츠 영역 >> ansWrap -->
         <div id="ansWrap">
 
             <div id="table">
                 <table>
                     <tr>
-                        <td><a href="ans_cnt.html">Q. TITLE8</a></td>
+                        <td><a href="ans_cnt.html">자바에서 클래스란?</a></td>
                         <td>정은아</td>
                         <td>2020-04-28</td>
                         <td>19회</td>
                     </tr>
                     <tr>
-                        <td><a href="#">Q. TITLE7</a></td>
+                        <td><a href="#">C언어의 포인터의 개념을 잘 모르겠어요.</a></td>
                         <td>이찬영</td>
                         <td>2020-04-23</td>
                         <td>10회</td>
                     </tr>
                     <tr>
-                        <td><a href="#">Q. TITLE6</a></td>
+                        <td><a href="#">네이버블로그 책에서...</a></td>
                         <td>김진주</td>
                         <td>2020-04-20</td>
                         <td>14회</td>
                     </tr>
                     <tr>
-                        <td><a href="#">Q. TITLE5</a></td>
+                        <td><a href="#">아두이노가 컴퓨터에 인식이 안되네요...</a></td>
                         <td>안유림</td>
                         <td>2020-04-17</td>
                         <td>11회</td>
                     </tr>
                     <tr>
-                        <td><a href="#">Q. TITLE4</a></td>
+                        <td><a href="#">아두이노 프로그램이 설치가 안되요 ㅠ.ㅠ</a></td>
                         <td>안유림</td>
                         <td>2020-04-13</td>
                         <td>20회</td>
                     </tr>
                     <tr>
-                        <td><a href="#">Q. TITLE3</a></td>
+                        <td><a href="#">클린코딩 50페이지에서</a></td>
                         <td>박지연</td>
                         <td>2020-04-13</td>
                         <td>18회</td>
                     </tr>
                     <tr>
-                        <td><a href="#">Q. TITLE2</a></td>
+                        <td><a href="#">리액트 프로그래밍에서 컴포넌트의 정의가 이해가 안됩니다.</a></td>
                         <td>김슬기</td>
                         <td>2020-04-02</td>
                         <td>9회</td>
                     </tr>
                     <tr>
-                        <td>&nbsp; <a href="#">└ A. TITLE2</a></td>
+                        <td>&nbsp; <a href="#">└ 답변입니다.</a></td>
                         <td>운영자</td>
                         <td>2020-04-03</td>
                         <td>15회</td>
                     </tr>
                     <tr>
-                        <td><a href="#">Q. TITLE1</a></td>
+                        <td><a href="#">배열이 이해가 안되요.</a></td>
                         <td>김지훈</td>
                         <td>2020-03-24</td>
                         <td>10회</td>
                     </tr>
                     <tr>
-                        <td>&nbsp; <a href="#">└ A. TITLE1</a></td>
+                        <td>&nbsp; <a href="#">└ 답변입니다.</a></td>
                         <td>운영자</td>
                         <td>2020-03-24</td>
                         <td>9회</td>
@@ -158,13 +160,10 @@
             
         </div>
         
-        <div id="btnWrap">
-            <button type="button" id="subOk">글쓰기</button>
-        </div>
+        <!-- 콘텐츠 영역 >> ansWrite -->
+        <button type="button" id="ansWrite">글쓰기</button>
 
-        
-        
-        <!-- 페이징 -->
+        <!-- 콘텐츠 영역 >> 페이징 -->
         <div class="list_number">
             <div>
                 <p>

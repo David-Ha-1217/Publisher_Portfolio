@@ -8,71 +8,62 @@
 div#contents {
     width: 1080px; height: 674px;
     margin: 0px auto;
-    overflow: hidden;
 }
 
-/* ------------- 상단 TITLE 영역 ------------- */
-
-div#contents h1 {
+div#contents > h1 {
     margin: 40px 0px 0px 438.375px;
     text-align: center;
-    display: block;
     float: left;
 }
 
-div#contents hr {
+div#contents > hr {
     width: 428px;
     margin: 10px 0px 0px 325px;
     float: left;
 }
 
-div#contents h3 {
-    margin: 20px 0px 0px 315.297px;
+div#contents > h4 {
+    margin: 10px 0px 0px 347.843px;
     text-align: center;
-    display: block;
     float: left;
 }
 
-/* ------------- input 영역 ------------- */
+/* 콘텐츠 영역 >> pwd_findInput */
 
-div#contents div {
-    width: 450px;
-    margin: 40px 0px 0px 315px;
-    text-align: center;
-    display: block;
+div#pwd_findInput {
+    width: 442px;
+    margin: 50px 0px 0px 319px;
     float: left;
 }
 
-div#contents div label.label {
+label.label {
     font-size: 24px;
     font-weight: bold;
 }
 
-/* 아이디 / 이메일 / 인증번호 */
-
-div#contents div input#member_id {
+input#member_id {
     width: 307px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
     margin-left: 54px;
 }
 
-div#contents div input#member_email {
+input#member_email {
     width: 307px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
     margin: 30px 0px 0px 54px;
 }
 
-div#contents div input#cite_num {
+input#cite_num {
     width: 188px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
     margin: 30px 0px 0px 30px;
 }
 
-div#contents div > button#cite_btn{
-    width: 111px; height: 57px;
+button#cite_btn{
+    width: 113px; height: 57px;
     border: 0px;
     border-radius: 10px;
     font-size: 16px;
@@ -82,22 +73,27 @@ div#contents div > button#cite_btn{
     cursor : pointer;
 }
 
-/* 버튼 영역 */
+/* 콘텐츠 영역 >> btnWrap */
 
-div#contents div button#pwd_find_btn {
+div#btnWrap {
+    width: 402px;
+    margin: 60px 0px 0px 339px;
+    float: left;
+}
+
+button#pwd_find_btn {
     width: 244px; height: 57px;
-    margin-left: 24px;
     border: 0px;
     border-radius: 10px;
     font-size: 16px;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgb(64,64,64);
-    float: left;
     font-weight: bold;
     cursor : pointer;
+    float: left;
 }
 
-div#contents div button#reset {
+button#reset {
     width: 148px; height: 57px;
     margin-left: 10px;
     border: 0px;
@@ -105,9 +101,9 @@ div#contents div button#reset {
     font-size: 16px;
     color: rgb(64,64,64);
     background-color: rgb(224,224,224);
-    float: left;
     font-weight: bold;
     cursor : pointer;
+    float: left;
 }
 
 /* ---------------------------- 콘텐츠 영역 END ------------------------------- */

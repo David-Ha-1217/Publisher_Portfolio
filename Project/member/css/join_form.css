@@ -19,23 +19,21 @@ div#contents h1 {
 
 div#contents > hr {
     width: 428px;
-    margin: 10px 0px 0px 325px;
+    margin: 10px 325px 0px 325px;
     float: left;
 }
 
 div#contents > h4 {
-    margin: 10px 0px 0px 458.578px;
+    margin: 10px 0px 0px 470.375px;
     text-align: center;
     float: left;
 }
 
 /* 콘텐츠 영역 >> joinInput */
-
 div#joinInput {
-    width: 640px;
-    margin: 50px 0px 0px 220px;
+    width: 636px;
+    margin: 50px 0px 0px 222px;
     float: left;
-    background-color: khaki;
 }
 
 label.label {
@@ -43,35 +41,15 @@ label.label {
     font-weight: bold;
 }
 
-
-div#contents div input#member_id {
+/* 아이디 */
+input#member_id {
     width: 310px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
     margin-left: 126px;
 }
 
-div#contents div > button#dup_id{
-    width: 113px; height: 57px;
-    border: 0px;
-    border-radius: 10px;
-    font-size: 16px;
-    color: rgb(64,64,64);
-    background-color: rgb(224,224,224);
-    font-weight: bold;
-    cursor : pointer;
-}
-
-/* 이메일 / 중복확인 */
-
-div#contents div input#member_email {
-    width: 310px; height: 57px;
-    border: 1px solid rgb(224,224,224);
-    border-radius: 10px;
-    margin: 15px 0px 0px 126px;
-}
-
-div#contents div > button#dup_email {
+div#joinInput > button#dup_id{
     width: 111px; height: 57px;
     border: 0px;
     border-radius: 10px;
@@ -82,29 +60,46 @@ div#contents div > button#dup_email {
     cursor : pointer;
 }
 
-/* 비밀번호 / 비밀번호 확인 */
+/* 이메일 */
+input#member_email {
+    width: 310px; height: 57px;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 10px;
+    margin: 15px 0px 0px 126px;
+}
 
-div#contents div input#member_pwd {
+div#joinInput > button#dup_email {
+    width: 111px; height: 57px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(64,64,64);
+    background-color: rgb(224,224,224);
+    font-weight: bold;
+    cursor : pointer;
+}
+
+/* 비밀번호 */
+input#member_pwd {
     width: 428px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
     margin: 15px 0px 0px 102px;
 }
 
-div#contents div input#re_pwd {
+/* 비밀번호 확인 */
+input#re_pwd {
     width: 428px; height: 57px;
     border: 1px solid rgb(224,224,224);
     border-radius: 10px;
-    margin: 15px 0px 0px 46px;
+    margin: 15px 0px 0px 45.66px;
 }
 
-/* 확인 / 취소 */
-
+/* 콘텐츠 영역 >> btnWrap */
 div#btnWrap {
     width: 280px;
     margin: 60px 0px 0px 400px;
     float: left;
-    background-color: lawngreen;
 }
 
 button#joinBtn {
@@ -131,3 +126,5 @@ button#reset {
     cursor : pointer;
     float: left;
 }
+
+/* ---------------------------- 콘텐츠 영역 END ------------------------------- */

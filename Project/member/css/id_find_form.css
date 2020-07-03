@@ -67,6 +67,7 @@ button#cite_btn{
     cursor : pointer;
 }
 
+/* 콘텐츠 영역 >> btnWrap */
 div#btnWrap {
     width: 402px;
     margin: 60px 0px 0px 339px;

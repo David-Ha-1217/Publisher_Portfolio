@@ -2,6 +2,7 @@
 ol, ul { list-style: none; }
 a { outline: 0; text-decoration: none; color: black; }
 img { border: 0; }
+button, input { outline: none; }
 
 /*
     > common.css - 공통 영역
@@ -118,7 +119,7 @@ nav {
   /* 네비게이션 영역 >> search */ 
   li#search {
     width: 250px; height: 42px;
-    margin:6px;
+    margin: 6px;
     border: 1px solid rgb(166,166,166);
     background: #fff;
     float: left; 
@@ -128,7 +129,6 @@ nav {
     width: 209px; height: 40px;
     margin: 0px 0px 0px 5px;
     border: 0px;
-    outline: none;
     float: left;
   }
   
@@ -137,7 +137,6 @@ nav {
     border: 0px;
     background-color: rgb(237, 237, 237);
     color: rgb(166,166,166);
-    outline: none;
     float: right;
     cursor: pointer;
   }

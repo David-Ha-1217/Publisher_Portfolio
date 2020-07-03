@@ -58,7 +58,7 @@ div#bottomCnt > div#bottomWrap {
     background-color: rgb(224,224,224);
 }
 
-
+/* 컨텐츠 영역 >> bottomCnt >> left */
 div#left {
     width: 510px; height: 288px;
     margin: 14px 0px 0px 45px;
@@ -102,6 +102,7 @@ div#left > table tr td:nth-child(3) {
     text-align: center;
 }
 
+/* 컨텐츠 영역 >> bottomCnt >> right */
 div#right {
     width: 475px; height: 288px;
     margin: 14px 45px 0px 0px;
