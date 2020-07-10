@@ -16,8 +16,52 @@
     <!-- ------------------------ js, jquery ------------------------ -->
     <!-- ----- fontawesome ----- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
+    <!-- ----- js, jquery (공통 영역) ----- -->
+    <script type="text/javascript" src="./js/common/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/common/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/common/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="./js/common/prefixfree.min.js"></script>
     <!-- ----- agree_form.js ----- -->
     <script type="text/javascript" src="./js/agree_form.js"></script>
+    <script>
+
+        var checkFlag = false // false 면 전체해제, true 면 전체선택
+
+        function check() {
+            if( checkFlag==false ) { // if문의 조건이 참인 경우
+
+            document.myFormSub.agree1[0].checked = true;
+            document.myFormSub.agree2[0].checked = true;
+            checkFlag = true;
+
+            } else { // if문의 조건이 거짓인 경우
+            document.myFormSub.agree1[0].checked = false;
+            document.myFormSub.agree2[0].checked = false;
+            checkFlag = false;
+            }
+        }
+
+        // 확인 버튼 (약관 동의)
+        function goJoinPage(){
+
+        var agreeCheck1 = document.getElementsByName("agree1")[0].checked;
+        var agreeCheck2 = document.getElementsByName("agree2")[0].checked;
+
+        var theForm = document.myFormSub;
+        theForm.method = "GET";
+        theForm.action = "../member/join_form.html";
+
+            if(agreeCheck1!="" && agreeCheck2!="") {
+                theForm.submit();
+            } else {
+                alert("동의 항목(필수)는 반드시 체크하셔야 다음 단계로 넘어갑니다.")
+            }
+        }
+
+    </script>
+
+        
+        
 </head>
 <body>
 
@@ -92,7 +136,7 @@
 
                 <!-- 콘텐츠 영역 >> agreeChk -->
                 <div id="agreeChk">
-                    <h4>이용 약관</h4>
+                    <h4>이용 약관(필수)</h4>
                     <div id="agree_cnt" style="overflow-x:hidden; overflow-y:scroll;">
                         <ul class="depth01">
                             <li><h4>제1조 (목적)</h4>
@@ -273,10 +317,10 @@
                         <h4>위 이용 약관에 동의합니다.</h4>
 
                         <div>
-                            <input type="radio" id="yesChk01" name="yesChk01">
+                            <input type="radio" id="yesChk01" name="agree1">
                             <label for="yesChk">예</label>
 
-                            <input type="radio" id="noChk01" name="noChk01">
+                            <input type="radio" id="noChk01" name="agree1">
                             <label for="noChk">아니요</label>
                         </div>
                     </div>
@@ -284,7 +328,7 @@
 
                 <!-- 콘텐츠 영역 >> psnInfo(personal information) -->
                 <div id="psnInfo">
-                    <h4>개인정보취급방침 동의</h4>
+                    <h4>개인정보취급방침 동의(필수)</h4>
                     <div id="psnInfo_cnt" style="overflow-x:hidden; overflow-y:scroll;">
                         <div>
                             <h4>총칙</h4>
@@ -373,10 +417,10 @@
                         <h4>위 개인정보취급방침에 동의합니다.</h4>
 
                         <div>
-                            <input type="radio" id="yesChk02" name="yesChk02">
+                            <input type="radio" id="yesChk02" name="agree2">
                             <label for="yesChk">예</label>
 
-                            <input type="radio" id="noChk02" name="noChk02">
+                            <input type="radio" id="noChk02" name="agree2">
                             <label for="noChk">아니요</label>
                         </div>
                     </div>
@@ -387,13 +431,13 @@
             <!-- 콘텐츠 영역 >> agreeAll -->
             <div id="agreeAll">
                 <label for="AllChk">위 개인정보취급방침에 동의합니다.</label>
-                <input type="checkbox" id="AllChk" name="AllChk">
+                <input type="checkbox" id="AllChk" name="AllChk" onclick="check();">
             </div>
 
             <!-- 콘텐츠 영역 >> btnWrap -->
             <div id="btnWrap">
-                <button type="button" id="subOk">확인</button>
-                <button type="button" id="reset">취소</button>
+                <button type="button" id="agree_formOk" name="agree_formOk" onclick="goJoinPage();">확인</button>
+                <button type="button" id="reset" name="reset">취소</button>
             </div>
 
         </div>
