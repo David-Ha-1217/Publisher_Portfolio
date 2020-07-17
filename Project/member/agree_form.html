@@ -16,11 +16,6 @@
     <!-- ------------------------ js, jquery ------------------------ -->
     <!-- ----- fontawesome ----- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
-    <!-- ----- js, jquery (공통 영역) ----- -->
-    <script type="text/javascript" src="./js/common/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="./js/common/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="./js/common/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="./js/common/prefixfree.min.js"></script>
     <!-- ----- agree_form.js ----- -->
     <script type="text/javascript" src="./js/agree_form.js"></script>
     <script>
@@ -30,13 +25,13 @@
         function check() {
             if( checkFlag==false ) { // if문의 조건이 참인 경우
 
-            document.myFormSub.agree1[0].checked = true;
-            document.myFormSub.agree2[0].checked = true;
+            document.agreeForm.agree1[0].checked = true;
+            document.agreeForm.agree2[0].checked = true;
             checkFlag = true;
 
             } else { // if문의 조건이 거짓인 경우
-            document.myFormSub.agree1[0].checked = false;
-            document.myFormSub.agree2[0].checked = false;
+            document.agreeForm.agree1[0].checked = false;
+            document.agreeForm.agree2[0].checked = false;
             checkFlag = false;
             }
         }
@@ -47,7 +42,7 @@
         var agreeCheck1 = document.getElementsByName("agree1")[0].checked;
         var agreeCheck2 = document.getElementsByName("agree2")[0].checked;
 
-        var theForm = document.myFormSub;
+        var theForm = document.agreeForm;
         theForm.method = "GET";
         theForm.action = "../member/join_form.html";
 
@@ -59,9 +54,7 @@
         }
 
     </script>
-
-        
-        
+    
 </head>
 <body>
 
@@ -125,7 +118,7 @@
 <!-- ---------------------------- 네비게이션 영역 END ------------------------------- -->
 
 <!-- ---------------------------- 콘텐츠 영역 ------------------------------- -->
-    <form name="myFormSub" onsubmit="return false">
+    <form name="agreeForm" onsubmit="return false">
         <div id="contents">
             
             <h1>약관 동의</h1>
