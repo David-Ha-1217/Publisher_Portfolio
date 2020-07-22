@@ -16,6 +16,7 @@
     <!-- ------------------------ js, jquery ------------------------ -->
     <!-- ----- fontawesome ----- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
+    <!-- ----- Javascript ----- -->
     <script>
         
         // 인증번호(난수) 생성 변수
@@ -96,7 +97,7 @@
 
                 var theForm = document.id_Form;
                 theForm.method = "GET";
-                theForm.action = "#";
+                theForm.action = "../member/login_form.html";
 
                 if (result == inputresult) {
                     alert("인증이 되었습니다.\n찾으시는 아이디는 " + dbId + " 입니다.");
