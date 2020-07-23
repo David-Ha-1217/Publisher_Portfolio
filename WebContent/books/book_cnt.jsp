@@ -1,0 +1,257 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JACOB'S LADDER - 도서</title>
+
+    <!-- ------------------------ CSS ------------------------ -->
+    <!-- ----- 공통 영역 ----- -->
+    <link rel="stylesheet" href="../css/common/common.css">
+    <!-- ----- 공통 영역 (푸터) ----- -->
+    <link rel="stylesheet" href="../css/common/foot_com.css">
+    <!-- ----- 콘텐츠 영역 (book_cnt.html) ----- -->
+    <link rel="stylesheet" href="../books/css/book_cnt.css">
+
+    <!-- ------------------------ js, jquery ------------------------ -->
+    <!-- ----- fontawesome ----- -->
+    <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--
+        > book_cnt.html - 도서(상세)
+        > (2020-05-15) 헤더, 푸터 마크업 완료.
+        > (2020-06-09) 컨텐츠 마크업 완료.
+        > (2020-06-29) 최종 마크업 완료.
+    -->
+
+    <!-- ---------------------------- 헤더 영역 ------------------------------- -->
+
+    <header>
+
+        <!-- 헤더 영역 >> logoWrap -->
+        <div id="logoWrap">
+
+            <h1><a href="../index.html">JACOB'S LADDER</a></h1>
+            <p>
+                <a href="../member/agree_form.html">회원가입</a> / <a href="../member/login_form.html">로그인</a>
+                <!--
+                    <a href="../mypage/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
+                    <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
+                -->
+            </p>
+
+        </div>
+        
+    </header>
+
+    <!-- ---------------------------- 헤더 영역 END ------------------------------- -->
+
+    <!-- ---------------------------- 네비게이션 영역 ------------------------------- -->
+
+    <nav role="navigation">
+
+        <!-- 네비게이션 영역 >> main-menu-->
+        <ul id="main-menu">
+
+            <li><a href="../company/company.html">회사소개</a>
+                <ul id="sub-menu">
+                    <li><a href="../company/company.html" aria-label="subemnu">회사소개</a></li>
+                    <li><a href="../company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
+                </ul>
+            </li>
+            <li><a href="../books/book.html">도서</a></li>
+            <li><a href="../pds/pds.html">자료실</a></li>
+            <li><a href="../ans/ans.html">질문답변</a></li>
+            <li><a href="../online/online.html">동영상 강의</a></li>
+
+            <!-- 네비게이션 영역 >> search-->
+            <li id="search">
+                <input type="text" placeholder="도서명, 저자 등 검색">
+                <button><i class="fas fa-search"></i></button>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ---------------------------- 네비게이션 영역 END ------------------------------- -->
+
+    <!-- ---------------------------- 콘텐츠 영역 ------------------------------- -->
+    <div id="contents">
+
+        <!-- 콘텐츠 영역 >> bTitleWrap -->
+        <div id="bTitleWrap">
+
+            <div id="bookTit">
+                <h2>지옥에서 온 문서 관리자 깃&깃허브 입문</h2>
+                <!-- <h3>- subTitle</h3> -->
+            </div>
+
+            <div id="adBtn">
+                <button type="button" id="alt">수정</button>
+                <button type="button" id="del">삭제</button>
+            </div>
+
+            <hr>
+
+        </div>
+
+        <!-- 콘텐츠 영역 >> bookInfo -->
+        <div id="bookInfo">
+
+            <img src="../images/book1.jpg">
+
+            <div id="bookCnt">
+                <ul id="tit">
+                    <li>저&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자</li>
+                    <li>발&nbsp;&nbsp;행&nbsp;&nbsp;인</li>
+                    <li>사&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;양</li>
+                    <li>I&nbsp;&nbsp;S&nbsp;&nbsp;B&nbsp;&nbsp;N</li>
+                    <li>정&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;가</li>
+                    <li>상&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;태</li>
+                </ul>
+
+                <ul id="cnt">
+                    <li>이고잉, 고경희</li>
+                    <li>2019-12-23</li>
+                    <li>272쪽 | 188*257mm</li>
+                    <li>979-11-6303-133-8 15000</li>
+                    <li>15,000 원</li>
+                    <li>정상 판매중</li>
+                </ul>
+            </div>
+
+            <hr id="vtc">
+
+            <div id="store">
+                <h3>도서구매 사이트</h3>
+                <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791163031222&orderClick=LEa&Kc="><img src="../images/kyobo.png"></a>
+                <a href="http://www.yes24.com/Product/Goods/84803146?Acode=101"><img src="../images/yes24.gif"></a>
+                <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=220609696&start=slayer"><img src="../images/al.gif"></a>
+            </div>
+
+            <hr class="hori">
+                
+            <div id="intro" class="bTit">
+                <h2>책&nbsp;&nbsp;&nbsp;소개</h2>
+                <p>
+                    대학생, 개발자, 일반 사무직까지! 문서 지옥에 빠진 모두를 위한 깃&깃허브 입문서가 나왔습니다. 일반 사람들에게 쉽게 프로그래밍을 알려 주는 ‘생활코딩’의 깃&깃허브 관련 강의에서 52개를 엄선해 체계적으로 재구성한 책입니다. 깃&깃허브를 처음 사용하는 사람이 볼 때 막힘이 없도록 자주 쓰지 않는 기능이나 복잡한 동작 원리 등은 빼고 유용한 기능은 모두 담았습니다. 덕분에 하루 5시간이면 기본 활용법을 완전히 정복할 수 있습니다. 실습과 연습 문제, 그림을 추가하고 비주얼 스튜디오 코드 사용자를 위한 꿀팁까지 담아 완성도를 높였습니다. 생활코딩 강의는 책 곳곳에 담긴 QR 코드로 편리하게 볼 수 있습니다.​ 
+                </p>
+            </div>
+
+            <hr class="hori">
+
+            <div id="bCnt" class="bTit">
+                <h2>목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;차</h2>
+
+                <div id="blist">
+
+                    <p>01장 깃 시작하기</p>
+                    <ul id="de01" class="list">
+                        <li>01-1 지옥에서 온 관리자, 깃</li>
+                        <li>01-2 깃 설치하기</li>
+                        <li>01-3 리눅스 명령 연습하기</li>
+                        <li>01장에서 꼭 기억해야 할 명령</li>
+                    </ul>
+                    
+                    <p>02장 깃으로 버전 관리하기</p>
+                    <ul id="de02" class="list">
+                        <li>02-1 깃 저장소 만들기</li>
+                        <li>02-2 버전 만들기</li>
+                        <li>02-3 커밋 내용 확인하기</li>
+                        <li>02-4 버전 만드는 단계마다 파일 상태 알아보기</li>
+                        <li>02-5 작업 되돌리기</li>
+                        <li>02장에서 꼭 기억해야 할 명령</li>
+                    </ul>
+    
+                    <p>03장 깃과 브랜치</p>
+                    <ul id="de03" class="list">
+                        <li>03-1 브랜치란?</li>
+                        <li>03-2 브랜치 만들기</li>
+                        <li>03-3 브랜치 정보 확인하기</li>
+                        <li>03-4 브랜치 병합하기</li>
+                        <li>03-5 브랜치 관리하기</li>
+                        <li>03장에서 꼭 기억해야 할 명령</li>
+                    </ul>
+    
+                    <p>04장 깃허브로 백업하기</p>
+                    <ul id="de04" class="list">
+                        <li>04-1 원격 저장소와 깃허브</li>
+                        <li>04-2 깃허브 시작하기</li>
+                        <li>04-3 지역 저장소를 원격 저장소에 연결하기</li>
+                        <li>04-4 원격 저장소에 올리기 및 내려받기</li>
+                        <li>04-5 깃허브에 SSH 원격 접속하기</li>
+                        <li>04장에서 꼭 기억해야 할 명령</li>
+                    </ul>
+    
+                    <p>05장 깃허브로 협업하기</p>
+                    <ul id="de05" class="list">
+                        <li>05-1 여러 컴퓨터에서 깃허브 저장소 함께 사용하기</li>
+                        <li>05-2 원격 브랜치 정보 가져오기</li>
+                        <li>05-3 협업의 기본 알아보기</li>
+                        <li>05-4 협업에서 브랜치 사용하기</li>
+                        <li>05장에서 꼭 기억해야 할 명령</li>
+                    </ul>
+    
+                    <p>06장 깃허브에서 개발자와 소통하기</p>
+                    <ul id="de06" class="list">
+                        <li>06-1 깃허브 프로필 관리하기</li>
+                        <li>06-2 README 파일 작성하기</li>
+                        <li>06-3 오픈 소스 프로젝트에 기여하기</li>
+                        <li>06-4 깃허브에 개인 블로그 만들기</li>
+                    </ul>
+    
+                    <ul id="de07" class="list">
+                        <li>실무 밀착 꿀팁! - 비주얼 스튜디오 코드에서 깃 활용하기</li>
+                        <li>찾아보기</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <hr class="hori">
+
+            <div id="author" class="bTit">
+
+                <h2>저자 소개</h2>
+                <div id="bAuth">
+                    <p class="name">고경희  funcom@gmail.com</p>
+                    <p>HTML5와 CSS3의 모든 태그를 집대성하여 베스트셀러에 오른 《Do it! HTML5+CSS3 웹 표준의 정석》 등 지금까지 40여 종의 책을 집필했다. 이번에는 생활코딩에 올라와 있는 이고잉 님의 깃(Git)과 깃허브(GitHub) 강의 영상을 학습서 형태로 처음부터 끝까지 새롭게 쓰고, 더 필요한 부분을 추가로 집필했다.
+                    홍익대학교 컴퓨터공학과를 졸업하고 동 대학원에서 인공지능을 공부했다. 한국디지털대학교에서 웹 기초(HTML) 분야를 강의했고, 한국 전자정보통신산업진흥회 등에서 웹 기술에 관한 강의를 진행해 왔다. Developer Technologies 분야의 마이크로소프트 공인 최고기술전문가(Most Valuable Professional)로 현재 활동 중이다.</p>
+                    <p class="name">이고잉</p>
+                    <p>일반 사람들에게 프로그래밍을 알려주는 무료 온라인, 오프라인 사이트 생활코딩(opentutorials.org)의 운영자다. 개발자뿐만 아니라 수많은 문서를 관리해야 하는 모든 사람들이 깃과 깃허브를 사용할 수 있도록 ‘GIT1’ 등 150여 개의 강의 영상을 만들었다. </p>
+                </div>
+               
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ---------------------------- 콘텐츠 영역 END ------------------------------- -->
+
+    <!-- ---------------------------- 푸터 영역 ------------------------------- -->
+
+    <footer>
+
+        <div id="ftWrap">
+            <h1>JACOB'S LADDER</h1>
+            <address>
+                <p>
+                    서울특별시 금천구 가산디지털2로 115(우편번호 08505) TEL (02)552-1722 FAX (02)552-1723 <br>
+                    사업자등록번호 115-87-44457 대표자 : 홍길동 / Email : jacob@jcl.co.kr<br>
+                    Copyright(c)2020 제이콥스 래더㈜ Jacob's Ladder Co., Ltd. All Rights Reserved
+                </p>
+            </address>
+        </div>
+        
+    </footer>
+
+    <!-- ---------------------------- 푸터 영역 END ------------------------------- -->
+
+</body>
+</html>

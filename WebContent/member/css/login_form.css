@@ -1,0 +1,159 @@
+/*
+    > login_form.css - login_form.html (콘텐츠)
+    > (2020-05-21) 콘텐츠 영역 css 완료.
+*/
+
+/* ---------------------------- 콘텐츠 영역 ------------------------------- */
+
+div#contents {
+    width: 1080px; height: 674px;
+    margin: 0px auto;
+}
+
+div#contents > h1 {
+    margin: 40px 0px 0px 497px;
+    text-align: center;
+    font-size: 32px;
+    float: left;
+}
+
+div#contents > hr {
+    width: 428px;
+    margin: 10px 0px 0px 325px;
+    float: left;
+}
+
+/* 콘텐츠 영역 >> loginInput */
+div#loginInput {
+    width: 411px; height: 218px;
+    margin: 50px 0px 0px 334.5px;
+    float: left;
+}
+
+div#inputId {
+    width: 409px; height: 60px;
+    border: 1px solid rgb(166,166,166);
+    background: #fff;
+    float: left;
+}
+
+div#inputId > label {
+    width: 60px; height: 60px;
+    border: 0px;
+    background: rgb(237, 237, 237);
+    color: rgb(166,166,166);
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+    outline: none;
+    float: left;
+}
+
+div#inputId > input {
+    width: 340px; height: 60px;
+    border: 0px;
+    margin-left: 9px;
+    outline: none;
+    float: right;
+}
+
+div#inputPwd {
+    width: 409px; height: 60px;
+    margin-top: 15px;
+    border: 1px solid rgb(166,166,166);
+    background: #fff;
+    float: left;
+}
+
+div#inputPwd > label {
+    width: 60px; height: 60px;
+    border: 0px;
+    background: rgb(237, 237, 237);
+    color: rgb(166,166,166);
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+    outline: none;
+    float: left;
+}
+
+div#inputPwd > input {
+    width: 340px; height: 60px;
+    border: 0px;
+    margin-left: 9px;
+    outline: none;
+    float: right;
+}
+
+div#saveId {
+    width: 110px; height: 20px;
+    margin-top: 10px;
+    float: left;
+}
+
+/*
+div#saveId > input {
+    width: 15px; height: 15px;
+    position: relative;
+    top: 1.5px;
+}
+*/
+
+button#loginBtn {
+    width: 100px; height: 47px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(255,255,255);
+    background-color: rgb(94,94,94);
+    margin-top: 31px;
+    font-weight: bold;
+    cursor : pointer;
+    float: right;
+}
+
+/* 콘텐츠 영역 >> btnWrap */
+div#btnWrap {
+    width: 411px; height: 103px;
+    margin: 60px 0px 0px 334.5px;
+    float: left;
+}
+
+button#id_findBtn {
+    width: 203px; height: 47px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(64,64,64);
+    background-color: rgb(224, 224, 224);
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+}
+
+button#pwd_findBtn {
+    width: 203px; height: 47px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(64,64,64);
+    background-color: rgb(224, 224, 224);
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
+
+button#join {
+    width: 411px; height: 47px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(64,64,64);
+    background-color: rgb(224, 224, 224);
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+}
+
+/* ---------------------------- 콘텐츠 영역 END ------------------------------- */
