@@ -11,11 +11,11 @@
     <!-- ------------------------ CSS ------------------------ -->
     <!-- ----- 공통 영역 ----- -->
     <link rel="stylesheet" href="./css/common/common.css">
-    <!-- ----- 푸터 영역 (index.html) ----- -->
+    <!-- ----- 푸터 영역 (index.jsp) ----- -->
     <link rel="stylesheet" href="./css/common/foot_idx.css">
-    <!-- ----- 콘텐츠 영역 (index.html) ----- -->
+    <!-- ----- 콘텐츠 영역 (index.jsp) ----- -->
     <link rel="stylesheet" href="./css/index.css">
-    <!-- ----- bxslider plugin (index.html) ----- -->
+    <!-- ----- bxslider plugin (index.jsp) ----- -->
     <link rel="stylesheet" href="./css/plugin/jquery.bxslider.css">
 
     <!-- ------------------------ js, jquery ------------------------ -->
@@ -26,16 +26,16 @@
     <script type="text/javascript" src="./js/common/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./js/common/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="./js/common/prefixfree.min.js"></script>
-    <!-- ----- js, jquery (index.html) ----- -->
+    <!-- ----- js, jquery (index.jsp) ----- -->
     <script type="text/javascript" src="./js/index.js"></script>
-    <!-- ----- bxslider plugin (index.html) ----- -->
+    <!-- ----- bxslider plugin (index.jsp) ----- -->
     <script type="text/javascript" src="./js/plugin/jquery.bxslider.min.js"></script>
 </head>
 
 <body>
 
     <!--
-        > index.html - 메인 페이지
+        > index.jsp - 메인 페이지
         > (2020-05-15) 헤더, 푸터 마크업 완료.
         > (2020-06-09) 컨텐츠 마크업 완료.
         > (2020-06-23) 최종 마크업 완료.
@@ -48,11 +48,11 @@
         <!-- 헤더 영역 >> logoWrap -->
         <div id="logoWrap">
 
-            <h1><a href="./index.html">JACOB'S LADDER</a></h1>
+            <h1><a href="./index.jsp">JACOB'S LADDER</a></h1>
             <p>
-                <a href="./member/agree_form.html">회원가입</a> / <a href="./member/login_form.html">로그인</a>
+                <a href="./member/agree_form.jsp">회원가입</a> / <a href="./member/login_form.jsp">로그인</a>
                 <!--
-                    <a href="./mypage/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
+                    <a href="./mypage/alt_user.jsp">마이페이지</a> / <a href="#">로그아웃</a>
                     <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
                 -->
             </p>
@@ -70,16 +70,16 @@
         <!-- 네비게이션 영역 >> main-menu-->
         <ul id="main-menu">
 
-            <li><a href="./company/company.html">회사소개</a>
+            <li><a href="./company/company.jsp">회사소개</a>
                 <ul id="sub-menu">
-                    <li><a href="./company/company.html" aria-label="subemnu">회사소개</a></li>
-                    <li><a href="./company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
+                    <li><a href="./company/company.jsp" aria-label="subemnu">회사소개</a></li>
+                    <li><a href="./company/directions.jsp" aria-label="subemnu">찾아오시는 길</a></li>
                 </ul>
             </li>
-            <li><a href="./books/book.html">도서</a></li>
-            <li><a href="./pds/pds.html">자료실</a></li>
-            <li><a href="./ans/ans.html">질문답변</a></li>
-            <li><a href="./online/online.html">동영상 강의</a></li>
+            <li><a href="./books/book.jsp">도서</a></li>
+            <li><a href="./pds/pds.jsp">자료실</a></li>
+            <li><a href="./ans/ans.jsp">질문답변</a></li>
+            <li><a href="./online/online.jsp">동영상 강의</a></li>
 
             <!-- 네비게이션 영역 >> search-->
             <li id="search">
@@ -102,7 +102,7 @@
 
             <ul id="slide_banner">
                 <li>
-                    <a href="./books/book_cnt.html">
+                    <a href="./books/book_cnt.jsp">
     
                         <div class="books">
                             <img src="./images/book1.jpg" alt="지옥에서 온 문서 관리자 깃&깃허브 입문">

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/common/common.css">
     <!-- ----- 공통 영역 (푸터) ----- -->
     <link rel="stylesheet" href="../css/common/foot_com.css">
-    <!-- ----- 콘텐츠 영역 (login_form.html) ----- -->
+    <!-- ----- 콘텐츠 영역 (login_form.jsp) ----- -->
     <link rel="stylesheet" href="./css/login_form.css">
 
     <!-- ------------------------ js, jquery ------------------------ -->
@@ -22,7 +22,7 @@
 <body>
 
     <!--
-        > login_form.html - 로그인
+        > login_form.jsp - 로그인
         > (2020-05-15) 헤더, 푸터 마크업 완료.
         > (2020-05-22) 컨텐츠 마크업 완료.
         > (2020-06-27) 최종 마크업 완료.
@@ -35,11 +35,11 @@
         <!-- 헤더 영역 >> logoWrap -->
         <div id="logoWrap">
 
-            <h1><a href="../index.html">JACOB'S LADDER</a></h1>
+            <h1><a href="../index.jsp">JACOB'S LADDER</a></h1>
             <p>
-                <a href="../member/agree_form.html">회원가입</a> / <a href="../member/login_form.html">로그인</a>
+                <a href="../member/agree_form.jsp">회원가입</a> / <a href="../member/login_form.jsp">로그인</a>
                 <!--
-                    <a href="../mypage/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
+                    <a href="../mypage/alt_user.jsp">마이페이지</a> / <a href="#">로그아웃</a>
                     <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
                 -->
             </p>
@@ -57,16 +57,16 @@
         <!-- 네비게이션 영역 >> main-menu-->
         <ul id="main-menu">
 
-            <li><a href="../company/company.html">회사소개</a>
+            <li><a href="../company/company.jsp">회사소개</a>
                 <ul id="sub-menu">
-                    <li><a href="../company/company.html" aria-label="subemnu">회사소개</a></li>
-                    <li><a href="../company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
+                    <li><a href="../company/company.jsp" aria-label="subemnu">회사소개</a></li>
+                    <li><a href="../company/directions.jsp" aria-label="subemnu">찾아오시는 길</a></li>
                 </ul>
             </li>
-            <li><a href="../books/book.html">도서</a></li>
-            <li><a href="../pds/pds.html">자료실</a></li>
-            <li><a href="../ans/ans.html">질문답변</a></li>
-            <li><a href="../online/online.html">동영상 강의</a></li>
+            <li><a href="../books/book.jsp">도서</a></li>
+            <li><a href="../pds/pds.jsp">자료실</a></li>
+            <li><a href="../ans/ans.jsp">질문답변</a></li>
+            <li><a href="../online/online.jsp">동영상 강의</a></li>
 
             <!-- 네비게이션 영역 >> search-->
             <li id="search">
@@ -109,9 +109,9 @@
 
         <!-- 콘텐츠 영역 >> btnWrap -->
         <div id="btnWrap">
-            <button type="button" id="id_findBtn" onclick="location.href='../member/id_find_form.html'">아이디 찾기</button>
-            <button type="button" id="pwd_findBtn" onclick="location.href='../member/pwd_find_form.html'">비밀번호 찾기</button>
-            <button type="button" id="join" onclick="location.href='../member/agree_form.html'">회원가입</button>
+            <button type="button" id="id_findBtn" onclick="location.href='../member/id_find_form.jsp'">아이디 찾기</button>
+            <button type="button" id="pwd_findBtn" onclick="location.href='../member/pwd_find_form.jsp'">비밀번호 찾기</button>
+            <button type="button" id="join" onclick="location.href='../member/agree_form.jsp'">회원가입</button>
         </div>
         
 

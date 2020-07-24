@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/common/aside.css">
     <!-- ----- 공통 영역 (푸터)----- -->
     <link rel="stylesheet" href="../css/common/foot_com.css">
-    <!-- ----- 콘텐츠 영역 (alt_user.html) ----- -->
+    <!-- ----- 콘텐츠 영역 (alt_user.jsp) ----- -->
     <link rel="stylesheet" href="./css/alt_user.css">
 
     <!-- ------------------------ js, jquery ------------------------ -->
@@ -24,7 +24,7 @@
 <body>
 
     <!--
-        > alt_user.html - 마이 페이지 (회원정보변경)
+        > alt_user.jsp - 마이 페이지 (회원정보변경)
         > (2020-05-15) 헤더, 푸터 마크업 완료.
         > (2020-05-26) 컨텐츠 마크업 완료.
         > (2020-06-24) 최종 마크업 완료.
@@ -37,11 +37,11 @@
         <!-- 헤더 영역 >> logoWrap -->
         <div id="logoWrap">
 
-            <h1><a href="../index.html">JACOB'S LADDER</a></h1>
+            <h1><a href="../index.jsp">JACOB'S LADDER</a></h1>
             <p>
-                <a href="../member/agree_form.html">회원가입</a> / <a href="../member/login_form.html">로그인</a>
+                <a href="../member/agree_form.jsp">회원가입</a> / <a href="../member/login_form.jsp">로그인</a>
                 <!--
-                    <a href="../mypage/alt_user.html">마이페이지</a> / <a href="#">로그아웃</a>
+                    <a href="../mypage/alt_user.jsp">마이페이지</a> / <a href="#">로그아웃</a>
                     <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
                 -->
             </p>
@@ -59,16 +59,16 @@
         <!-- 네비게이션 영역 >> main-menu-->
         <ul id="main-menu">
 
-            <li><a href="../company/company.html">회사소개</a>
+            <li><a href="../company/company.jsp">회사소개</a>
                 <ul id="sub-menu">
-                    <li><a href="../company/company.html" aria-label="subemnu">회사소개</a></li>
-                    <li><a href="../company/directions.html" aria-label="subemnu">찾아오시는 길</a></li>
+                    <li><a href="../company/company.jsp" aria-label="subemnu">회사소개</a></li>
+                    <li><a href="../company/directions.jsp" aria-label="subemnu">찾아오시는 길</a></li>
                 </ul>
             </li>
-            <li><a href="../books/book.html">도서</a></li>
-            <li><a href="../pds/pds.html">자료실</a></li>
-            <li><a href="../ans/ans.html">질문답변</a></li>
-            <li><a href="../online/online.html">동영상 강의</a></li>
+            <li><a href="../books/book.jsp">도서</a></li>
+            <li><a href="../pds/pds.jsp">자료실</a></li>
+            <li><a href="../ans/ans.jsp">질문답변</a></li>
+            <li><a href="../online/online.jsp">동영상 강의</a></li>
 
             <!-- 네비게이션 영역 >> search-->
             <li id="search">
@@ -93,8 +93,8 @@
                 <h3>마이 페이지</h3>
                 <hr>
                 <ul>
-                    <li><a href="../mypage/alt_user.html">회원정보변경</a></li>
-                    <li><a href="../mypage/del_user.html">회원탈퇴</a></li>
+                    <li><a href="../mypage/alt_user.jsp">회원정보변경</a></li>
+                    <li><a href="../mypage/del_user.jsp">회원탈퇴</a></li>
                 </ul>
             </div>
 
