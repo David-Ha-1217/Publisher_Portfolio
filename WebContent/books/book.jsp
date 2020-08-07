@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+        
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %> 
+    
 <!DOCTYPE html>  
 <html lang="ko">
 <head>
@@ -9,11 +13,12 @@
 
     <!-- ------------------------ CSS ------------------------ -->
     <!-- ----- 공통 영역 ----- -->
-    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/common/common.css">
     <!-- ----- 공통 영역 (푸터) ----- -->
-    <link rel="stylesheet" href="../css/common/foot_com.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/common/foot_com.css">
+    
     <!-- ----- 콘텐츠 영역 (book.jsp) ----- -->
-    <link rel="stylesheet" href="../books/css/book.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/books/css/book.css">
 
     <!-- ------------------------ js, jquery ------------------------ -->
     <!-- ----- fontawesome ----- -->
@@ -35,13 +40,22 @@
         <!-- 헤더 영역 >> logoWrap -->
         <div id="logoWrap">
 
-            <h1><a href="../index.jsp">JACOB'S LADDER</a></h1>
+            <h1><a href="publisher.gd?type=index">JACOB'S LADDER</a></h1>
             <p>
-                <a href="../member/agree_form.jsp">회원가입</a> / <a href="../member/login_form.jsp">로그인</a>
+            
+            <c:choose>
+            	<c:when test="${ empty sessionScope.loginUserInfo }">
+            		<a href="publisher.gd?type=agreeForm">회원가입</a> / <a href="publisher.gd?type=loginForm">로그인</a>
+                </c:when>
+                <c:otherwise>
+                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
+                </c:otherwise>
+            </c:choose>
+                
                 <!--
-                    <a href="../mypage/alt_user.jsp">마이페이지</a> / <a href="#">로그아웃</a>
-                    <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
+                 <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
                 -->
+
             </p>
 
         </div>
@@ -57,16 +71,16 @@
         <!-- 네비게이션 영역 >> main-menu-->
         <ul id="main-menu">
 
-            <li><a href="../company/company.jsp">회사소개</a>
+            <li><a href="publisher.gd?type=companyForm">회사소개</a>
                 <ul id="sub-menu">
-                    <li><a href="../company/company.jsp" aria-label="subemnu">회사소개</a></li>
-                    <li><a href="../company/directions.jsp" aria-label="subemnu">찾아오시는 길</a></li>
+                    <li><a href="publisher.gd?type=companyForm" aria-label="subemnu">회사소개</a></li>
+                    <li><a href="publisher.gd?type=directionsForm" aria-label="subemnu">찾아오시는 길</a></li>
                 </ul>
             </li>
-            <li><a href="../books/book.jsp">도서</a></li>
-            <li><a href="../pds/pds.jsp">자료실</a></li>
-            <li><a href="../ans/ans.jsp">질문답변</a></li>
-            <li><a href="../online/online.jsp">동영상 강의</a></li>
+            <li><a href="publisher.gd?type=bookForm">도서</a></li>
+            <li><a href="./pds/pds.jsp">자료실</a></li>
+            <li><a href="./ans/ans.jsp">질문답변</a></li>
+            <li><a href="./online/online.jsp">동영상 강의</a></li>
 
             <!-- 네비게이션 영역 >> search-->
             <li id="search">
@@ -98,12 +112,12 @@
             <div class="bList" id="b1">
 
                 <div id="bimg">
-                    <img src="../images/book1.jpg">
+                    <img src="${pageContext.request.contextPath}/images/book1.jpg">
                 </div>
                 
                 <div id="bCnt">
                     <ul>
-                        <li><a href="./book_cnt.jsp"><h2>지옥에서 온 문서 관리자 깃&깃허브 입문</h2></a></li>
+                        <li><a href="publisher.gd?type=bookCnt"><h2>지옥에서 온 문서 관리자 깃&깃허브 입문</h2></a></li>
                     <!-- <li>subTITLE</li> -->
                         <li><p>이고잉,고경희</p>&nbsp;|&nbsp;<p>2019-12-06</p>&nbsp;|&nbsp;<p>15,000 원</p></li>
                         <li>대학생, 개발자, 일반 사무직까지! 문서 지옥에 빠진 모두를 위한 깃&깃허브 입문서가 나왔습니다. 일반 사람들에게 쉽게 프로그래밍을 알려 주는 ‘생활코딩’의 깃&깃허브 관련 강의에서 52개를 엄선해 체계적으로 재구성한 책입니다. </li>
@@ -114,7 +128,7 @@
 
             <div class="bList" id="b2">
                 <div id="bimg">
-                    <img src="../images/book2.jpg">
+                    <img src="${pageContext.request.contextPath}/images/book2.jpg">
                 </div>
 
                 <div id="bCnt">
@@ -130,7 +144,7 @@
 
             <div class="bList" id="b3">
                 <div id="bimg">
-                    <img src="../images/book3.png">
+                    <img src="${pageContext.request.contextPath}/images/book3.png">
                 </div>
 
                 <div id="bCnt">
@@ -145,7 +159,7 @@
 
             <div class="bList" id="b4">
                 <div id="bimg">
-                    <img src="../images/book4.png">
+                    <img src="${pageContext.request.contextPath}/images/book4.png">
                 </div>
 
                 <div id="bCnt">
@@ -160,7 +174,7 @@
 
             <div class="bList" id="b5">
                 <div id="bimg">
-                    <img src="../images/book5.png">
+                    <img src="${pageContext.request.contextPath}/images/book5.png">
                 </div>
 
                 <div id="bCnt">
@@ -199,10 +213,10 @@
     </div>
 
     <!-- ---------------------------- 콘텐츠 영역 END ------------------------------- -->
-
+    
     <!-- ---------------------------- 푸터 영역 ------------------------------- -->
 
-    <footer>
+	<footer class="ft_com">
 
         <div id="ftWrap">
             <h1>JACOB'S LADDER</h1>

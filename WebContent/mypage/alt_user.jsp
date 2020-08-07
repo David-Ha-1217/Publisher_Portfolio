@@ -20,6 +20,17 @@
     <!-- ------------------------ js, jquery ------------------------ -->
     <!-- ----- fontawesome ----- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
+    <script>
+
+    	function altok() {
+    		var theForm = document.altForm;
+   		 	theForm.method = "POST";
+            theForm.action = "publisher.gd?type=mypage";
+            
+            theForm.submit();
+    	}
+    
+    </script>
 </head>
 <body>
 
@@ -101,31 +112,32 @@
         </aside>
 
         <!-- 콘텐츠 영역 >> contents -->
-        <section id="contents">
-
-            <h1>회원정보변경</h1>
-            <hr>
-
-            <div id="altInput">
-                <label for="member_id" class="label">아이디</label>
-                <input type="text" id="member_id" name="member_id" minlength="5" maxlength="11" placeholder="아이디를 입력해주세요.">
-                <div></div>
-
-                <label for="member_email" class="label">이메일</label>
-                <input type="email" id="member_email" name="member_email" maxlength="50" placeholder="이메일를 입력해주세요.">
-                <button id="dup_email">중복확인</button>
-
-                <label for="member_pwd" class="label">비밀번호</label>
-                <input type="password" id="member_pwd" name="member_pwd" minlength="8" maxlength="20" placeholder="비밀번호를 입력해주세요.">
-
-                <label for="re_pwd" class="label">비밀번호 확인</label>
-                <input type="password" id="re_pwd" name="re_pwd" minlength="8" maxlength="20" placeholder="비밀번호를 다시 입력해주세요.">
-            </div>
-
-            <button type="button" id="altOk">정보 수정</button>
-
-        </section>
-
+        <form name="altForm" method="post">
+	        <section id="contents">
+	
+	            <h1>회원정보변경</h1>
+	            <hr>
+	
+	            <div id="altInput">
+	                <label for="member_id" class="label">아이디</label>
+	                <input type="text" id="member_id" name="member_id" minlength="5" maxlength="11" readonly value="${myInfo.id}">
+	                <div></div>
+	
+	                <label for="member_email" class="label">이메일</label>
+	                <input type="email" id="member_email" name="member_email" maxlength="50" value="${myInfo.email}">
+	                <button id="dup_email" onclick="altEmailCheck();">중복확인</button>
+	
+	                <label for="member_pwd" class="label">비밀번호</label>
+	                <input type="password" id="member_pwd" name="member_pwd" minlength="8" maxlength="20" value="${myInfo.pwd}">
+	
+	                <label for="re_pwd" class="label">비밀번호 확인</label>
+	                <input type="password" id="re_pwd" name="re_pwd" minlength="8" maxlength="20" value="${myInfo.pwd}">
+	            </div>
+	
+	            <button type="submit" id="altOk"  onclick="altok();">정보 수정</button>
+	
+	        </section>
+		</form>
     </div>
 
     <!-- ---------------------------- 콘텐츠 영역 END ------------------------------- -->

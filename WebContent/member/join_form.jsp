@@ -29,6 +29,7 @@
         // 아이디 중복확인
         function joinIdCheck() {
 
+        	
             checkid = document.getElementById("member_id").value;
 
             console.log(checkid);
@@ -43,6 +44,7 @@
             dchkid = document.getElementById("dup_id").value;
             console.log(dchkid);
 
+            
         }
 
         //  이메일 중복확인 했는지, 안했는지 확인하기 위한 변수.
@@ -85,8 +87,8 @@
                 var pass = document.getElementById("member_pwd").value;
                 
                 var theForm = document.joinForm;
-                theForm.method = "GET";
-                theForm.action = "../member/join_ok.jsp"; 
+                theForm.method = "POST";
+                theForm.action = "publisher.gd?type=join"; 
 
                 //아이디 중복확인 변수2
                 var chkreid = document.getElementById("member_id").value;
@@ -276,7 +278,7 @@
 
             <!-- 콘텐츠 영역 >> btnWrap -->
             <div id="btnWrap">
-                <button type="button" id="joinBtn" onclick="joinok();">확인</button>
+                <button type="submit" id="joinBtn" onclick="joinok();">확인</button>
                 <button type="reset" id="reset">취소</button>
             </div>
 

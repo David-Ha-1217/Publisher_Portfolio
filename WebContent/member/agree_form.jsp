@@ -45,8 +45,8 @@
         var agreeCheck2 = document.getElementsByName("agree2")[0].checked;
 
         var theForm = document.agreeForm;
-        theForm.method = "GET";
-        theForm.action = "../member/join_form.jsp";
+        theForm.method = "POST";
+        theForm.action = "publisher.gd?type=joinForm";
 
             if(agreeCheck1!="" && agreeCheck2!="") {
                 theForm.submit();
@@ -120,7 +120,8 @@
 <!-- ---------------------------- 네비게이션 영역 END ------------------------------- -->
 
 <!-- ---------------------------- 콘텐츠 영역 ------------------------------- -->
-    <form name="agreeForm" onsubmit="return false">
+    <!-- <form name="agreeForm" onsubmit="return false"> agree -->
+    <form id="join" name="agreeForm">
         <div id="contents">
             
             <h1>약관 동의</h1>
@@ -431,8 +432,8 @@
 
             <!-- 콘텐츠 영역 >> btnWrap -->
             <div id="btnWrap">
-                <button type="button" id="agree_formOk" name="agree_formOk" onclick="goJoinPage();">확인</button>
-                <button type="button" id="reset" name="reset">취소</button>
+                <button type="submit" id="agree_formOk" name="agree_formOk" onclick="goJoinPage();">확인</button>
+                <button type="reset" id="reset" name="reset">취소</button>
             </div>
 
         </div>

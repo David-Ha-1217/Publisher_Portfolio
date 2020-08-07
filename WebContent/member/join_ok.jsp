@@ -18,6 +18,17 @@
     <!-- ------------------------ js, jquery ------------------------ -->
     <!-- ----- fontawesome ----- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
+    <script>
+    
+    	function joinhome() {
+    		var theForm = document.joinOk;
+   		 	theForm.method = "POST";
+            theForm.action = "publisher.gd?type=joinOk";
+            
+            theForm.submit();
+    	}
+    
+    </script>
 </head>
 <body>
 
@@ -81,22 +92,24 @@
     <!-- ---------------------------- 네비게이션 영역 END ------------------------------- -->
 
     <!-- ---------------------------- 콘텐츠 영역 ------------------------------- -->
-    <div id="contents">
-        
-        <h1>가입 완료</h1>
-        <hr>
-        <h2>
-            '지식이 넘치는 책을 만드는 이곳'<br>
-            JACOB'S LADDER에 오신걸 환영합니다.
-        </h2>
-
-        <!-- 콘텐츠 영역 >> 가입 완료 -->
-        <img src="../images/join_ok.PNG" alt="가입 완료">
-
-        <button type="button" id="home" onclick="location.href='../index.jsp'">홈으로</button>
-
-
-    </div>
+    <form name="joinOk" onsubmit="return false">
+	    <div id="contents">
+	        
+	        <h1>가입 완료</h1>
+	        <hr>
+	        <h2>
+	            '지식이 넘치는 책을 만드는 이곳'<br>
+	            JACOB'S LADDER에 오신걸 환영합니다.
+	        </h2>
+	
+	        <!-- 콘텐츠 영역 >> 가입 완료 -->
+	        <img src="../images/join_ok.PNG" alt="가입 완료">
+	
+	        <button type="submit" id="home" onclick="joinhome();">홈으로</button>
+	
+	
+	    </div>
+	</form>
     <!-- ---------------------------- 콘텐츠 영역 END ------------------------------- -->
 
     <!-- ---------------------------- 푸터 영역 ------------------------------- -->
