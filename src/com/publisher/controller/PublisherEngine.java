@@ -1,7 +1,10 @@
 package com.publisher.controller;
 
 import com.publisher.controller.action.Action;
+import com.publisher.controller.action.Admin;
 import com.publisher.controller.action.AgreeForm;
+import com.publisher.controller.action.Ans;
+import com.publisher.controller.action.AnsCnt;
 import com.publisher.controller.action.Book;
 import com.publisher.controller.action.BookCnt;
 import com.publisher.controller.action.Company;
@@ -52,6 +55,8 @@ public class PublisherEngine {
 			act = new MypageForm();
 		} else if (type.equals("mypage")) {			// 마이페이지 - 정보수정(서비스, DB)
 			act = new Mypage();
+		} else if (type.contentEquals("adminForm")) {	// 관리페이지 - 정보출력(화면)
+			act = new Admin();
 		} else if (type.equals("companyForm")) {		// 회사소개 - 회사소개(화면) 
 			act = new Company();
 		} else if (type.equals("directionsForm")) {		// 회사소개 - 찾아오시는 길(화면)
@@ -60,7 +65,12 @@ public class PublisherEngine {
 			act = new Book();
 		} else if (type.equals("bookCnt")) {		// 도서 - 상세(화면)
 			act = new BookCnt();
+		} else if (type.equals("ansForm")) {		// 질문답변 - 질문답변(화면)
+			act = new Ans();
+		} else if (type.equals("ansCnt")) {			// 질문답변 - 상세(화면)
+			act = new AnsCnt();
 		}
+		
 		
 		return act;
 	}
