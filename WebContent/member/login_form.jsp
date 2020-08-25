@@ -30,19 +30,9 @@
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/prefixfree.min.js"></script>
     
-    <!-- ----- js, jquery (login_form.jsp) ----- --> 
-    <script type="text/javascript" src="${pageContext.request.contextPath}/member/js/login_form.js"></script>
-    
 </head>
 
 <body>
-
-    <!--
-        > index.jsp - 메인 페이지
-        > (2020-05-15) 헤더, 푸터 마크업 완료.
-        > (2020-06-09) 컨텐츠 마크업 완료.
-        > (2020-06-23) 최종 마크업 완료.
-    -->
 
     <!-- ---------------------------- 헤더 영역 ------------------------------- -->
 
@@ -53,24 +43,22 @@
 
             <h1><a href="publisher.gd?type=index">JACOB'S LADDER</a></h1>
             <p>
-            
             <c:choose>
             	<c:when test="${ empty sessionScope.loginUserInfo }">
             		<a href="publisher.gd?type=agreeForm">회원가입</a> / <a href="publisher.gd?type=loginForm">로그인</a>
                 </c:when>
-                <c:otherwise>
-                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
-                </c:otherwise>
+                <c:when test="${ myInfo.id eq 'admin' }">
+            		<a href="publisher.gd?type=adminForm">관리페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
+                </c:when>
+                <c:when test="${ myInfo.id ne 'admin' }">
+                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃 </a>
+                </c:when>
             </c:choose>
                 
-                <!--
-                 <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
-                -->
-
             </p>
 
         </div>
-        
+    
     </header>
 
     <!-- ---------------------------- 헤더 영역 END ------------------------------- -->
@@ -89,9 +77,9 @@
                 </ul>
             </li>
             <li><a href="publisher.gd?type=bookForm">도서</a></li>
-            <li><a href="./pds/pds.jsp">자료실</a></li>
-            <li><a href="./ans/ans.jsp">질문답변</a></li>
-            <li><a href="./online/online.jsp">동영상 강의</a></li>
+            <li><a href="publisher.gd?type=pdsForm">자료실</a></li>
+            <li><a href="publisher.gd?type=ansForm">질문답변</a></li>
+            <li><a href="publisher.gd?type=onlineForm">동영상 강의</a></li>
 
             <!-- 네비게이션 영역 >> search-->
             <li id="search">
@@ -137,9 +125,9 @@
         <!-- 콘텐츠 영역 >> btnWrap -->
         <form id="btnWrap" name="btnWrap" method="post">
 	        <div id="btnWrap">
-	            <button type="button" id="id_findBtn" onclick="login_id()">아이디 찾기</button>
-	            <button type="button" id="pwd_findBtn" onclick="login_pwd();">비밀번호 찾기</button>
-	            <button type="submit" id="join" onclick="login_agree();">회원가입</button>
+	            <button type="button" id="id_findBtn"  onclick="location.href='publisher.gd?type=idFindForm'">아이디 찾기</button>
+	            <button type="button" id="pwd_findBtn"  onclick="location.href='publisher.gd?type=pwdFindForm'">비밀번호 찾기</button>
+	            <button type="button" id="join" onclick="location.href='publisher.gd?type=agreeForm'">회원가입</button>
 	        </div>
         </form>
         

@@ -49,7 +49,7 @@
             	<c:when test="${ empty sessionScope.loginUserInfo }">
             		<a href="publisher.gd?type=agreeForm">회원가입</a> / <a href="publisher.gd?type=loginForm">로그인</a>
                 </c:when>
-                <c:when test="${ sessionScope.member_id eq admin }">
+                <c:when test="${ sessionScope.member_id == admin }">
             		<a href="publisher.gd?type=adminForm">관리페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
                 </c:when>
                 <c:otherwise>
@@ -106,7 +106,7 @@
                 <h3>관리 페이지</h3>
                 <hr>
                 <ul>
-                    <li><a href="../admin/admin.jsp">회원관리</a></li>
+                    <li><a href="publisher.gd?type=adminForm">회원관리</a></li>
                 </ul>
             </div>
 

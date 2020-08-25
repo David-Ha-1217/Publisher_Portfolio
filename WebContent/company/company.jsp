@@ -43,20 +43,18 @@
 
             <h1><a href="publisher.gd?type=index">JACOB'S LADDER</a></h1>
             <p>
-            
             <c:choose>
             	<c:when test="${ empty sessionScope.loginUserInfo }">
             		<a href="publisher.gd?type=agreeForm">회원가입</a> / <a href="publisher.gd?type=loginForm">로그인</a>
                 </c:when>
-                <c:otherwise>
-                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
-                </c:otherwise>
+                <c:when test="${ myInfo.id eq 'admin' }">
+            		<a href="publisher.gd?type=adminForm">관리페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
+                </c:when>
+                <c:when test="${ myInfo.id ne 'admin' }">
+                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃 </a>
+                </c:when>
             </c:choose>
                 
-                <!--
-                 <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
-                -->
-
             </p>
 
         </div>
@@ -79,9 +77,9 @@
                 </ul>
             </li>
             <li><a href="publisher.gd?type=bookForm">도서</a></li>
-            <li><a href="./pds/pds.jsp">자료실</a></li>
-            <li><a href="./ans/ans.jsp">질문답변</a></li>
-            <li><a href="./online/online.jsp">동영상 강의</a></li>
+            <li><a href="publisher.gd?type=pdsForm">자료실</a></li>
+            <li><a href="publisher.gd?type=ansForm">질문답변</a></li>
+            <li><a href="publisher.gd?type=onlineForm">동영상 강의</a></li>
 
             <!-- 네비게이션 영역 >> search-->
             <li id="search">

@@ -40,17 +40,16 @@
 
             <h1><a href="publisher.gd?type=index">JACOB'S LADDER</a></h1>
             <p>
-            
             <c:choose>
             	<c:when test="${ empty sessionScope.loginUserInfo }">
             		<a href="publisher.gd?type=agreeForm">회원가입</a> / <a href="publisher.gd?type=loginForm">로그인</a>
                 </c:when>
-                <c:when test="${ sessionScope.member_id eq admin }">
+                <c:when test="${ myInfo.id eq 'admin' }">
             		<a href="publisher.gd?type=adminForm">관리페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
                 </c:when>
-                <c:otherwise>
-                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
-                </c:otherwise>
+                <c:when test="${ myInfo.id ne 'admin' }">
+                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃 </a>
+                </c:when>
             </c:choose>
                 
             </p>
@@ -108,7 +107,7 @@
                 <li class="ansCnt">조&nbsp;회&nbsp;수</li>
                 <li class="a01">19회</li>
             </ul>
-            <button type="button" id="list" onclick="location.href='../ans/ans.jsp'">목록</button>
+            <button type="button" id="list" onclick="location.href='publisher.gd?type=ansForm'">목록</button>
         </div>
 
         <!-- 콘텐츠 영역 >> ansWrap -->
@@ -120,7 +119,15 @@
         <div id="ansBtn">
             <button type="button" id="del">삭제</button>
             <button type="button" id="alt">수정</button>
-            <button type="button" id="ans">답글</button>
+            
+			<c:choose>
+	        	<c:when test="${ myInfo.id eq 'admin' }">
+            		<button type="button" id="ans">답글</button>
+		        </c:when>
+		        <c:otherwise>
+            		<button type="button" id="ans" style="display:none;">답글</button>
+		        </c:otherwise>
+	        </c:choose>
         </div>
         
 

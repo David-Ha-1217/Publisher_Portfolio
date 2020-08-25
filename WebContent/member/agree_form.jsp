@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %> 
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,17 +13,22 @@
 
     <!-- ------------------------ CSS ------------------------ -->
     <!-- ----- 공통 영역 ----- -->
-    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/common/common.css">
     <!-- ----- 공통 영역 (푸터) ----- -->
-    <link rel="stylesheet" href="../css/common/foot_com.css">
-    <!-- ---------------- 콘텐츠 영역 (agree_form.jsp) ---------------- -->
-    <link rel="stylesheet" href="./css/agree_form.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/common/foot_com.css">
+    
+    <!-- ----- 콘텐츠 영역 (agree_form.jsp) ----- -->
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/member/css/agree_form.css">
 
     <!-- ------------------------ js, jquery ------------------------ -->
     <!-- ----- fontawesome ----- -->
     <script src="https://kit.fontawesome.com/7c9e7a71e3.js" crossorigin="anonymous"></script>
-    <!-- ----- agree_form.js ----- -->
-    <script type="text/javascript" src="./js/agree_form.js"></script>
+        <!-- ----- js, jquery (공통 영역) ----- -->
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/prefixfree.min.js"></script>
+       
     <script>
 
         var checkFlag = false // false 면 전체해제, true 면 전체선택
@@ -60,13 +69,6 @@
 </head>
 <body>
 
-    <!--
-        > login_form.jsp - 로그인
-        > (2020-05-15) 헤더, 푸터 마크업 완료.
-        > (2020-05-22) 컨텐츠 마크업 완료.
-        > (2020-06-24) 최종 마크업 완료.
-    -->
-
    <!-- ---------------------------- 헤더 영역 ------------------------------- -->
 
     <header>
@@ -74,13 +76,20 @@
         <!-- 헤더 영역 >> logoWrap -->
         <div id="logoWrap">
 
-            <h1><a href="../index.jsp">JACOB'S LADDER</a></h1>
+            <h1><a href="publisher.gd?type=index">JACOB'S LADDER</a></h1>
             <p>
-                <a href="../member/agree_form.jsp">회원가입</a> / <a href="../member/login_form.jsp">로그인</a>
-                <!--
-                    <a href="../mypage/alt_user.jsp">마이페이지</a> / <a href="#">로그아웃</a>
-                    <a href="#">관리페이지</a> / <a href="#">로그아웃</a>
-                -->
+            <c:choose>
+            	<c:when test="${ empty sessionScope.loginUserInfo }">
+            		<a href="publisher.gd?type=agreeForm">회원가입</a> / <a href="publisher.gd?type=loginForm">로그인</a>
+                </c:when>
+                <c:when test="${ myInfo.id eq 'admin' }">
+            		<a href="publisher.gd?type=adminForm">관리페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
+                </c:when>
+                <c:when test="${ myInfo.id ne 'admin' }">
+                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃 </a>
+                </c:when>
+            </c:choose>
+                
             </p>
 
         </div>
@@ -96,16 +105,16 @@
         <!-- 네비게이션 영역 >> main-menu-->
         <ul id="main-menu">
 
-            <li><a href="../company/company.jsp">회사소개</a>
+            <li><a href="publisher.gd?type=companyForm">회사소개</a>
                 <ul id="sub-menu">
-                    <li><a href="../company/company.jsp" aria-label="subemnu">회사소개</a></li>
-                    <li><a href="../company/directions.jsp" aria-label="subemnu">찾아오시는 길</a></li>
+                    <li><a href="publisher.gd?type=companyForm" aria-label="subemnu">회사소개</a></li>
+                    <li><a href="publisher.gd?type=directionsForm" aria-label="subemnu">찾아오시는 길</a></li>
                 </ul>
             </li>
-            <li><a href="../books/book.jsp">도서</a></li>
-            <li><a href="../pds/pds.jsp">자료실</a></li>
-            <li><a href="../ans/ans.jsp">질문답변</a></li>
-            <li><a href="../online/online.jsp">동영상 강의</a></li>
+            <li><a href="publisher.gd?type=bookForm">도서</a></li>
+            <li><a href="publisher.gd?type=pdsForm">자료실</a></li>
+            <li><a href="publisher.gd?type=ansForm">질문답변</a></li>
+            <li><a href="publisher.gd?type=onlineForm">동영상 강의</a></li>
 
             <!-- 네비게이션 영역 >> search-->
             <li id="search">
@@ -442,7 +451,7 @@
 
 <!-- ---------------------------- 푸터 영역 ------------------------------- -->
 
-    <footer>
+	<footer class="ft_com">
 
         <div id="ftWrap">
             <h1>JACOB'S LADDER</h1>

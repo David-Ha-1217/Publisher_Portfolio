@@ -18,7 +18,7 @@ public class Login implements Action {
 		
 		
 		// 로그인이 실패할 경우 넘어간다.
-		String path = "/membership/loginFail.jsp";
+		String path = "/member/login_fail.jsp";
 		HttpSession session = request.getSession();
 		
 		//파라미터로 넘겨온 값을 불러옵니다.

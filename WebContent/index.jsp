@@ -51,17 +51,16 @@
 
             <h1><a href="publisher.gd?type=index">JACOB'S LADDER</a></h1>
             <p>
-            
             <c:choose>
             	<c:when test="${ empty sessionScope.loginUserInfo }">
             		<a href="publisher.gd?type=agreeForm">회원가입</a> / <a href="publisher.gd?type=loginForm">로그인</a>
                 </c:when>
-                <c:when test="${ sessionScope.id eq 'admin' }">
+                <c:when test="${ myInfo.id eq 'admin' }">
             		<a href="publisher.gd?type=adminForm">관리페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
                 </c:when>
-                <c:otherwise>
-                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
-                </c:otherwise>
+                <c:when test="${ myInfo.id ne 'admin' }">
+                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃 </a>
+                </c:when>
             </c:choose>
                 
             </p>
@@ -111,10 +110,10 @@
 
             <ul id="slide_banner">
                 <li>
-                    <a href="./books/book_cnt.jsp">
+                    <a href="publisher.gd?type=bookCnt">
     
                         <div class="books">
-                            <img src="./images/book1.jpg" alt="지옥에서 온 문서 관리자 깃&깃허브 입문">
+                            <img src="${pageContext.request.contextPath}/images/book1.jpg" alt="지옥에서 온 문서 관리자 깃&깃허브 입문">
                             <h3>지옥에서 온 문서 관리자 깃&깃허브 입문</h3>
                             <div>
                                 생활코딩 강의에서 52개를 엄선, 한 권 안에 자주 쓰는 기능은 모두 담았다! 문서 지옥, 깃&깃허브로 하루 안에 탈출한다!
@@ -128,7 +127,7 @@
                     <a href="#">
     
                         <div class="books">
-                            <img src="./images/book2.jpg" alt="리액트 프로그래밍 정석">
+                            <img src="${pageContext.request.contextPath}/images/book2.jpg" alt="리액트 프로그래밍 정석">
                             <h3>리액트 프로그래밍 정석</h3>
                             <div>
                                 전 세계의 뛰어난 개발자들이 모여 일한다는 실리콘밸리! 실리콘밸리에서도 핫한 기업인 ‘에어비앤비’에서 프런트엔드 리드로 활약하는 저자에게 리액트를 배워 보자.
@@ -142,7 +141,7 @@
                     <a href="#">
     
                         <div class="books">
-                            <img src="./images/book3.png" alt="클론 코딩 영화 평점 웹서비스">
+                            <img src="${pageContext.request.contextPath}/images/book3.png" alt="클론 코딩 영화 평점 웹서비스">
                             <h3>클론 코딩 영화 평점 웹서비스</h3>
                             <div>
                                 9살부터 코딩을 시작한 전형적인 ‘천재 코더’ 니꼴라스! 니꼴라스는 세상에서 가장 빠르게 프로그래밍을 배울 수 있는 방법은 클론 코딩이라고 말합니다.
@@ -156,7 +155,7 @@
                     <a href="#">
     
                         <div class="books">
-                            <img src="./images/book4.png" alt="키트 없이 만드는 아두이노">
+                            <img src="${pageContext.request.contextPath}/images/book4.png" alt="키트 없이 만드는 아두이노">
                             <h3>키트 없이 만드는 아두이노</h3>
                             <div>
                                 인터넷만 연결하면 아두이노 실습 준비 끝! 팅커캐드에서 준비물 없이 배우는 IoT 체험 학습!
@@ -170,7 +169,7 @@
                     <a href="#">
     
                         <div class="books">
-                            <img src="./images/book5.png" alt="기계는 어떻게 생각하는가?">
+                            <img src="${pageContext.request.contextPath}/images/book5.png" alt="기계는 어떻게 생각하는가?">
                             <h3>기계는 어떻게 생각하는가?</h3>
                             <div>
                                 “자율 주행차는 어떻게 작동하는 걸까?” “알파고는 이세돌을 어떻게 이겼을까?” 개발자, CTO는 물론 중·고등학생에 이르기까지 4차 산업 혁명을 이끌 모든 사람을 위한 필독서!

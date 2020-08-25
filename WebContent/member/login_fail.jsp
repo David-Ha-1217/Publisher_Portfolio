@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JACOB'S LADDER - 가입완료</title>
+    <title>JACOB'S LADDER - 로그인 실패</title>
 
     <!-- ------------------------ CSS ------------------------ -->
     <!-- ----- 공통 영역 ----- -->
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/common/foot_com.css">
     
     <!-- ----- 콘텐츠 영역 (join_ok.jsp) ----- -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/member/css/join_ok.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/member/css/login_fail.css">
 
     <!-- ------------------------ js, jquery ------------------------ -->
     <!-- ----- fontawesome ----- -->
@@ -31,10 +31,10 @@
     
     <script>
     
-    	function joinhome() {
-    		var theForm = document.joinOk;
+    	function loginGo() {
+    		var theForm = document.login_f;
    		 	theForm.method = "POST";
-            theForm.action = "publisher.gd?type=index";
+            theForm.action = "publisher.gd?type=loginForm";
             
             theForm.submit();
     	}
@@ -103,20 +103,21 @@
     <!-- ---------------------------- 네비게이션 영역 END ------------------------------- -->
 
     <!-- ---------------------------- 콘텐츠 영역 ------------------------------- -->
-    <form name="joinOk" onsubmit="return false">
+    <form name="login_f" onsubmit="return false">
 	    <div id="contents">
 	        
-	        <h1>가입 완료</h1>
+	        <h1>로그인 실패</h1>
 	        <hr>
 	        <h2>
-	            '지식이 넘치는 책을 만드는 이곳'<br>
-	            JACOB'S LADDER에 오신걸 환영합니다.
+	        	입력한 아이디(비밀번호)가 잘못 입력되었습니다.<br>
+	        	아이디(비밀번호)를 확인 후 다시 한번 입력해 주세요.
 	        </h2>
 	
 	        <!-- 콘텐츠 영역 >> 가입 완료 -->
-	        <img src="${pageContext.request.contextPath}/images/join_ok.PNG" alt="가입 완료">
+	        <img src="${pageContext.request.contextPath}/images/fail.png" alt="로그인 실패">
+	        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="플랫 아이콘">플랫 아이콘</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 	
-	        <button type="submit" id="home" onclick="joinhome();">홈으로</button>
+	        <button type="submit" id="logingo" onclick="loginGo();">로그인</button>
 	
 	
 	    </div>
