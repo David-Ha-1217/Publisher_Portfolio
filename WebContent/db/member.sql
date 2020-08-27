@@ -16,3 +16,6 @@ CREATE TABLE member(
 COMMIT;
 
 select * from member;
+
+delete from member where id='a';
+commit;
