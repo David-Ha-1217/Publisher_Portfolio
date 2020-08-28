@@ -43,17 +43,16 @@
 
             <h1><a href="publisher.gd?type=index">JACOB'S LADDER</a></h1>
             <p>
-            
             <c:choose>
             	<c:when test="${ empty sessionScope.loginUserInfo }">
             		<a href="publisher.gd?type=agreeForm">회원가입</a> / <a href="publisher.gd?type=loginForm">로그인</a>
                 </c:when>
-                <c:when test="${ sessionScope.member_id == admin }">
+                <c:when test="${ myInfo.id eq 'admin' }">
             		<a href="publisher.gd?type=adminForm">관리페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
                 </c:when>
-                <c:otherwise>
-                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃</a>
-                </c:otherwise>
+                <c:when test="${ myInfo.id ne 'admin' }">
+                	<a href="publisher.gd?type=mypageForm">마이페이지</a> / <a href="publisher.gd?type=logout">로그아웃 </a>
+                </c:when>
             </c:choose>
                 
             </p>
